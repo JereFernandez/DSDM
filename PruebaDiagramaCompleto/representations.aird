@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_j-7MMAKQEeu5w-Dds4RBEw" selectedViews="_H4FA0AKREeu5w-Dds4RBEw" version="14.3.1.202003261200">
+    <semanticResources>PruebaXMI.diagramaclasescompleto</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_H4FA0AKREeu5w-Dds4RBEw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IWyWEQKREeu5w-Dds4RBEw" name="new DiagramaDeClases" repPath="#_IWL5IAKREeu5w-Dds4RBEw" changeId="fff80544-ca36-4dd9-990c-b9fdd91f3350">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']"/>
+        <target xmi:type="diagramaClasesCompleto:DiagramaClases" href="PruebaXMI.diagramaclasescompleto#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_IWL5IAKREeu5w-Dds4RBEw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_IWolEAKREeu5w-Dds4RBEw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_IWolEQKREeu5w-Dds4RBEw">
+        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_m64G0A2PEeuNrbXke9b4-Q" sizeComputationExpression="2">
+          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <beginLabelStyleDescription xmi:type="style:BeginLabelStyleDescription" xmi:id="_m64G0Q2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="1">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </beginLabelStyleDescription>
+          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_m64G0g2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="[nombre/]">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </centerLabelStyleDescription>
+          <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_m64G0w2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="*">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </endLabelStyleDescription>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_p3TbsA2PEeuNrbXke9b4-Q" sourceArrow="FillDiamond" sizeComputationExpression="2">
+          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <beginLabelStyleDescription xmi:type="style:BeginLabelStyleDescription" xmi:id="_p3TbsQ2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="*">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </beginLabelStyleDescription>
+          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_p3Tbsg2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="[nombre/]">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </centerLabelStyleDescription>
+          <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_p3Tbsw2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="*">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </endLabelStyleDescription>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_vZtUVA2PEeuNrbXke9b4-Q" sourceArrow="Diamond" sizeComputationExpression="2">
+          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <beginLabelStyleDescription xmi:type="style:BeginLabelStyleDescription" xmi:id="_vZtUVQ2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="1">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </beginLabelStyleDescription>
+          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_vZtUVg2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="[nombre/]">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </centerLabelStyleDescription>
+          <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_vZtUVw2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false" labelExpression="1">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </endLabelStyleDescription>
+        </computedStyleDescriptions>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_IXPCAAKREeu5w-Dds4RBEw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_IXPCAQKREeu5w-Dds4RBEw" type="Sirius" element="_IWL5IAKREeu5w-Dds4RBEw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_LuqbYAKSEeu5w-Dds4RBEw" type="2002" element="_LunYEAKSEeu5w-Dds4RBEw">
+          <children xmi:type="notation:Node" xmi:id="_LurCcAKSEeu5w-Dds4RBEw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_LurCcQKSEeu5w-Dds4RBEw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_HNeSsAKTEeu5w-Dds4RBEw" type="3009" element="_HNWW4AKTEeu5w-Dds4RBEw">
+              <children xmi:type="notation:Node" xmi:id="_HNeSswKTEeu5w-Dds4RBEw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_HNe5wAKTEeu5w-Dds4RBEw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_H5hOcAKVEeu5w-Dds4RBEw" type="3010" element="_H4prwAKVEeu5w-Dds4RBEw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_H5hOcQKVEeu5w-Dds4RBEw" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_H5hOcgKVEeu5w-Dds4RBEw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_QN7UoAKVEeu5w-Dds4RBEw" type="3010" element="_QNzY0QKVEeu5w-Dds4RBEw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_QN7UoQKVEeu5w-Dds4RBEw" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_QN7UogKVEeu5w-Dds4RBEw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_oPnu4AKcEeu3IcgioXN-gA" type="3010" element="_oPH_oAKcEeu3IcgioXN-gA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_oPnu4QKcEeu3IcgioXN-gA" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_oPnu4gKcEeu3IcgioXN-gA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_0YwjQAtVEeudaNZRT0uZ5Q" type="3010" element="_0Yju8gtVEeudaNZRT0uZ5Q">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_0YwjQQtVEeudaNZRT0uZ5Q" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_0YwjQgtVEeudaNZRT0uZ5Q"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_08T2MAKXEeu3IcgioXN-gA" type="3010" element="_07dhoAKXEeu3IcgioXN-gA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_08T2MQKXEeu3IcgioXN-gA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_08T2MgKXEeu3IcgioXN-gA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_08YHoAKXEeu3IcgioXN-gA" type="3010" element="_073KQAKXEeu3IcgioXN-gA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_08YHoQKXEeu3IcgioXN-gA" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_08YHogKXEeu3IcgioXN-gA"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_HNe5wQKTEeu5w-Dds4RBEw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_HNe5wgKTEeu5w-Dds4RBEw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_HNeSsQKTEeu5w-Dds4RBEw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HNeSsgKTEeu5w-Dds4RBEw" x="259" y="18" width="195" height="171"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_E1qUgAKYEeu3IcgioXN-gA" type="3009" element="_E1gjgQKYEeu3IcgioXN-gA">
+              <children xmi:type="notation:Node" xmi:id="_E1ul8AKYEeu3IcgioXN-gA" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_E1vNAAKYEeu3IcgioXN-gA" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_7R30oAKYEeu3IcgioXN-gA" type="3010" element="_7RKqAAKYEeu3IcgioXN-gA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_7R30oQKYEeu3IcgioXN-gA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_7R30ogKYEeu3IcgioXN-gA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_9LXF0AKYEeu3IcgioXN-gA" type="3010" element="_9LTbcQKYEeu3IcgioXN-gA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_9LXF0QKYEeu3IcgioXN-gA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_9LXF0gKYEeu3IcgioXN-gA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_u06A0AKcEeu3IcgioXN-gA" type="3010" element="_u00hQAKcEeu3IcgioXN-gA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_u06A0QKcEeu3IcgioXN-gA" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_u06A0gKcEeu3IcgioXN-gA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_7R4bsAKYEeu3IcgioXN-gA" type="3010" element="_7RahoAKYEeu3IcgioXN-gA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_7R4bsQKYEeu3IcgioXN-gA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_7R4bsgKYEeu3IcgioXN-gA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_C-NOMAKZEeu3IcgioXN-gA" type="3010" element="_C-Kx8QKZEeu3IcgioXN-gA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_C-NOMQKZEeu3IcgioXN-gA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_C-NOMgKZEeu3IcgioXN-gA"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_E1vNAQKYEeu3IcgioXN-gA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_E1vNAgKYEeu3IcgioXN-gA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_E1qUgQKYEeu3IcgioXN-gA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E1qUggKYEeu3IcgioXN-gA" x="871" y="6" width="171" height="171"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_4CiFcAT2Eeu3g8CGE3Ckww" type="3009" element="_4BjOAAT2Eeu3g8CGE3Ckww">
+              <children xmi:type="notation:Node" xmi:id="_4Cm98AT2Eeu3g8CGE3Ckww" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_4CnlAAT2Eeu3g8CGE3Ckww" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_QzoAgAT3Eeu3g8CGE3Ckww" type="3010" element="_QzdBYAT3Eeu3g8CGE3Ckww">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_QzoAgQT3Eeu3g8CGE3Ckww" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_QzoAggT3Eeu3g8CGE3Ckww"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_4CoMEAT2Eeu3g8CGE3Ckww"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_4CoMEQT2Eeu3g8CGE3Ckww"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_4CiFcQT2Eeu3g8CGE3Ckww" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4CiFcgT2Eeu3g8CGE3Ckww" x="259" y="331" width="195" height="159"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cdOEYAT4Eeu3g8CGE3Ckww" type="3009" element="_cdDsUAT4Eeu3g8CGE3Ckww">
+              <children xmi:type="notation:Node" xmi:id="_cdOrcAT4Eeu3g8CGE3Ckww" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_cdOrcQT4Eeu3g8CGE3Ckww" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_cdOrcgT4Eeu3g8CGE3Ckww"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_cdOrcwT4Eeu3g8CGE3Ckww"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cdOEYQT4Eeu3g8CGE3Ckww" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cdOEYgT4Eeu3g8CGE3Ckww" x="583" y="42" width="174" height="144"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zFKhoAT4Eeu3b7UvzH2Ijg" type="3009" element="_zD2TAAT4Eeu3b7UvzH2Ijg">
+              <children xmi:type="notation:Node" xmi:id="_zFOzEAT4Eeu3b7UvzH2Ijg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_zFPaIAT4Eeu3b7UvzH2Ijg" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_zFPaIQT4Eeu3b7UvzH2Ijg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_zFPaIgT4Eeu3b7UvzH2Ijg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_zFKhoQT4Eeu3b7UvzH2Ijg" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zFKhogT4Eeu3b7UvzH2Ijg" x="583" y="325" width="171" height="171"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_LurCcgKSEeu5w-Dds4RBEw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_LurCcwKSEeu5w-Dds4RBEw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_LuqbYQKSEeu5w-Dds4RBEw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LuqbYgKSEeu5w-Dds4RBEw" x="192" y="36" width="1083" height="519"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WxZSEA2gEeuln8j_d1Dmag" type="2001" element="_Wuo5AA2gEeuln8j_d1Dmag">
+          <children xmi:type="notation:Node" xmi:id="_Wxf_wA2gEeuln8j_d1Dmag" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Wxf_wQ2gEeuln8j_d1Dmag" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WxmGYA2gEeuln8j_d1Dmag" type="3005" element="_WupgEA2gEeuln8j_d1Dmag">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WxmGYQ2gEeuln8j_d1Dmag" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WxmGYg2gEeuln8j_d1Dmag"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WxZSEQ2gEeuln8j_d1Dmag" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WxZSEg2gEeuln8j_d1Dmag" x="24" y="24" width="100" height="100"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_IXPCAgKREeu5w-Dds4RBEw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_umxjYAT7Eeu3b7UvzH2Ijg" type="4001" element="_umpnkgT7Eeu3b7UvzH2Ijg" source="_HNeSsAKTEeu5w-Dds4RBEw" target="_4CiFcAT2Eeu3g8CGE3Ckww">
+          <children xmi:type="notation:Node" xmi:id="_umxjZAT7Eeu3b7UvzH2Ijg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_umxjZQT7Eeu3b7UvzH2Ijg" x="-9" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_umxjZgT7Eeu3b7UvzH2Ijg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_umxjZwT7Eeu3b7UvzH2Ijg" x="5" y="-1" width="27" height="21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_umyKcAT7Eeu3b7UvzH2Ijg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_umyKcQT7Eeu3b7UvzH2Ijg" x="-5" y="12"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_umxjYQT7Eeu3b7UvzH2Ijg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_umxjYgT7Eeu3b7UvzH2Ijg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_umxjYwT7Eeu3b7UvzH2Ijg" points="[0, 12, -9, -144]$[9, 156, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_umyKcgT7Eeu3b7UvzH2Ijg" id="(0.5129533678756477,0.9289940828402367)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_umyKcwT7Eeu3b7UvzH2Ijg" id="(0.5595854922279793,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_G34rcA2PEeuNrbXke9b4-Q" type="4001" element="_G2pVUA2PEeuNrbXke9b4-Q" source="_cdOEYAT4Eeu3g8CGE3Ckww" target="_HNeSsAKTEeu5w-Dds4RBEw">
+          <children xmi:type="notation:Node" xmi:id="_G4AAMA2PEeuNrbXke9b4-Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G4AAMQ2PEeuNrbXke9b4-Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_G4AnQA2PEeuNrbXke9b4-Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G4AnQQ2PEeuNrbXke9b4-Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_G4B1YA2PEeuNrbXke9b4-Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G4B1YQ2PEeuNrbXke9b4-Q" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_G34rcQ2PEeuNrbXke9b4-Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_G35SgA2PEeuNrbXke9b4-Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G35SgQ2PEeuNrbXke9b4-Q" points="[0, 0, 131, -3]$[-131, 3, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G4E4sA2PEeuNrbXke9b4-Q" id="(0.0,0.4154929577464789)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G4E4sQ2PEeuNrbXke9b4-Q" id="(1.0,0.5088757396449705)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_HnCQcA2PEeuNrbXke9b4-Q" type="4001" element="_Hmy_6A2PEeuNrbXke9b4-Q" source="_zFKhoAT4Eeu3b7UvzH2Ijg" target="_cdOEYAT4Eeu3g8CGE3Ckww">
+          <children xmi:type="notation:Node" xmi:id="_HnCQdA2PEeuNrbXke9b4-Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HnCQdQ2PEeuNrbXke9b4-Q" x="1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HnCQdg2PEeuNrbXke9b4-Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HnCQdw2PEeuNrbXke9b4-Q" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HnCQeA2PEeuNrbXke9b4-Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HnCQeQ2PEeuNrbXke9b4-Q" x="1" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_HnCQcQ2PEeuNrbXke9b4-Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_HnCQcg2PEeuNrbXke9b4-Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HnCQcw2PEeuNrbXke9b4-Q" points="[0, 0, -1, 141]$[1, -141, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HnCQeg2PEeuNrbXke9b4-Q" id="(0.5562130177514792,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HnCQew2PEeuNrbXke9b4-Q" id="(0.5523255813953488,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_LunYEAKSEeu5w-Dds4RBEw" name="PaqueteDePrueba" width="70" height="60">
+      <target xmi:type="diagramaClasesCompleto:Package" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0"/>
+      <semanticElements xmi:type="diagramaClasesCompleto:Package" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Lun_IAKSEeu5w-Dds4RBEw" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="217,196,215">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HNWW4AKTEeu5w-Dds4RBEw" name="Persona" outgoingEdges="_umpnkgT7Eeu3b7UvzH2Ijg" incomingEdges="_G2pVUA2PEeuNrbXke9b4-Q" width="20" height="20">
+        <target xmi:type="diagramaClasesCompleto:Clase" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+        <semanticElements xmi:type="diagramaClasesCompleto:Clase" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Yccc8QUAEeu3b7UvzH2Ijg" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="194,239,255" foregroundColor="194,239,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_H4prwAKVEeu5w-Dds4RBEw" name="nombre: String">
+          <target xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@atributos_contenidos.0"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@atributos_contenidos.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_KHvZgQKVEeu5w-Dds4RBEw" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/AtributoPrivate.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']/@conditionnalStyles.0/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_QNzY0QKVEeu5w-Dds4RBEw" name="edad: int">
+          <target xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@atributos_contenidos.1"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@atributos_contenidos.1"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_X7CxVgKVEeu5w-Dds4RBEw" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/AtributoPrivate.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']/@conditionnalStyles.0/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_oPH_oAKcEeu3IcgioXN-gA" name="apellido: String">
+          <target xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@atributos_contenidos.2"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@atributos_contenidos.2"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_s9fMMQKcEeu3IcgioXN-gA" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/AtributoPrivate.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']/@conditionnalStyles.0/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_0Yju8gtVEeudaNZRT0uZ5Q">
+          <target xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@operaciones_contenidas.0/@parametros_contenidos.0"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@operaciones_contenidas.0/@parametros_contenidos.0"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_07dhoAKXEeu3IcgioXN-gA" name="correr(): void">
+          <target xmi:type="diagramaClasesCompleto:Operacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@operaciones_contenidas.0"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Operacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@operaciones_contenidas.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fCVcwQKYEeu3IcgioXN-gA" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/OperacionPublic.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Operacion']/@conditionnalStyles.1/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Operacion']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_073KQAKXEeu3IcgioXN-gA" name="caminar(): int">
+          <target xmi:type="diagramaClasesCompleto:Operacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@operaciones_contenidas.1"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Operacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@operaciones_contenidas.1"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fCX5AQKYEeu3IcgioXN-gA" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/OperacionPublic.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Operacion']/@conditionnalStyles.1/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Operacion']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_E1gjgQKYEeu3IcgioXN-gA" name="&lt;&lt;I>> &#xA;Volador" width="20" height="20">
+        <target xmi:type="diagramaClasesCompleto:Interface" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1"/>
+        <semanticElements xmi:type="diagramaClasesCompleto:Interface" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_E1k08AKYEeu3IcgioXN-gA" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="204,242,166" foregroundColor="204,242,166">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Interface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Interface']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_7RKqAAKYEeu3IcgioXN-gA" name="edad: int">
+          <target xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@atributos_contenidos.0"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@atributos_contenidos.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_7RZ6kAKYEeu3IcgioXN-gA" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/AtributoPublic.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']/@conditionnalStyles.2/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_9LTbcQKYEeu3IcgioXN-gA" name="correr: int">
+          <target xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@atributos_contenidos.1"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@atributos_contenidos.1"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_z9qDUQKcEeu3IcgioXN-gA" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/AtributoPublic.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']/@conditionnalStyles.2/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_u00hQAKcEeu3IcgioXN-gA" name="altitud: int">
+          <target xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@atributos_contenidos.2"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@atributos_contenidos.2"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_x6nNgAKcEeu3IcgioXN-gA" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/AtributoPublic.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']/@conditionnalStyles.2/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_7RahoAKYEeu3IcgioXN-gA" name="caminar(): void">
+          <target xmi:type="diagramaClasesCompleto:Operacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@operaciones_contenidas.0"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Operacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@operaciones_contenidas.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_7RfaIAKYEeu3IcgioXN-gA" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/OperacionPublic.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Operacion']/@conditionnalStyles.1/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Operacion']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_C-Kx8QKZEeu3IcgioXN-gA" name="correr(): int">
+          <target xmi:type="diagramaClasesCompleto:Operacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@operaciones_contenidas.1"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Operacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1/@operaciones_contenidas.1"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_C-LZAAKZEeu3IcgioXN-gA" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/OperacionPublic.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Operacion']/@conditionnalStyles.1/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Operacion']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_4BjOAAT2Eeu3g8CGE3Ckww" name="Domicilio" incomingEdges="_umpnkgT7Eeu3b7UvzH2Ijg" width="20" height="20">
+        <target xmi:type="diagramaClasesCompleto:Clase" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.2"/>
+        <semanticElements xmi:type="diagramaClasesCompleto:Clase" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_4Bm4YAT2Eeu3g8CGE3Ckww" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="194,239,255" foregroundColor="194,239,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_QzdBYAT3Eeu3g8CGE3Ckww" name="calle: int">
+          <target xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.2/@atributos_contenidos.0"/>
+          <semanticElements xmi:type="diagramaClasesCompleto:Atributo" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.2/@atributos_contenidos.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QzePgAT3Eeu3g8CGE3Ckww" labelSize="12" iconPath="/DiagramaCompleto.design/src/iconos/AtributoPrivate.GIF" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']/@conditionnalStyles.0/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@subNodeMappings[name='Atributo']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_cdDsUAT4Eeu3g8CGE3Ckww" name="Clase3" outgoingEdges="_G2pVUA2PEeuNrbXke9b4-Q" incomingEdges="_Hmy_6A2PEeuNrbXke9b4-Q" width="20" height="20">
+        <target xmi:type="diagramaClasesCompleto:Clase" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.3"/>
+        <semanticElements xmi:type="diagramaClasesCompleto:Clase" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_cdDsUQT4Eeu3g8CGE3Ckww" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="194,239,255" foregroundColor="194,239,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_zD2TAAT4Eeu3b7UvzH2Ijg" name="Clase4" outgoingEdges="_Hmy_6A2PEeuNrbXke9b4-Q" width="20" height="20">
+        <target xmi:type="diagramaClasesCompleto:Clase" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.4"/>
+        <semanticElements xmi:type="diagramaClasesCompleto:Clase" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.4"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_zD7LgAT4Eeu3b7UvzH2Ijg" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="194,239,255" foregroundColor="194,239,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@containerMappings[name='Paquete']/@subContainerMappings[name='Clase']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_umpnkgT7Eeu3b7UvzH2Ijg" name="haciaDomicilio" sourceNode="_HNWW4AKTEeu5w-Dds4RBEw" targetNode="_4BjOAAT2Eeu3g8CGE3Ckww" beginLabel="1" endLabel="*">
+      <target xmi:type="diagramaClasesCompleto:Relacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@relaciones_contenidas.0"/>
+      <semanticElements xmi:type="diagramaClasesCompleto:Relacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@relaciones_contenidas.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_m64G1A2PEeuNrbXke9b4-Q" description="_m64G0A2PEeuNrbXke9b4-Q" size="2" strokeColor="0,0,0">
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_m64G1Q2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_m64G1w2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_m64G1g2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@edgeMappings[name='Relacion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_G2pVUA2PEeuNrbXke9b4-Q" name="haciaPersona" sourceNode="_cdDsUAT4Eeu3g8CGE3Ckww" targetNode="_HNWW4AKTEeu5w-Dds4RBEw" beginLabel="1" endLabel="1">
+      <target xmi:type="diagramaClasesCompleto:Relacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.3/@relaciones_contenidas.0"/>
+      <semanticElements xmi:type="diagramaClasesCompleto:Relacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.3/@relaciones_contenidas.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_vZt7YA2PEeuNrbXke9b4-Q" description="_vZtUVA2PEeuNrbXke9b4-Q" sourceArrow="Diamond" size="2" strokeColor="0,0,0">
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_vZt7YQ2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_vZt7Yw2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_vZt7Yg2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@edgeMappings[name='Relacion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Hmy_6A2PEeuNrbXke9b4-Q" name="haciaClase3" sourceNode="_zD2TAAT4Eeu3b7UvzH2Ijg" targetNode="_cdDsUAT4Eeu3g8CGE3Ckww" beginLabel="*" endLabel="*">
+      <target xmi:type="diagramaClasesCompleto:Relacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.4/@relaciones_contenidas.0"/>
+      <semanticElements xmi:type="diagramaClasesCompleto:Relacion" href="PruebaXMI.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.4/@relaciones_contenidas.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_p3TbtA2PEeuNrbXke9b4-Q" description="_p3TbsA2PEeuNrbXke9b4-Q" sourceArrow="FillDiamond" size="2" strokeColor="0,0,0">
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_p3TbtQ2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_p3Tbtw2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_p3Tbtg2PEeuNrbXke9b4-Q" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@edgeMappings[name='Relacion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Wuo5AA2gEeuln8j_d1Dmag" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="diagramaClasesCompleto:ConfiguracionDB" href="PruebaXMI.diagramaclasescompleto#//@configuraciondb.0"/>
+      <semanticElements xmi:type="diagramaClasesCompleto:ConfiguracionDB" href="PruebaXMI.diagramaclasescompleto#//@configuraciondb.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WupgEA2gEeuln8j_d1Dmag" labelSize="12" labelPosition="node" workspacePath="/DiagramaCompleto.design/iconos/BD.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@nodeMappings[name='ConfiguracionDB']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer/@nodeMappings[name='ConfiguracionDB']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_IWVqIAKREeu5w-Dds4RBEw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/DiagramaCompleto.design/description/DiagramaCompleto.odesign#//@ownedViewpoints[name='DiagramaUTN']/@ownedRepresentations[name='DiagramaDeClases']/@defaultLayer"/>
+    <target xmi:type="diagramaClasesCompleto:DiagramaClases" href="PruebaXMI.diagramaclasescompleto#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
