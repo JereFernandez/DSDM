@@ -140,7 +140,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0/generateMainClass"/>
+          <references href="generateMainClass.emtl#/0/generateMainClass"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -152,7 +152,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateBaseRepository.emtl#/0/generateBaseRepository"/>
+          <references href="../repositories/generateBaseRepository.emtl#/0/generateBaseRepository"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -164,7 +164,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateRepositories.emtl#/0/generateRepositories"/>
+          <references href="../repositories/generateRepositories.emtl#/0/generateRepositories"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -176,7 +176,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateBaseEntity.emtl#/0/generateBaseEntity"/>
+          <references href="../Entity/generateBaseEntity.emtl#/0/generateBaseEntity"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -188,7 +188,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateBaseService.emtl#/0/generateBaseService"/>
+          <references href="../services/generateBaseService.emtl#/0/generateBaseService"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -200,7 +200,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateServices.emtl#/0/generateServices"/>
+          <references href="../services/generateServices.emtl#/0/generateServices"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -224,7 +224,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateInterface.emtl#/0/generateInterface"/>
+          <references href="../Entity/generateInterface.emtl#/0/generateInterface"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="d">

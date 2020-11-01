@@ -17,7 +17,7 @@
             <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
             <body xsi:type="mtl:TemplateInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
+              <definition href="generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                 <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
               </argument>
@@ -90,7 +90,7 @@
               <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
               <body xsi:type="mtl:TemplateInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToMany"/>
+                <definition href="generateRelationNotation.emtl#/0/generateRelationOneToMany"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                   <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                 </argument>
@@ -250,7 +250,7 @@
               <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
               <body xsi:type="mtl:TemplateInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationManyToMany"/>
+                <definition href="generateRelationNotation.emtl#/0/generateRelationManyToMany"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                   <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                 </argument>
@@ -356,7 +356,7 @@
                 <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;"/>
                 <body xsi:type="mtl:TemplateInvocation">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                  <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalDestinoOneToOne"/>
+                  <definition href="generateRelationNotation.emtl#/0/generateBidirectionalDestinoOneToOne"/>
                   <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                     <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                   </argument>
@@ -436,7 +436,7 @@
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;"/>
                   <body xsi:type="mtl:TemplateInvocation">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                    <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
+                    <definition href="generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
                     <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                       <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                     </argument>
@@ -512,7 +512,7 @@
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;"/>
                   <body xsi:type="mtl:TemplateInvocation">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                    <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalDestinoOneToMany"/>
+                    <definition href="generateRelationNotation.emtl#/0/generateBidirectionalDestinoOneToMany"/>
                     <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                       <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                     </argument>
@@ -592,7 +592,7 @@
                     <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;"/>
                     <body xsi:type="mtl:TemplateInvocation">
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                      <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalOrigenOneToMany"/>
+                      <definition href="generateRelationNotation.emtl#/0/generateBidirectionalOrigenOneToMany"/>
                       <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                         <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                       </argument>
@@ -681,7 +681,7 @@
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;"/>
                   <body xsi:type="mtl:TemplateInvocation">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                    <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalOrigenOneToMany"/>
+                    <definition href="generateRelationNotation.emtl#/0/generateBidirectionalOrigenOneToMany"/>
                     <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                       <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                     </argument>
@@ -773,7 +773,7 @@
                     <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;"/>
                     <body xsi:type="mtl:TemplateInvocation">
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                      <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationManyToOne"/>
+                      <definition href="generateRelationNotation.emtl#/0/generateRelationManyToOne"/>
                       <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                         <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                       </argument>
@@ -850,7 +850,7 @@
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;"/>
                   <body xsi:type="mtl:TemplateInvocation">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                    <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalDestinoManyToMany"/>
+                    <definition href="generateRelationNotation.emtl#/0/generateBidirectionalDestinoManyToMany"/>
                     <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                       <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                     </argument>
@@ -942,7 +942,7 @@
                     <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;"/>
                     <body xsi:type="mtl:TemplateInvocation">
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                      <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalOrigenManyToMany"/>
+                      <definition href="generateRelationNotation.emtl#/0/generateBidirectionalOrigenManyToMany"/>
                       <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                         <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                       </argument>
@@ -1050,7 +1050,7 @@
               <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
               <body xsi:type="mtl:TemplateInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
+                <definition href="generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                   <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                 </argument>
@@ -1123,7 +1123,7 @@
                 <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
                 <body xsi:type="mtl:TemplateInvocation">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                  <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToMany"/>
+                  <definition href="generateRelationNotation.emtl#/0/generateRelationOneToMany"/>
                   <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                     <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                   </argument>
@@ -1283,7 +1283,7 @@
                 <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
                 <body xsi:type="mtl:TemplateInvocation">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                  <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationManyToMany"/>
+                  <definition href="generateRelationNotation.emtl#/0/generateRelationManyToMany"/>
                   <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                     <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                   </argument>
@@ -1388,7 +1388,7 @@
               <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
               <body xsi:type="mtl:TemplateInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
+                <definition href="generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                   <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                 </argument>
@@ -1473,7 +1473,7 @@
                 <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
                 <body xsi:type="mtl:TemplateInvocation">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                  <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToMany"/>
+                  <definition href="generateRelationNotation.emtl#/0/generateRelationOneToMany"/>
                   <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                     <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                   </argument>
@@ -1645,7 +1645,7 @@
                 <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
                 <body xsi:type="mtl:TemplateInvocation">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                  <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationManyToMany"/>
+                  <definition href="generateRelationNotation.emtl#/0/generateRelationManyToMany"/>
                   <argument xsi:type="ocl.ecore:VariableExp" name="relacion" referredVariable="/0/generateRelation/%.1/relacion">
                     <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
                   </argument>
@@ -1827,7 +1827,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
+          <references href="generateRelationNotation.emtl#/0/generateRelationOneToOne"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -1839,7 +1839,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationOneToMany"/>
+          <references href="generateRelationNotation.emtl#/0/generateRelationOneToMany"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -1851,7 +1851,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationManyToOne"/>
+          <references href="generateRelationNotation.emtl#/0/generateRelationManyToOne"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -1863,7 +1863,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateRelationManyToMany"/>
+          <references href="generateRelationNotation.emtl#/0/generateRelationManyToMany"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -1875,7 +1875,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalDestinoManyToMany"/>
+          <references href="generateRelationNotation.emtl#/0/generateBidirectionalDestinoManyToMany"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -1887,7 +1887,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalOrigenManyToMany"/>
+          <references href="generateRelationNotation.emtl#/0/generateBidirectionalOrigenManyToMany"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -1899,7 +1899,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalOrigenOneToMany"/>
+          <references href="generateRelationNotation.emtl#/0/generateBidirectionalOrigenOneToMany"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -1911,7 +1911,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalDestinoOneToMany"/>
+          <references href="generateRelationNotation.emtl#/0/generateBidirectionalDestinoOneToMany"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -1923,7 +1923,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateRelationNotation.emtl#/0/generateBidirectionalDestinoOneToOne"/>
+          <references href="generateRelationNotation.emtl#/0/generateBidirectionalDestinoOneToOne"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
