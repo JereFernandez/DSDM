@@ -34,4 +34,12 @@
 	
 	
 	
+	
+	
+				@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)
+			private List<Localidad> haciaLocalidad = new ArrayList<Localidad>();
+	
+	
+	
+	
 	}

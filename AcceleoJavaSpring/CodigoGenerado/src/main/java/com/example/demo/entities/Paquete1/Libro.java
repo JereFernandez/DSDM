@@ -40,4 +40,16 @@
 	
 	
 	
+	
+	
+				@ManyToMany(cascade= CascadeType.ALL)
+				@JoinTable(name="Libro_Autor",
+				joinColumns=@JoinColumn(name="Libro"),
+				inverseJoinColumns=@JoinColumn(name="Autor"))
+				@Default
+			private List<Autor> haciaAutor = new ArrayList<Autor>();
+	
+	
+	
+	
 	}

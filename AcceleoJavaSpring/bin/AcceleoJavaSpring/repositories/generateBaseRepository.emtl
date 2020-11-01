@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generateBaseRepository" nsURI="AcceleoJavaSpring::repositories::generateBaseRepository" startHeaderPosition="30" endHeaderPosition="402">
+  <mtl:Module name="generateBaseRepository" nsURI="AcceleoJavaSpring::repositories::generateBaseRepository" startHeaderPosition="30" endHeaderPosition="378">
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
@@ -67,28 +67,19 @@
                 <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/main/java/">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                 </source>
-                <argument xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/substituteAll">
+                <argument xsi:type="ocl.ecore:PropertyCallExp">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                   <source xsi:type="ocl.ecore:PropertyCallExp">
-                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                    <source xsi:type="ocl.ecore:PropertyCallExp">
-                      <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
-                      <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseRepository/raiz">
-                        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-                      </source>
-                      <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+                    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseRepository/raiz">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
                     </source>
-                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
                   </source>
-                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".">
-                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                  </argument>
-                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/">
-                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                  </argument>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
                 </argument>
               </source>
-              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/">
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
               </argument>
             </source>
@@ -122,16 +113,6 @@
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
       </eAnnotations>
-      <eOperations name="substituteAll">
-        <eAnnotations source="MTL non-standard"/>
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="substring">
-          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        </eParameters>
-        <eParameters name="replacement">
-          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        </eParameters>
-      </eOperations>
       <eOperations name="+">
         <eAnnotations source="MTL non-standard"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
@@ -227,7 +208,7 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateBaseRepository">
       <details key="start" value="116"/>
-      <details key="end" value="871"/>
+      <details key="end" value="847"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateBaseRepository/%">
@@ -237,112 +218,112 @@
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateBaseRepository/%.1">
       <details key="start" value="183"/>
-      <details key="end" value="858"/>
+      <details key="end" value="834"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateBaseRepository/%.1/%">
-      <details key="start" value="361"/>
-      <details key="end" value="369"/>
+      <details key="start" value="337"/>
+      <details key="end" value="345"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateBaseRepository/%.1/%.1">
-      <details key="start" value="370"/>
-      <details key="end" value="402"/>
+      <details key="start" value="346"/>
+      <details key="end" value="378"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateBaseRepository/%.1/%.1/%">
-      <details key="start" value="370"/>
-      <details key="end" value="394"/>
+      <details key="start" value="346"/>
+      <details key="end" value="370"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateBaseRepository/%.1/%.1/%/raiz">
-      <details key="start" value="370"/>
-      <details key="end" value="374"/>
+      <details key="start" value="346"/>
+      <details key="end" value="350"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generateBaseRepository/%.1/%.2">
-      <details key="start" value="404"/>
-      <details key="end" value="405"/>
+      <details key="start" value="380"/>
+      <details key="end" value="381"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generateBaseRepository/%.1/%.3">
-      <details key="start" value="406"/>
-      <details key="end" value="443"/>
+      <details key="start" value="382"/>
+      <details key="end" value="419"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generateBaseRepository/%.1/%.3/%">
-      <details key="start" value="406"/>
-      <details key="end" value="430"/>
+      <details key="start" value="382"/>
+      <details key="end" value="406"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generateBaseRepository/%.1/%.3/%/raiz">
-      <details key="start" value="406"/>
-      <details key="end" value="410"/>
+      <details key="start" value="382"/>
+      <details key="end" value="386"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generateBaseRepository/%.1/%.4">
-      <details key="start" value="445"/>
-      <details key="end" value="470"/>
+      <details key="start" value="421"/>
+      <details key="end" value="446"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generateBaseRepository/%.1/%.5">
-      <details key="start" value="471"/>
-      <details key="end" value="503"/>
+      <details key="start" value="447"/>
+      <details key="end" value="479"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generateBaseRepository/%.1/%.5/%">
-      <details key="start" value="471"/>
-      <details key="end" value="495"/>
+      <details key="start" value="447"/>
+      <details key="end" value="471"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generateBaseRepository/%.1/%.5/%/raiz">
-      <details key="start" value="471"/>
-      <details key="end" value="475"/>
+      <details key="start" value="447"/>
+      <details key="end" value="451"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/generateBaseRepository/%.1/%.6">
-      <details key="start" value="505"/>
-      <details key="end" value="506"/>
+      <details key="start" value="481"/>
+      <details key="end" value="482"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/generateBaseRepository/%.1/%.7">
-      <details key="start" value="507"/>
-      <details key="end" value="544"/>
+      <details key="start" value="483"/>
+      <details key="end" value="520"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/generateBaseRepository/%.1/%.7/%">
-      <details key="start" value="507"/>
-      <details key="end" value="531"/>
+      <details key="start" value="483"/>
+      <details key="end" value="507"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/generateBaseRepository/%.1/%.7/%/raiz">
-      <details key="start" value="507"/>
-      <details key="end" value="511"/>
+      <details key="start" value="483"/>
+      <details key="end" value="487"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/generateBaseRepository/%.1/%.8">
-      <details key="start" value="546"/>
-      <details key="end" value="851"/>
+      <details key="start" value="522"/>
+      <details key="end" value="827"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generateBaseRepository/%.1/%.9">
       <details key="start" value="190"/>
-      <details key="end" value="341"/>
+      <details key="end" value="317"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/generateBaseRepository/%.1/%.9/%">
       <details key="start" value="190"/>
-      <details key="end" value="305"/>
+      <details key="end" value="281"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/generateBaseRepository/%.1/%.9/%/%">
       <details key="start" value="190"/>
-      <details key="end" value="267"/>
+      <details key="end" value="243"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.23" references="/0/generateBaseRepository/%.1/%.9/%/%/%">
       <details key="start" value="190"/>
-      <details key="end" value="263"/>
+      <details key="end" value="239"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/generateBaseRepository/%.1/%.9/%/%/%/%">
@@ -352,65 +333,50 @@
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/generateBaseRepository/%.1/%.9/%/%/%/%.1">
       <details key="start" value="207"/>
-      <details key="end" value="263"/>
+      <details key="end" value="239"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/generateBaseRepository/%.1/%.9/%/%/%/%.1/%">
       <details key="start" value="207"/>
-      <details key="end" value="239"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.27" references="/0/generateBaseRepository/%.1/%.9/%/%/%/%.1/%/%">
-      <details key="start" value="207"/>
       <details key="end" value="231"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/generateBaseRepository/%.1/%.9/%/%/%/%.1/%/%/raiz">
+    <eAnnotations source="positions.27" references="/0/generateBaseRepository/%.1/%.9/%/%/%/%.1/%/raiz">
       <details key="start" value="207"/>
       <details key="end" value="211"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.29" references="/0/generateBaseRepository/%.1/%.9/%/%/%/%.1/%.1">
-      <details key="start" value="254"/>
-      <details key="end" value="257"/>
+    <eAnnotations source="positions.28" references="/0/generateBaseRepository/%.1/%.9/%/%/%.1">
+      <details key="start" value="240"/>
+      <details key="end" value="243"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/generateBaseRepository/%.1/%.9/%/%/%/%.1/%.2">
-      <details key="start" value="259"/>
-      <details key="end" value="262"/>
+    <eAnnotations source="positions.29" references="/0/generateBaseRepository/%.1/%.9/%/%.1">
+      <details key="start" value="244"/>
+      <details key="end" value="281"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/generateBaseRepository/%.1/%.9/%/%/%.1">
-      <details key="start" value="264"/>
-      <details key="end" value="267"/>
+    <eAnnotations source="positions.30" references="/0/generateBaseRepository/%.1/%.9/%/%.1/%">
+      <details key="start" value="244"/>
+      <details key="end" value="268"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/generateBaseRepository/%.1/%.9/%/%.1">
-      <details key="start" value="268"/>
-      <details key="end" value="305"/>
+    <eAnnotations source="positions.31" references="/0/generateBaseRepository/%.1/%.9/%/%.1/%/raiz">
+      <details key="start" value="244"/>
+      <details key="end" value="248"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/generateBaseRepository/%.1/%.9/%/%.1/%">
-      <details key="start" value="268"/>
-      <details key="end" value="292"/>
+    <eAnnotations source="positions.32" references="/0/generateBaseRepository/%.1/%.9/%.1">
+      <details key="start" value="282"/>
+      <details key="end" value="317"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/generateBaseRepository/%.1/%.9/%/%.1/%/raiz">
-      <details key="start" value="268"/>
-      <details key="end" value="272"/>
+    <eAnnotations source="positions.33" references="/0/generateBaseRepository/%.1/%.10">
+      <details key="start" value="326"/>
+      <details key="end" value="333"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/generateBaseRepository/%.1/%.9/%.1">
-      <details key="start" value="306"/>
-      <details key="end" value="341"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/generateBaseRepository/%.1/%.10">
-      <details key="start" value="350"/>
-      <details key="end" value="357"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/generateBaseRepository/raiz">
+    <eAnnotations source="positions.34" references="/0/generateBaseRepository/raiz">
       <details key="start" value="156"/>
       <details key="end" value="177"/>
       <details key="line" value="5"/>

@@ -37,4 +37,18 @@
 	
 	
 	
+	
+	
+				@OneToOne(cascade= CascadeType.ALL)
+				@JoinColumn(name="fk_Domicilio")
+			private Domicilio haciaDomicilio;
+	
+	
+	
+				@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)
+			private List<Libro> haciaLibro = new ArrayList<Libro>();
+	
+	
+	
+	
 	}
