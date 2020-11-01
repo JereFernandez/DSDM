@@ -1,9 +1,4 @@
-[comment encoding = UTF-8 /]
-[module generateBaseEntity('http://www.example.org/diagramaClasesCompleto')]
-
-[template public generateBaseEntity(raiz: DiagramaClases)]
-[file ('src/main/java'+raiz.artefacto_contenido.grupoId, false, 'UTF-8')]
-package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities;
+package com.example.demo.entities;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -30,5 +25,3 @@ public class Base implements Serializable {
     private Long id;
 
 }
-[/file]
-[/template]

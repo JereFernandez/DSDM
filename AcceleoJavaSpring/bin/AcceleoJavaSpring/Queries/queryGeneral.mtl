@@ -3,3 +3,5 @@
 
 
 [query public queryGeneral (anArtefacto : Artefacto) : OclAny = self/]
+
+[query public isClassAssociative(class : Clase) : Boolean = self.esAsociativa /]

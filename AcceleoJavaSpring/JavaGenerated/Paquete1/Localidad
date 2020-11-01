@@ -1,0 +1,27 @@
+					import javax.persistence.Column;
+					import javax.persistence.Entity;
+					import javax.persistence.Table;
+					import org.hibernate.envers.Audited;
+					import lombok.AllArgsConstructor;
+					import lombok.Builder;
+					import lombok.Data;
+					import lombok.NoArgsConstructor;
+				
+						
+					@Entity
+					@Table(name= "Localidad")
+					@Data
+					@AllArgsConstructor
+					@NoArgsConstructor
+					@Builder
+					
+					@Audited
+					public class Localidad {
+					@Column(name = "denominacion")
+						private  String denominacion;
+					
+					
+					
+					
+					
+					}

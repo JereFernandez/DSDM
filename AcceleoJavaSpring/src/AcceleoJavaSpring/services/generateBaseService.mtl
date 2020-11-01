@@ -23,7 +23,6 @@ public interface BaseService<E extends Base, ID extends Serializable> {
     public boolean delete(ID id) throws Exception;
 }
 
-
 [/file]
 
 [file ('src/main/java/'+raiz.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+raiz.artefacto_contenido.artefactotId+'/services/BaseServiceImpl.java', false, 'UTF-8')]
@@ -39,6 +38,9 @@ import javax.transaction.Transactional;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
+
+
+
 
 public abstract class BaseServiceImpl<E extends Base, ID extends Serializable> implements BaseService<E, ID> {
 

@@ -7,31 +7,26 @@
 [import AcceleoJavaSpring::Relation::generateExtension/]
 
 
-[template public generateEntity(d : DiagramaClases)]
-[for (paquete : Package | d.packages_contenidos)]
-		
-	[for (i : Clase | paquete.clasificadores_contenidos->filter(Clase))]
-	[file ('src/main/java/'+d.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+d.artefacto_contenido.artefactotId+'/entities/'+paquete.nombre+'/'+ i.nombre +'.java', false, 'UTF-8')]
-	package [d.artefacto_contenido.grupoId/].[d.artefacto_contenido.artefactotId/].entities.[paquete.nombre/];
-	[if (not (i.relaciones_contenidas->isEmpty()))]
+[template public generateEntity(c : Clase)]
+	[if (not (c.relaciones_contenidas->isEmpty()))]
 		import javax.persistence.JoinColumn;
 		import javax.persistence.CascadeType;
-		[if (i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToOne))]
+		[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToOne))]
 			import javax.persistence.OneToOne;
 		[/if]
-		[if (i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany))]
+		[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany))]
 			import javax.persistence.OneToMany;
 			import javax.persistence.JoinTable;
 			import java.util.ArrayList;
 			import java.util.List;
 			import lombok.Builder.Default;
 		[/if]
-		[if (i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToOne))]
+		[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToOne))]
 			import javax.persistence.ManyToOne;
 		[/if]
-		[if (i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToMany))]
+		[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToMany))]
 			import javax.persistence.ManyToMany;
-			[if (not(i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany)))]
+			[if (not(c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany)))]
 			import javax.persistence.JoinTable;
 			import java.util.ArrayList;
 			import java.util.List;
@@ -42,39 +37,26 @@
 	import javax.persistence.Column;
 	import javax.persistence.Entity;
 	import javax.persistence.Table;
-	[if (i.esAuditable)]import org.hibernate.envers.Audited;[/if]
+	[if (c.esAuditable)]import org.hibernate.envers.Audited;[/if]
 	import lombok.AllArgsConstructor;
 	import lombok.Builder;
 	import lombok.Data;
 	import lombok.NoArgsConstructor;
-	[if (i.herencias_contenidas->size()=0)]
-		import [d.artefacto_contenido.grupoId/].[d.artefacto_contenido.artefactotId/].entities.Base;
+	[if (c.herencias_contenidas->size()=0)]
+
 	[/if]
-	
 		
 	@Entity
-	@Table(name= "[i.nombre.toLowerFirst()/]")
+	@Table(name= "[c.nombre/]")
 	@Data
 	@AllArgsConstructor
 	@NoArgsConstructor
 	@Builder
-	[comment agregar un if, para controlar el tema de las herencias /]
 	
-	[if (i.esAuditable)]@Audited[/if]
-	public [if(i.esAbstracta)]abstract [/if]class [i.nombre/] [generateExtension(i)/] [generateImplementation(i)/] {
-	[generateProperty(i)/]
-	[generateRelation(i,paquete,d)/]
+	[if (c.esAuditable)]@Audited[/if]
+	public [if(c.esAbstracta)]abstract [/if]class [c.nombre/] {
+	[generateProperty(c)/]
+	[generateRelation(c)/]
 	
 	}
-	[/file]
-	
-	
-	
-	[/for]
-[/for]
-
-
 [/template]
-
-
-

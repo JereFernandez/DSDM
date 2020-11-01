@@ -1,17 +1,12 @@
 [comment encoding = UTF-8 /]
 [module generateRelation('http://www.example.org/diagramaClasesCompleto')]
 [import AcceleoJavaSpring::Relation::generateRelationNotation/]
-[import AcceleoJavaSpring::Entity::generateAssociativeClass /]
+[import AcceleoJavaSpring::Queries::queryGeneral /]
+[import AcceleoJavaSpring::Entity::generateEntity /]
 
-[template public generateRelation(a : Clase, paquete : Package, d: DiagramaClases)]
+[template public generateRelation(a : Clase)]
 
 [for (relacion : Relacion | a.relaciones_contenidas)]
-
-[if (not relacion.clases_asociativas_contenidas->isEmpty())]
-	[for (c : Clase | relacion.clases_asociativas_contenidas)]
-			[generateAssociativeClass(relacion, paquete, d)/]
-	[/for]
-[/if]
 
 [if (relacion.tipo=TipoRelacion::unidireccional)]
 
@@ -95,8 +90,14 @@
 		[generateRelationManyToMany(relacion)/]
 		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
 	[/if]
-
 [/if]
+
+[for ( c : Clase | relacion.clases_asociativas_contenidas)]
+	[if (isClassAssociative(c))]
+		[generateEntity(c)/]
+	[/if]
+[/for]
+
 [/for]
 
 [/template]
