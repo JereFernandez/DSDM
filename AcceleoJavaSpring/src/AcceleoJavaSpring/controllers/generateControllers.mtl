@@ -11,7 +11,7 @@
 [for (c : Clase | p.clasificadores_contenidos->filter(Clase))]
 [if (c.tieneABM)]
 
-[file ('src/main/java/'+raiz.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+raiz.artefacto_contenido.artefactotId+'/controllers/'+c.nombre+'Controller.java', false, 'UTF-8')]
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/controllers/'+p.nombre+'/'+c.nombre+'Controller.java', false, 'UTF-8')]
 package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].controllers;
 
 import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.[p.nombre/].[c.nombre/];
