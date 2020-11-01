@@ -23,7 +23,6 @@ public interface BaseService<E extends Base, ID extends Serializable> {
     public boolean delete(ID id) throws Exception;
 }
 
-
 [/file]
 
 [file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/services/BaseServiceImpl.java', false, 'UTF-8')]
@@ -117,8 +116,6 @@ public abstract class BaseServiceImpl<E extends Base, ID extends Serializable> i
             throw new Exception(e.getMessage());
         }
     }
-
 }
 [/file]
-
 [/template]

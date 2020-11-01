@@ -1,94 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generateDiagramaClases" nsURI="AcceleoJavaSpring::main::generateDiagramaClases" startHeaderPosition="30" endHeaderPosition="163">
+  <mtl:Module name="generateDiagramaClases" nsURI="AcceleoJavaSpring::main::generateDiagramaClases" startHeaderPosition="30" endHeaderPosition="166">
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
-    <imports href="../Entity/generateEntity.emtl#/0"/>
-    <imports href="generateMainClass.emtl#/0"/>
-    <imports href="../repositories/generateBaseRepository.emtl#/0"/>
-    <imports href="../repositories/generateRepositories.emtl#/0"/>
-    <imports href="../Entity/generateBaseEntity.emtl#/0"/>
-    <imports href="../services/generateBaseService.emtl#/0"/>
-    <imports href="../services/generateServices.emtl#/0"/>
-    <imports href="../controllers/generateBaseController.emtl#/0"/>
-    <imports href="../Entity/generateInterface.emtl#/0"/>
-    <imports href="../Configurations/generatePom.emtl#/0"/>
-    <imports href="../Configurations/generateAplicationProperties.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Package/generatePackage.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateBaseRepository.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateRepositories.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateBaseEntity.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateBaseService.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateServices.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/controllers/generateBaseController.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateInterface.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Configurations/generatePom.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Configurations/generateAplicationProperties.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateDiagrama" visibility="Public" main="true">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="generateMainClass.emtl#/0/generateMainClass"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
+        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0/generateMainClass"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../Entity/generateInterface.emtl#/0/generateInterface"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
+        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateInterface.emtl#/0/generateInterface"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../Entity/generateBaseEntity.emtl#/0/generateBaseEntity"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
+        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Package/generatePackage.emtl#/0/generatePackage"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../Entity/generateEntity.emtl#/0/generateEntity"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
+        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateBaseRepository.emtl#/0/generateBaseRepository"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../repositories/generateBaseRepository.emtl#/0/generateBaseRepository"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
+        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateRepositories.emtl#/0/generateRepositories"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../repositories/generateRepositories.emtl#/0/generateRepositories"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
+        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateBaseService.emtl#/0/generateBaseService"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../services/generateBaseService.emtl#/0/generateBaseService"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
+        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateServices.emtl#/0/generateServices"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../services/generateServices.emtl#/0/generateServices"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
+        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/controllers/generateBaseController.emtl#/0/generateBaseController"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
-      <body xsi:type="mtl:TemplateInvocation">
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../controllers/generateBaseController.emtl#/0/generateBaseController"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateDiagrama/d">
-          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-        </argument>
-      </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&#xD;&#xA;"/>
-      <parameter name="d">
+      <parameter name="raiz">
         <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
       </parameter>
     </ownedModuleElement>
@@ -119,19 +111,19 @@
         </eAnnotations>
         <eAnnotations source="MTL" references="/0/generateDiagrama"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="d">
+        <eParameters name="raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </eParameters>
       </eOperations>
-      <eOperations name="generateEntity">
+      <eOperations name="generatePackage">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../Entity/generateEntity.emtl#/0/generateEntity"/>
+          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Package/generatePackage.emtl#/0/generatePackage"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="d">
+        <eParameters name="raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </eParameters>
       </eOperations>
@@ -140,7 +132,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="generateMainClass.emtl#/0/generateMainClass"/>
+          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0/generateMainClass"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -152,7 +144,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../repositories/generateBaseRepository.emtl#/0/generateBaseRepository"/>
+          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateBaseRepository.emtl#/0/generateBaseRepository"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -164,22 +156,10 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../repositories/generateRepositories.emtl#/0/generateRepositories"/>
+          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateRepositories.emtl#/0/generateRepositories"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
-          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-        </eParameters>
-      </eOperations>
-      <eOperations name="generateBaseEntity">
-        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-          <contents xsi:type="ocl.ecore:Constraint"/>
-        </eAnnotations>
-        <eAnnotations source="MTL">
-          <references href="../Entity/generateBaseEntity.emtl#/0/generateBaseEntity"/>
-        </eAnnotations>
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="aDiagramaClases">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </eParameters>
       </eOperations>
@@ -188,7 +168,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../services/generateBaseService.emtl#/0/generateBaseService"/>
+          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateBaseService.emtl#/0/generateBaseService"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -200,7 +180,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../services/generateServices.emtl#/0/generateServices"/>
+          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateServices.emtl#/0/generateServices"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -212,7 +192,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../controllers/generateBaseController.emtl#/0/generateBaseController"/>
+          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/controllers/generateBaseController.emtl#/0/generateBaseController"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -224,7 +204,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../Entity/generateInterface.emtl#/0/generateInterface"/>
+          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateInterface.emtl#/0/generateInterface"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="d">
@@ -295,155 +275,137 @@
     <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateDiagrama">
-      <details key="start" value="794"/>
-      <details key="end" value="1120"/>
+      <details key="start" value="797"/>
+      <details key="end" value="1123"/>
       <details key="line" value="16"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateDiagrama/%">
-      <details key="start" value="869"/>
-      <details key="end" value="889"/>
+      <details key="start" value="875"/>
+      <details key="end" value="898"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/generateDiagrama/%/d">
-      <details key="start" value="887"/>
-      <details key="end" value="888"/>
+    <eAnnotations source="positions.2" references="/0/generateDiagrama/%/raiz">
+      <details key="start" value="893"/>
+      <details key="end" value="897"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateDiagrama/%.1">
-      <details key="start" value="891"/>
-      <details key="end" value="893"/>
+      <details key="start" value="900"/>
+      <details key="end" value="902"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateDiagrama/%.2">
-      <details key="start" value="894"/>
-      <details key="end" value="914"/>
+      <details key="start" value="903"/>
+      <details key="end" value="926"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/generateDiagrama/%.2/d">
-      <details key="start" value="912"/>
-      <details key="end" value="913"/>
+    <eAnnotations source="positions.5" references="/0/generateDiagrama/%.2/raiz">
+      <details key="start" value="921"/>
+      <details key="end" value="925"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateDiagrama/%.3">
-      <details key="start" value="916"/>
-      <details key="end" value="918"/>
+      <details key="start" value="928"/>
+      <details key="end" value="930"/>
       <details key="line" value="20"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generateDiagrama/%.4">
-      <details key="start" value="919"/>
-      <details key="end" value="940"/>
+      <details key="start" value="931"/>
+      <details key="end" value="952"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/generateDiagrama/%.4/d">
-      <details key="start" value="938"/>
-      <details key="end" value="939"/>
+    <eAnnotations source="positions.8" references="/0/generateDiagrama/%.4/raiz">
+      <details key="start" value="947"/>
+      <details key="end" value="951"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generateDiagrama/%.5">
-      <details key="start" value="942"/>
-      <details key="end" value="944"/>
+      <details key="start" value="954"/>
+      <details key="end" value="956"/>
       <details key="line" value="21"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generateDiagrama/%.6">
-      <details key="start" value="945"/>
-      <details key="end" value="962"/>
+      <details key="start" value="957"/>
+      <details key="end" value="985"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/generateDiagrama/%.6/d">
-      <details key="start" value="960"/>
-      <details key="end" value="961"/>
+    <eAnnotations source="positions.11" references="/0/generateDiagrama/%.6/raiz">
+      <details key="start" value="980"/>
+      <details key="end" value="984"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generateDiagrama/%.7">
-      <details key="start" value="964"/>
-      <details key="end" value="966"/>
+      <details key="start" value="987"/>
+      <details key="end" value="989"/>
       <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generateDiagrama/%.8">
-      <details key="start" value="967"/>
-      <details key="end" value="992"/>
+      <details key="start" value="990"/>
+      <details key="end" value="1016"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/generateDiagrama/%.8/d">
-      <details key="start" value="990"/>
-      <details key="end" value="991"/>
+    <eAnnotations source="positions.14" references="/0/generateDiagrama/%.8/raiz">
+      <details key="start" value="1011"/>
+      <details key="end" value="1015"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/generateDiagrama/%.9">
-      <details key="start" value="994"/>
-      <details key="end" value="996"/>
+      <details key="start" value="1018"/>
+      <details key="end" value="1020"/>
       <details key="line" value="23"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/generateDiagrama/%.10">
-      <details key="start" value="997"/>
-      <details key="end" value="1020"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/generateDiagrama/%.10/d">
-      <details key="start" value="1018"/>
-      <details key="end" value="1019"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/generateDiagrama/%.11">
-      <details key="start" value="1022"/>
-      <details key="end" value="1024"/>
-      <details key="line" value="24"/>
-    </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/generateDiagrama/%.12">
-      <details key="start" value="1025"/>
-      <details key="end" value="1047"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/generateDiagrama/%.12/d">
-      <details key="start" value="1045"/>
+      <details key="start" value="1021"/>
       <details key="end" value="1046"/>
       <details key="line" value="0"/>
     </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateDiagrama/%.10/raiz">
+      <details key="start" value="1041"/>
+      <details key="end" value="1045"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateDiagrama/%.11">
+      <details key="start" value="1048"/>
+      <details key="end" value="1050"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateDiagrama/%.12">
+      <details key="start" value="1051"/>
+      <details key="end" value="1073"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateDiagrama/%.12/raiz">
+      <details key="start" value="1068"/>
+      <details key="end" value="1072"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
     <eAnnotations source="positions.21" references="/0/generateDiagrama/%.13">
-      <details key="start" value="1049"/>
-      <details key="end" value="1051"/>
+      <details key="start" value="1075"/>
+      <details key="end" value="1077"/>
       <details key="line" value="25"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/generateDiagrama/%.14">
-      <details key="start" value="1052"/>
-      <details key="end" value="1071"/>
+      <details key="start" value="1078"/>
+      <details key="end" value="1106"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/generateDiagrama/%.14/d">
-      <details key="start" value="1069"/>
-      <details key="end" value="1070"/>
+    <eAnnotations source="positions.23" references="/0/generateDiagrama/%.14/raiz">
+      <details key="start" value="1101"/>
+      <details key="end" value="1105"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/generateDiagrama/%.15">
-      <details key="start" value="1073"/>
-      <details key="end" value="1075"/>
+      <details key="start" value="1108"/>
+      <details key="end" value="1110"/>
       <details key="line" value="26"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/generateDiagrama/%.16">
-      <details key="start" value="1076"/>
-      <details key="end" value="1101"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.26" references="/0/generateDiagrama/%.16/d">
-      <details key="start" value="1099"/>
-      <details key="end" value="1100"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.27" references="/0/generateDiagrama/%.17">
-      <details key="start" value="1103"/>
-      <details key="end" value="1107"/>
-      <details key="line" value="27"/>
-    </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/generateDiagrama/d">
-      <details key="start" value="828"/>
-      <details key="end" value="846"/>
+    <eAnnotations source="positions.25" references="/0/generateDiagrama/raiz">
+      <details key="start" value="831"/>
+      <details key="end" value="852"/>
       <details key="line" value="16"/>
     </eAnnotations>
   </ecore:EAnnotation>

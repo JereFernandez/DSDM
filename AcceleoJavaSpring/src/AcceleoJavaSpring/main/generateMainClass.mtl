@@ -3,7 +3,7 @@
 
 
 [template public generateMainClass(raiz : DiagramaClases)]
-[file ('src/main/java/'+raiz.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+raiz.artefacto_contenido.artefactotId+'/'+(raiz.artefacto_contenido.nombre)+'.java', false, 'UTF-8')]
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/'+'Main_'+raiz.artefacto_contenido.nombre+'.java', false, 'UTF-8')]
 package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/];
 
 import org.springframework.boot.SpringApplication;

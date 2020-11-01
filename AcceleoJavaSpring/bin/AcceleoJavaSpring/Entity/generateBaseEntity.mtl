@@ -1,10 +1,9 @@
 [comment encoding = UTF-8 /]
 [module generateBaseEntity('http://www.example.org/diagramaClasesCompleto')]
 
-[template public generateBaseEntity(aDiagramaClases : DiagramaClases)]
-
-[file ('src/main/java/'+aDiagramaClases.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+aDiagramaClases.artefacto_contenido.artefactotId+'/entities/Base.java', false, 'UTF-8')]
-package [aDiagramaClases.artefacto_contenido.grupoId/].[aDiagramaClases.artefacto_contenido.artefactotId/].entities;
+[template public generateBaseEntity(raiz: DiagramaClases)]
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/entities/BaseEntity.java', false, 'UTF-8')]
+package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,7 +30,6 @@ public class Base implements Serializable {
     private Long id;
 
 }
-
 [/file]
 
 [/template]
