@@ -2,7 +2,7 @@
 [module generateBaseEntity('http://www.example.org/diagramaClasesCompleto')]
 
 [template public generateBaseEntity(raiz: DiagramaClases)]
-[file ('src/main/java'+raiz.artefacto_contenido.grupoId, false, 'UTF-8')]
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/entities/BaseEntity.java', false, 'UTF-8')]
 package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities;
 
 import lombok.Getter;
