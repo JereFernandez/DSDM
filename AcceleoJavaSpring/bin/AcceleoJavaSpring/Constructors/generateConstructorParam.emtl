@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generateConstructorParam" nsURI="AcceleoJavaSpring::Constructors::generateConstructorParam" startHeaderPosition="29" endHeaderPosition="241">
+  <mtl:Module name="generateConstructorParam" nsURI="AcceleoJavaSpring::Constructors::generateConstructorParam" startHeaderPosition="30" endHeaderPosition="245">
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
@@ -139,63 +139,63 @@
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateConstructorParam">
-      <details key="start" value="113"/>
-      <details key="end" value="273"/>
+      <details key="start" value="116"/>
+      <details key="end" value="278"/>
       <details key="line" value="4"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateConstructorParam/%">
-      <details key="start" value="170"/>
-      <details key="end" value="261"/>
+      <details key="start" value="174"/>
+      <details key="end" value="265"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateConstructorParam/%/%">
-      <details key="start" value="235"/>
-      <details key="end" value="241"/>
+      <details key="start" value="239"/>
+      <details key="end" value="245"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateConstructorParam/%/%/a">
-      <details key="start" value="235"/>
-      <details key="end" value="236"/>
+      <details key="start" value="239"/>
+      <details key="end" value="240"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateConstructorParam/%/%.1">
-      <details key="start" value="243"/>
-      <details key="end" value="244"/>
+      <details key="start" value="247"/>
+      <details key="end" value="248"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateConstructorParam/%/%.2">
-      <details key="start" value="245"/>
-      <details key="end" value="253"/>
+      <details key="start" value="249"/>
+      <details key="end" value="257"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateConstructorParam/%/%.2/a">
-      <details key="start" value="245"/>
-      <details key="end" value="246"/>
+      <details key="start" value="249"/>
+      <details key="end" value="250"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generateConstructorParam/%/a">
-      <details key="start" value="176"/>
-      <details key="end" value="188"/>
+      <details key="start" value="180"/>
+      <details key="end" value="192"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generateConstructorParam/%/%.3">
-      <details key="start" value="191"/>
-      <details key="end" value="216"/>
+      <details key="start" value="195"/>
+      <details key="end" value="220"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generateConstructorParam/%/%.3/raiz">
-      <details key="start" value="191"/>
-      <details key="end" value="195"/>
+      <details key="start" value="195"/>
+      <details key="end" value="199"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generateConstructorParam/%/%.4">
-      <details key="start" value="229"/>
-      <details key="end" value="232"/>
+      <details key="start" value="233"/>
+      <details key="end" value="236"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generateConstructorParam/raiz">
-      <details key="start" value="155"/>
-      <details key="end" value="167"/>
+      <details key="start" value="158"/>
+      <details key="end" value="170"/>
       <details key="line" value="4"/>
     </eAnnotations>
   </ecore:EAnnotation>

@@ -3,10 +3,11 @@
 [import AcceleoJavaSpring::Property::generateProperty/]
 [import AcceleoJavaSpring::Relation::generateImplementation /]
 [import AcceleoJavaSpring::Relation::generateExtension /]
-[import AcceleoJavaSpring::Relation::generateRelation/]
 
 [template public generateAssociativeClass(r : Relacion, paquete : Package, d: DiagramaClases)]
+
 [for (i : Clase | r.clases_asociativas_contenidas)]
+
 	[file ('src/main/java/'+d.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+d.artefacto_contenido.artefactotId+'/entities/'+paquete.nombre+'/'+i.nombre+'.java', false, 'UTF-8')]
 	package [d.artefacto_contenido.grupoId/].[d.artefacto_contenido.artefactotId/].entities.[paquete.nombre/];
 	import java.io.Serializable;
@@ -25,7 +26,6 @@
 	import lombok.Data;
 	import lombok.NoArgsConstructor;
 
-
 	@Entity
 	@Table(name= "[i.nombre.toLowerFirst()/]")
 	@Data
@@ -35,7 +35,6 @@
 	[if (i.esAuditable)]@Audited[/if]
 	public [if(i.esAbstracta)]abstract [/if]class [i.nombre/] [generateExtension(i)/] [generateImplementation(i)/] {
 	[generateProperty(i)/]
-	[generateRelation(i, paquete,d)/]
 	@OneToOne(cascade= CascadeType.ALL)
 	@JoinColumn(name="fk_[r.origen.nombre.toLowerFirst()/]")
 	[r.visibilidad/] [r.origen.nombre/] [r.origen.nombre.toLowerFirst()/];
@@ -47,6 +46,5 @@
 	
 	[/file]
 [/for]
-
 
 [/template]

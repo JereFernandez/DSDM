@@ -4,8 +4,8 @@
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateInterfaceExtension.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Property/generateInterfaceProperty.emtl#/0"/>
+    <imports href="../Relation/generateInterfaceExtension.emtl#/0"/>
+    <imports href="../Property/generateInterfaceProperty.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateInterface" visibility="Public">
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="mtl:ForBlock">
@@ -53,7 +53,7 @@
             <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
             <body xsi:type="mtl:TemplateInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateInterfaceExtension.emtl#/0/generateInterfaceExtension"/>
+              <definition href="../Relation/generateInterfaceExtension.emtl#/0/generateInterfaceExtension"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="i" referredVariable="/0/generateInterface/%/%/i">
                 <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Interface"/>
               </argument>
@@ -61,7 +61,7 @@
             <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="{&#xD;&#xA;&#x9;&#x9;"/>
             <body xsi:type="mtl:TemplateInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Property/generateInterfaceProperty.emtl#/0/generateInterfaceProperty"/>
+              <definition href="../Property/generateInterfaceProperty.emtl#/0/generateInterfaceProperty"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="i" referredVariable="/0/generateInterface/%/%/i">
                 <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Interface"/>
               </argument>
@@ -238,7 +238,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Relation/generateInterfaceExtension.emtl#/0/generateInterfaceExtension"/>
+          <references href="../Relation/generateInterfaceExtension.emtl#/0/generateInterfaceExtension"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
@@ -250,7 +250,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Property/generateInterfaceProperty.emtl#/0/generateInterfaceProperty"/>
+          <references href="../Property/generateInterfaceProperty.emtl#/0/generateInterfaceProperty"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="i">
