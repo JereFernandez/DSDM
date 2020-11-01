@@ -1,0 +1,12 @@
+[comment encoding = UTF-8 /]
+[module generateOverloadedConstructor('http://www.example.org/diagramaClasesCompleto')]
+
+
+
+[template public generateOverloadConstructor(raiz : Clase)]
+	public [raiz.nombre/] (){
+	[for (a : Atributo | raiz.atributos_contenidos)]
+	this.[raiz.atributos_contenidos.nombre/] = [raiz.atributos_contenidos.nombre/];
+	[/for]
+	}
+[/template]

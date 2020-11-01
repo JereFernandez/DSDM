@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/DiagramaClasesCompleto/src" modelPluginID="DiagramaClasesCompleto"
-    modelName="DiagramaClasesCompleto" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
-    operationReflection="true" importOrganizing="true">
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/DiagramaClasesCompleto/src-gen" creationIcons="false"
+    editDirectory="/DiagramaClasesCompleto.edit/src-gen" editorDirectory="/DiagramaClasesCompleto.editor/src-gen"
+    modelPluginID="DiagramaClasesCompleto" modelName="DiagramaClasesCompleto" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>diagramaClasesCompleto.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
   <genPackages prefix="DiagramaClasesCompleto" disposableProviderFactory="true" ecorePackage="diagramaClasesCompleto.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoRelacion">
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRelacion/unidireccional"/>
@@ -71,8 +74,24 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//Lenguaje">
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/java"/>
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/python"/>
-      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/net"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/NET"/>
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/node"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//RepresentacionGrafica">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/text"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/combo"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/radio"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/checkbox"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/date"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoABM">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/simple"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/seleccionable"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroDetalle"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroComboDetalle"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroDetalleCombo"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroComboDetalleCombo"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/sinRepresentacion"/>
     </genEnums>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//DiagramaClases">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/packages_contenidos"/>
@@ -80,8 +99,9 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/configuraciondb"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/configuraciondocker"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/configuracionlenguaje"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/configuracionmicroservicios"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="diagramaClasesCompleto.ecore#//Clasificador">
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Clasificador">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clasificador/nombre"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Clasificador/atributos_contenidos"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Clasificador/operaciones_contenidas"/>
@@ -106,17 +126,20 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/esFinal"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/esStatic"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/visibilidad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/tipoABM"/>
     </genClasses>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Operacion">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Operacion/tipoRetorno"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Operacion/esAbstracta"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Operacion/parametros_contenidos"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Operacion/endpoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Operacion/parametros_internos"/>
     </genClasses>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Atributo">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Atributo/tipo"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Atributo/esAuditable"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Atributo/pseudonimo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Atributo/representacionGrafica"/>
     </genClasses>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Package">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Package/clasificadores_contenidos"/>
@@ -167,6 +190,13 @@
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//ConfiguracionLenguaje">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionLenguaje/version"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionLenguaje/lenguaje"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//ParametroInterno">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ParametroInterno/tipo"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//ConfiguracionMicroservicios">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionMicroservicios/ipDiscovery"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionMicroservicios/puertoDiscovery"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

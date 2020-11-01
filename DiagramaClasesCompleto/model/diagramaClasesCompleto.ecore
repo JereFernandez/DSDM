@@ -12,7 +12,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="configuraciondocker" upperBound="-1"
         eType="#//ConfiguracionDocker" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="configuracionlenguaje"
-        lowerBound="1" upperBound="-1" eType="#//ConfiguracionLenguaje" containment="true"/>
+        upperBound="-1" eType="#//ConfiguracionLenguaje" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuracionmicroservicios"
+        upperBound="-1" eType="#//ConfiguracionMicroservicios" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Clasificador" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -44,7 +46,10 @@
         upperBound="-1" eType="#//Clase" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="esFinal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="esStatic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibilidad" eType="#//ModicadoresAcceso"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibilidad" eType="#//ModicadoresAcceso"
+        defaultValueLiteral="private"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipoABM" eType="#//TipoABM"
+        defaultValueLiteral="sinRepresentacion"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Operacion" eSuperTypes="#//Retornable">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipoRetorno" eType="#//TipoRetorno"/>
@@ -54,20 +59,24 @@
         upperBound="-1" eType="#//Retornable" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="endpoint" lowerBound="1"
         eType="#//EndPoint" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parametros_internos" upperBound="-1"
+        eType="#//ParametroInterno" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Atributo" eSuperTypes="#//Retornable">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" eType="#//TipoDato"
         defaultValueLiteral="int"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="esAuditable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pseudonimo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="representacionGrafica"
+        eType="#//RepresentacionGrafica"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TipoRelacion">
     <eLiterals name="unidireccional"/>
     <eLiterals name="bidireccional" value="1"/>
     <eLiterals name="composicion" value="2"/>
     <eLiterals name="agregacion" value="3"/>
-    <eLiterals name="dependenciaUso" value="4" literal="dependenciaUso"/>
-    <eLiterals name="dependenciaCreacion" value="5" literal="dependenciaCreacion"/>
+    <eLiterals name="dependenciaUso" value="4"/>
+    <eLiterals name="dependenciaCreacion" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TipoDato">
     <eLiterals name="int"/>
@@ -186,7 +195,32 @@
   <eClassifiers xsi:type="ecore:EEnum" name="Lenguaje">
     <eLiterals name="java"/>
     <eLiterals name="python" value="1"/>
-    <eLiterals name="net" value="2" literal="net"/>
+    <eLiterals name="NET" value="2"/>
     <eLiterals name="node" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParametroInterno">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" eType="#//TipoRetorno"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConfiguracionMicroservicios">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ipDiscovery" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="http://localhost"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="puertoDiscovery" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="8761"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RepresentacionGrafica">
+    <eLiterals name="text"/>
+    <eLiterals name="combo" value="1"/>
+    <eLiterals name="radio" value="2"/>
+    <eLiterals name="checkbox" value="3"/>
+    <eLiterals name="date" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TipoABM">
+    <eLiterals name="simple"/>
+    <eLiterals name="seleccionable" value="1"/>
+    <eLiterals name="maestroDetalle" value="3"/>
+    <eLiterals name="maestroComboDetalle" value="3"/>
+    <eLiterals name="maestroDetalleCombo" value="4"/>
+    <eLiterals name="maestroComboDetalleCombo" value="5"/>
+    <eLiterals name="sinRepresentacion" value="6"/>
   </eClassifiers>
 </ecore:EPackage>
