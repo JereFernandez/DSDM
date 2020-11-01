@@ -42,16 +42,20 @@
 	import javax.persistence.Column;
 	import javax.persistence.Entity;
 	import javax.persistence.Table;
-	[if (i.esAuditable)]import org.hibernate.envers.Audited;[/if]
+
+	[if (i.esAuditable)]
+	import org.hibernate.envers.Audited;
+	[/if]
+
 	import lombok.AllArgsConstructor;
 	import lombok.Builder;
 	import lombok.Data;
 	import lombok.NoArgsConstructor;
+
 	[if (i.herencias_contenidas->size()=0)]
 		import [d.artefacto_contenido.grupoId/].[d.artefacto_contenido.artefactotId/].entities.Base;
 	[/if]
 	
-		
 	@Entity
 	@Table(name= "[i.nombre.toLowerFirst()/]")
 	@Data
@@ -66,15 +70,11 @@
 	[generateRelation(i,paquete,d)/]
 	
 	}
+
 	[/file]
 	
-	
-	
 	[/for]
+
 [/for]
 
-
 [/template]
-
-
-

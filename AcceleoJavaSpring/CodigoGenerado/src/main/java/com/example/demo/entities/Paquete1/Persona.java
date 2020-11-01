@@ -10,14 +10,15 @@
 	import javax.persistence.Column;
 	import javax.persistence.Entity;
 	import javax.persistence.Table;
-	
+
+
 	import lombok.AllArgsConstructor;
 	import lombok.Builder;
 	import lombok.Data;
 	import lombok.NoArgsConstructor;
+
 		import com.example.demo.entities.Base;
 	
-		
 	@Entity
 	@Table(name= "persona")
 	@Data
@@ -37,4 +38,19 @@
 	
 	
 	
+	
+	
+				@OneToOne(cascade= CascadeType.ALL)
+				@JoinColumn(name="fk_Domicilio")
+			private Domicilio haciaDomicilio;
+	
+	
+	
+				@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)
+			private List<Libro> haciaLibro = new ArrayList<Libro>();
+	
+	
+	
+	
 	}
+

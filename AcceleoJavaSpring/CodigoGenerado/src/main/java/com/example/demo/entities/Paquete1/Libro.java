@@ -9,14 +9,15 @@
 	import javax.persistence.Column;
 	import javax.persistence.Entity;
 	import javax.persistence.Table;
-	
+
+
 	import lombok.AllArgsConstructor;
 	import lombok.Builder;
 	import lombok.Data;
 	import lombok.NoArgsConstructor;
+
 		import com.example.demo.entities.Base;
 	
-		
 	@Entity
 	@Table(name= "libro")
 	@Data
@@ -40,4 +41,17 @@
 	
 	
 	
+	
+	
+				@ManyToMany(cascade= CascadeType.ALL)
+				@JoinTable(name="Libro_Autor",
+				joinColumns=@JoinColumn(name="Libro"),
+				inverseJoinColumns=@JoinColumn(name="Autor"))
+				@Default
+			private List<Autor> haciaAutor = new ArrayList<Autor>();
+	
+	
+	
+	
 	}
+
