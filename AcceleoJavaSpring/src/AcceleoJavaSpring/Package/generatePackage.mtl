@@ -2,11 +2,13 @@
 [module generatePackage('http://www.example.org/diagramaClasesCompleto')]
 
 [import AcceleoJavaSpring::Entity::generateEntity /]
+[import AcceleoJavaSpring::Entity::generateBaseEntity /]
 
 [template public generatePackage(raiz : DiagramaClases)]
+[generateBaseEntity(raiz)/]
 [for (p : Package | raiz.packages_contenidos)]
 [for (c : Clase | p.clasificadores_contenidos->filter(Clase))]
-[file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/entities/'+p.nombre+'/'+c.nombre, false, 'UTF-8')]
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/entities/'+p.nombre+'/'+c.nombre+'.java', false, 'UTF-8')]
 [generateEntity(c)/]
 [/file]
 [/for]

@@ -86,3 +86,5 @@ AcceleoJavaSpring/JavaGenerated/src/main/java/com/example/demo/services/PersonaS
 *.java
 *.launch
 *.launch
+*.emtl
+*.emtl

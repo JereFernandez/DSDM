@@ -8,55 +8,55 @@
 
 
 [template public generateEntity(c : Clase)]
-	[if (not (c.relaciones_contenidas->isEmpty()))]
-		import javax.persistence.JoinColumn;
-		import javax.persistence.CascadeType;
-		[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToOne))]
-			import javax.persistence.OneToOne;
-		[/if]
-		[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany))]
-			import javax.persistence.OneToMany;
-			import javax.persistence.JoinTable;
-			import java.util.ArrayList;
-			import java.util.List;
-			import lombok.Builder.Default;
-		[/if]
-		[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToOne))]
-			import javax.persistence.ManyToOne;
-		[/if]
-		[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToMany))]
-			import javax.persistence.ManyToMany;
-			[if (not(c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany)))]
-			import javax.persistence.JoinTable;
-			import java.util.ArrayList;
-			import java.util.List;
-			import lombok.Builder.Default;
-			[/if]
-		[/if]
-	[/if]
-	import javax.persistence.Column;
-	import javax.persistence.Entity;
-	import javax.persistence.Table;
-	[if (c.esAuditable)]import org.hibernate.envers.Audited;[/if]
-	import lombok.AllArgsConstructor;
-	import lombok.Builder;
-	import lombok.Data;
-	import lombok.NoArgsConstructor;
-	[if (c.herencias_contenidas->size()=0)]
+[if (not (c.relaciones_contenidas->isEmpty()))]
+import javax.persistence.JoinColumn;
+import javax.persistence.CascadeType;
+[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToOne))]
+import javax.persistence.OneToOne;
+[/if]
+[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany))]
+import javax.persistence.OneToMany;
+import javax.persistence.JoinTable;
+import java.util.ArrayList;
+import java.util.List;
+import lombok.Builder.Default;
+[/if]
+[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToOne))]
+import javax.persistence.ManyToOne;
+[/if]
+[if (c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToMany))]
+import javax.persistence.ManyToMany;
+[if (not(c.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany)))]
+import javax.persistence.JoinTable;
+import java.util.ArrayList;
+import java.util.List;
+import lombok.Builder.Default;
+[/if]
+[/if]
+[/if]
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+[if (c.esAuditable)]import org.hibernate.envers.Audited;[/if]
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+[if (c.herencias_contenidas->size()=0)]
 
-	[/if]
+[/if]
 		
-	@Entity
-	@Table(name= "[c.nombre/]")
-	@Data
-	@AllArgsConstructor
-	@NoArgsConstructor
-	@Builder
+@Entity
+@Table(name= "[c.nombre/]")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 	
-	[if (c.esAuditable)]@Audited[/if]
-	public [if(c.esAbstracta)]abstract [/if]class [c.nombre/] {
+[if (c.esAuditable)]@Audited[/if]
+public [if(c.esAbstracta)]abstract [/if]class [c.nombre/] {
 	[generateProperty(c)/]
 	[generateRelation(c)/]
 	
-	}
+}
 [/template]

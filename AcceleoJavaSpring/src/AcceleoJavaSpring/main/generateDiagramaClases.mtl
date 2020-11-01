@@ -17,7 +17,6 @@
 [comment @main/]
 [generateMainClass(raiz)/]
 [generateInterface(raiz)/]
-[generateBaseEntity(raiz)/]
 [generatePackage(raiz)/]
 [generateBaseRepository(raiz)/]
 [generateRepositories(raiz)/]

@@ -78,6 +78,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </charset>
       </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <parameter name="raiz">
         <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
       </parameter>
@@ -177,7 +178,7 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateBaseEntity">
       <details key="start" value="110"/>
-      <details key="end" value="1012"/>
+      <details key="end" value="1014"/>
       <details key="line" value="4"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateBaseEntity/%">
@@ -300,7 +301,12 @@
       <details key="end" value="312"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/generateBaseEntity/raiz">
+    <eAnnotations source="positions.25" references="/0/generateBaseEntity/%.1">
+      <details key="start" value="1001"/>
+      <details key="end" value="1003"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateBaseEntity/raiz">
       <details key="start" value="146"/>
       <details key="end" value="166"/>
       <details key="line" value="4"/>

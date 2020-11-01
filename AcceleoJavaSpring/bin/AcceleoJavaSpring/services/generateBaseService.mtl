@@ -39,9 +39,6 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
-
-
-
 public abstract class BaseServiceImpl<E extends Base, ID extends Serializable> implements BaseService<E, ID> {
 
     protected BaseRepository<E,ID> repository;
@@ -119,8 +116,6 @@ public abstract class BaseServiceImpl<E extends Base, ID extends Serializable> i
             throw new Exception(e.getMessage());
         }
     }
-
 }
 [/file]
-
 [/template]

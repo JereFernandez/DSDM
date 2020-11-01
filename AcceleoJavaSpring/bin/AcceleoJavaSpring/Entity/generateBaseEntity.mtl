@@ -31,4 +31,5 @@ public class Base implements Serializable {
 
 }
 [/file]
+
 [/template]

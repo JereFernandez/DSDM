@@ -28,7 +28,7 @@ public interface BaseController<E extends Base, ID extends Serializable> {
 
 [/file]
 
-[file ('src/main/java/'+raiz.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+raiz.artefacto_contenido.artefactotId+'/controllers/BaseControllerImpl.java', false, 'UTF-8')]
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/controllers/BaseControllerImpl.java', false, 'UTF-8')]
 package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].controllers;
 
 import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.Base;
