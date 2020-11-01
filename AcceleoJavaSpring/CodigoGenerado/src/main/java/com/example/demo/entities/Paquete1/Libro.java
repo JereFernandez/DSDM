@@ -9,14 +9,15 @@
 	import javax.persistence.Column;
 	import javax.persistence.Entity;
 	import javax.persistence.Table;
-	
+
+
 	import lombok.AllArgsConstructor;
 	import lombok.Builder;
 	import lombok.Data;
 	import lombok.NoArgsConstructor;
+
 		import com.example.demo.entities.Base;
 	
-		
 	@Entity
 	@Table(name= "libro")
 	@Data
@@ -53,3 +54,4 @@
 	
 	
 	}
+
