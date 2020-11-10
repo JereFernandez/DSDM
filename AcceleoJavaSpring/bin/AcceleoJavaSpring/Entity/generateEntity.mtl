@@ -5,9 +5,13 @@
 [import AcceleoJavaSpring::Relation::generateRelation/]
 [import AcceleoJavaSpring::Relation::generateImplementation/]
 [import AcceleoJavaSpring::Relation::generateExtension/]
+[import AcceleoJavaSpring::controllers::generateEntityController /]
 
 
-[template public generateEntity(c : Clase)]
+[template public generateEntity(c : Clase, art: Artefacto, p : Package)]
+[file ('src/main/java/'+art.grupoId+'.'+art.artefactotId+'/entities/'+p.nombre+'/'+c.nombre+'.java', false, 'UTF-8')]
+package [art.grupoId/].[art.artefactotId/].entities;
+
 [if (not (c.relaciones_contenidas->isEmpty()))]
 import javax.persistence.JoinColumn;
 import javax.persistence.CascadeType;
@@ -42,21 +46,21 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-[if (c.herencias_contenidas->size()=0)]
 
-[/if]
-		
+
 @Entity
 @Table(name= "[c.nombre/]")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-	
 [if (c.esAuditable)]@Audited[/if]
-public [if(c.esAbstracta)]abstract [/if]class [c.nombre/] {
+public [if(c.esAbstracta)]abstract[/if] class [c.nombre/] [generateExtension(c)/] [generateImplementation(c)/] {
+
 	[generateProperty(c)/]
-	[generateRelation(c)/]
+	[generateRelation(c, art, p)/]
+	[generateOperation(c)/]
 	
 }
+[/file]
 [/template]

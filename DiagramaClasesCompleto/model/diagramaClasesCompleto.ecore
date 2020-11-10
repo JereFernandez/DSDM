@@ -97,6 +97,7 @@
     <eLiterals name="byte" value="5"/>
     <eLiterals name="boolean" value="6"/>
     <eLiterals name="String" value="7"/>
+    <eLiterals name="Date" value="8"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ModicadoresAcceso">
     <eLiterals name="package"/>

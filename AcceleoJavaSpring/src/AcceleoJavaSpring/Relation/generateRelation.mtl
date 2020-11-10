@@ -4,7 +4,7 @@
 [import AcceleoJavaSpring::Queries::queryGeneral /]
 [import AcceleoJavaSpring::Entity::generateEntity /]
 
-[template public generateRelation(a : Clase)]
+[template public generateRelation(a : Clase, art: Artefacto, p : Package)]
 
 [for (relacion : Relacion | a.relaciones_contenidas)]
 
@@ -94,7 +94,7 @@
 
 [for ( c : Clase | relacion.clases_asociativas_contenidas)]
 	[if (isClassAssociative(c))]
-		[generateEntity(c)/]
+		[generateEntity(c, art, p)/]
 	[/if]
 [/for]
 

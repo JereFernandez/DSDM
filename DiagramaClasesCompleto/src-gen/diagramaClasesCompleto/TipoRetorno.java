@@ -96,7 +96,17 @@ public enum TipoRetorno implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	STRING(7, "String", "String");
+	STRING(7, "String", "String"),
+
+	/**
+	 * The '<em><b>Date</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DATE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	DATE(8, "Date", "Date");
 
 	/**
 	 * The '<em><b>Void</b></em>' literal value.
@@ -187,13 +197,24 @@ public enum TipoRetorno implements Enumerator {
 	public static final int STRING_VALUE = 7;
 
 	/**
+	 * The '<em><b>Date</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DATE
+	 * @model name="Date"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int DATE_VALUE = 8;
+
+	/**
 	 * An array of all the '<em><b>Tipo Retorno</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	private static final TipoRetorno[] VALUES_ARRAY = new TipoRetorno[] { VOID, FLOAT, INT, DOUBLE, CHAR, BYTE, BOOLEAN,
-			STRING, };
+			STRING, DATE, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Tipo Retorno</b></em>' enumerators.
@@ -265,6 +286,8 @@ public enum TipoRetorno implements Enumerator {
 			return BOOLEAN;
 		case STRING_VALUE:
 			return STRING;
+		case DATE_VALUE:
+			return DATE;
 		}
 		return null;
 	}

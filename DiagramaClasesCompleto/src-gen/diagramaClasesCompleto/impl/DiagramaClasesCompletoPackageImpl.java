@@ -1781,6 +1781,7 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 		addEEnumLiteral(tipoRetornoEEnum, TipoRetorno.BYTE);
 		addEEnumLiteral(tipoRetornoEEnum, TipoRetorno.BOOLEAN);
 		addEEnumLiteral(tipoRetornoEEnum, TipoRetorno.STRING);
+		addEEnumLiteral(tipoRetornoEEnum, TipoRetorno.DATE);
 
 		initEEnum(modicadoresAccesoEEnum, ModicadoresAcceso.class, "ModicadoresAcceso");
 		addEEnumLiteral(modicadoresAccesoEEnum, ModicadoresAcceso.PACKAGE);

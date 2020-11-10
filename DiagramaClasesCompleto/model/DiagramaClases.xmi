@@ -1,41 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto"
+<diagramaClasesCompleto:DiagramaClases
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto"
     xsi:schemaLocation="http://www.example.org/diagramaClasesCompleto diagramaClasesCompleto.ecore">
-  <packages_contenidos nombre="Paquete1">
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Domicilio">
-      <atributos_contenidos nombre="calle" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="numero" visibilidad="private"/>
-      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.2" nombre="haciaLocalidad" multiplicidad="oneToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.0" visibilidad="private"/>
+  <packages_contenidos
+      nombre="Persona">
+    <clasificadores_contenidos
+        xsi:type="diagramaClasesCompleto:Clase"
+        nombre="Persona"
+        esAbstracta="true"
+        tieneABM="true">
+      <atributos_contenidos
+          nombre="Nombre"
+          visibilidad="private"
+          tipo="String"
+          esAuditable="true"/>
+      <atributos_contenidos
+          nombre="Apellido"
+          visibilidad="private"
+          tipo="String"
+          esAuditable="true"/>
+      <atributos_contenidos
+          nombre="Edad"
+          visibilidad="private"
+          pseudonimo=""/>
+      <atributos_contenidos
+          nombre="DNI"
+          visibilidad="private"
+          esAuditable="true"
+          pseudonimo="dni"/>
+      <realizaciones_contenidas
+          destino="//@packages_contenidos.0/@clasificadores_contenidos.3"
+          origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
     </clasificadores_contenidos>
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Persona" tieneABM="true">
-      <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String" pseudonimo=""/>
-      <atributos_contenidos nombre="dni" visibilidad="private"/>
-      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.0" nombre="haciaDomicilio" origen="//@packages_contenidos.0/@clasificadores_contenidos.1" visibilidad="private"/>
-      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.3" nombre="haciaLibro" tipo="composicion" multiplicidad="oneToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.1" visibilidad="private"/>
+    <clasificadores_contenidos
+        xsi:type="diagramaClasesCompleto:Clase"
+        nombre="Alumno">
+      <atributos_contenidos
+          nombre="LegajoAlumno"
+          visibilidad="private"
+          esAuditable="true"/>
+      <operaciones_contenidas
+          nombre="Pensar"
+          visibilidad="public"
+          tipoRetorno="String"/>
+      <herencias_contenidas
+          origen="//@packages_contenidos.0/@clasificadores_contenidos.1"
+          destino="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
     </clasificadores_contenidos>
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Localidad" esAuditable="true" tieneABM="true">
-      <atributos_contenidos nombre="denominacion" visibilidad="private" tipo="String"/>
+    <clasificadores_contenidos
+        xsi:type="diagramaClasesCompleto:Clase"
+        nombre="Profesor">
+      <atributos_contenidos
+          nombre="LegajoProfesor"
+          visibilidad="private"
+          esAuditable="true"/>
+      <operaciones_contenidas
+          nombre="DarClase"
+          visibilidad="public"/>
+      <herencias_contenidas
+          origen="//@packages_contenidos.0/@clasificadores_contenidos.2"
+          destino="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
     </clasificadores_contenidos>
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Libro">
-      <atributos_contenidos nombre="titulo" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="paginas" visibilidad="private"/>
-      <atributos_contenidos nombre="autor" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="genero" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="fecha" visibilidad="private"/>
-      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.4" nombre="haciaAutor" multiplicidad="manyToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.3" visibilidad="private"/>
-    </clasificadores_contenidos>
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Autor" tieneABM="true">
-      <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="bibliografia" visibilidad="private" tipo="String"/>
+    <clasificadores_contenidos
+        xsi:type="diagramaClasesCompleto:Interface"
+        nombre="ActividadFisica">
+      <atributos_contenidos
+          nombre="Velocidad"
+          visibilidad="public"
+          tipo="float"/>
+      <operaciones_contenidas
+          nombre="Correr"
+          visibilidad="private"
+          esStatic="true"/>
+      <operaciones_contenidas
+          nombre="Danzar"
+          visibilidad="public"
+          tipoRetorno="int"/>
     </clasificadores_contenidos>
   </packages_contenidos>
-  <artefacto_contenido/>
-  <configuraciondb dbNombre="bd" dbUsuario="root" dbPuerto="3306" ip="localhost" dbContrasena="" serverPuerto="9000"/>
-  <configuraciondocker/>
-  <configuracionlenguaje/>
-  <configuracionmicroservicios/>
+  <artefacto_contenido
+      nombre="PruebaModelo"
+      grupoId="prueba.example"
+      artefactotId="prueba"
+      descripcion="Prueba modelo"/>
 </diagramaClasesCompleto:DiagramaClases>
-    
