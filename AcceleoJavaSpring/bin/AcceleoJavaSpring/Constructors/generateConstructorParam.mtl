@@ -1,6 +1,0 @@
-[comment encoding = UTF-8 /]
-[module generateConstructorParam('http://www.example.org/diagramaClasesCompleto')]
-
-[template public generateConstructorParam(raiz : Clase)]
-[for (a : Atributo | raiz.atributos_contenidos) separator (',')][a.tipo/] [a.nombre/][/for]
-[/template]

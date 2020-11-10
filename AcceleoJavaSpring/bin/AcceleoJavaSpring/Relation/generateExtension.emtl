@@ -56,7 +56,7 @@
           <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
         </ifExpr>
         <elseIf>
-          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;extends Base&#xD;&#xA;"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;extends BaseEntity&#xD;&#xA;"/>
           <ifExpr xsi:type="ocl.ecore:OperationCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="ocl.ecore:OperationCallExp">
@@ -179,12 +179,12 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateExtension">
       <details key="start" value="111"/>
-      <details key="end" value="329"/>
+      <details key="end" value="335"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateExtension/%">
       <details key="start" value="159"/>
-      <details key="end" value="316"/>
+      <details key="end" value="322"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateExtension/%/%">
@@ -274,12 +274,12 @@
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/generateExtension/%/%.3">
       <details key="start" value="251"/>
-      <details key="end" value="311"/>
+      <details key="end" value="317"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generateExtension/%/%.3/%">
       <details key="start" value="296"/>
-      <details key="end" value="311"/>
+      <details key="end" value="317"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/generateExtension/%/%.3/%.1">

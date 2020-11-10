@@ -16,12 +16,7 @@
 [template public generateDiagrama(raiz : DiagramaClases)]
 [comment @main/]
 [generateMainClass(raiz)/]
-[generateInterface(raiz)/]
 [generatePackage(raiz)/]
-[generateBaseRepository(raiz)/]
-[generateRepositories(raiz)/]
-[generateBaseService(raiz)/]
-[generateServices(raiz)/]
-[generateBaseController(raiz)/]
+
 
 [/template]

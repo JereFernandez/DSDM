@@ -36,6 +36,7 @@
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/byte"/>
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/boolean"/>
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/String"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/Date"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//ModicadoresAcceso">
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ModicadoresAcceso/package"/>
