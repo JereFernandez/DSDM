@@ -45,7 +45,19 @@
       <operaciones_contenidas
           nombre="Pensar"
           visibilidad="public"
-          tipoRetorno="String"/>
+          tipoRetorno="String">
+        <parametros_contenidos
+            xsi:type="diagramaClasesCompleto:Atributo"
+            nombre="Edad"/>
+        <parametros_contenidos
+            xsi:type="diagramaClasesCompleto:Atributo"
+            nombre="Algo"
+            tipo="String"/>
+        <parametros_contenidos
+            xsi:type="diagramaClasesCompleto:Atributo"
+            nombre="fechapensamiento"
+            tipo="Date"/>
+      </operaciones_contenidas>
       <herencias_contenidas
           origen="//@packages_contenidos.0/@clasificadores_contenidos.1"
           destino="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
