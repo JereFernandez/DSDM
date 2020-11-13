@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaClasesCompleto:DiagramaClases 
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto"
+    xsi:schemaLocation="http://www.example.org/diagramaClasesCompleto diagramaClasesCompleto.ecore">
+  <packages_contenidos nombre="Persona">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Estado">
+      <atributos_contenidos nombre="Atributo2" visibilidad="private"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="TipoTramite">
+      <atributos_contenidos nombre="Atributo1" visibilidad="private"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.0" nombre="Estado_TipoTramite1" origen="//@packages_contenidos.0/@clasificadores_contenidos.1">
+        <clases_asociativas_contenidas nombre="TipoTramite_Estado" esAsociativa="true">
+          <atributos_contenidos nombre="Atributo3" visibilidad="private"/>
+        </clases_asociativas_contenidas>
+      </relaciones_contenidas>
+    </clasificadores_contenidos>
+  </packages_contenidos>
+</diagramaClasesCompleto:DiagramaClases>
