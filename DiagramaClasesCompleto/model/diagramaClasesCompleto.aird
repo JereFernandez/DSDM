@@ -4,7 +4,7 @@
     <semanticResources>diagramaClasesCompleto.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_WN_lEPCLEeqUW9KVUPtBCQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_WeQTofenEeqc24r4kbW6YA" name="diagramaClasesCompleto class diagram" repPath="#_WeFUgPenEeqc24r4kbW6YA" changeId="e44444df-f93c-4718-b171-acb49a671d7e">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_WeQTofenEeqc24r4kbW6YA" name="diagramaClasesCompleto class diagram" repPath="#_WeFUgPenEeqc24r4kbW6YA" changeId="56332c13-c06e-446a-b8f5-ad8d68502fda">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="diagramaClasesCompleto.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -809,7 +809,7 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_W0IdAPenEeqc24r4kbW6YA" type="4001" element="_WzwplvenEeqc24r4kbW6YA" source="_Wz5McPenEeqc24r4kbW6YA" target="_Wz5zgPenEeqc24r4kbW6YA">
           <children xmi:type="notation:Node" xmi:id="_W0IdBPenEeqc24r4kbW6YA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W0IdBfenEeqc24r4kbW6YA" x="-21" y="-67"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W0IdBfenEeqc24r4kbW6YA" x="-27" y="-75"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_W0IdBvenEeqc24r4kbW6YA" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W0IdB_enEeqc24r4kbW6YA" x="-12" y="-10"/>
@@ -857,7 +857,7 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_W0LgVPenEeqc24r4kbW6YA" type="4001" element="_Wzx3vfenEeqc24r4kbW6YA" source="_Wz5zgPenEeqc24r4kbW6YA" target="_Wz5McPenEeqc24r4kbW6YA">
           <children xmi:type="notation:Node" xmi:id="_W0MHYPenEeqc24r4kbW6YA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W0MHYfenEeqc24r4kbW6YA" x="63" y="98"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W0MHYfenEeqc24r4kbW6YA" x="65" y="97"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_W0MHYvenEeqc24r4kbW6YA" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W0MHY_enEeqc24r4kbW6YA" x="36" y="10"/>

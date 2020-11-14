@@ -340,9 +340,6 @@ public class GenerateDiagramaClases extends AbstractAcceleoGenerator {
     @Override
     public void registerPackages(ResourceSet resourceSet) {
         super.registerPackages(resourceSet);
-        if (!isInWorkspace(diagramaClasesCompleto.DiagramaClasesCompletoPackage.class)) {
-            resourceSet.getPackageRegistry().put(diagramaClasesCompleto.DiagramaClasesCompletoPackage.eINSTANCE.getNsURI(), diagramaClasesCompleto.DiagramaClasesCompletoPackage.eINSTANCE);
-        }
         
         /*
          * If you want to change the content of this method, do NOT forget to change the "@generated"
