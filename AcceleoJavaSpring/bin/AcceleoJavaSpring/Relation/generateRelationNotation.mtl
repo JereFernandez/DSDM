@@ -44,3 +44,13 @@
 [template public generateBidirectionalDestinoOneToOne(i : Relacion)]
 	@OneToOne(mappedBy = "[i.nombre/]")
 [/template]
+
+
+[template public generateAssociativeClassOneToMany(i : Relacion)]
+	@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)
+[/template]
+
+[template public generateAssociativeClassManyToOne(i : Relacion)]
+	@ManyToOne()
+	@JoinColumn(name="fk_[i.destino.nombre/]")
+[/template]

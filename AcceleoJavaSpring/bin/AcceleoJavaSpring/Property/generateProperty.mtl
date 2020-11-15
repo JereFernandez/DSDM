@@ -4,7 +4,8 @@
 
 [template public generateProperty(c : Clase)]
 [for (a : Atributo | c.atributos_contenidos)]
-[if (not (a.pseudonimo -> isEmpty()))]
+[if (a.pseudonimo='' or a.pseudonimo=null)] 
+[else]
 @Column (name = "[a.pseudonimo/]")
 [/if]
 [if (a.esFinal)]

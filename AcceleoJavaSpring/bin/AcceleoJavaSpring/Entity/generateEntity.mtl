@@ -6,11 +6,12 @@
 [import AcceleoJavaSpring::Relation::generateImplementation/]
 [import AcceleoJavaSpring::Relation::generateExtension/]
 [import AcceleoJavaSpring::controllers::generateEntityController /]
+[import AcceleoJavaSpring::Relation::generateRelationNotation /]
 
 
-[template public generateEntity(c : Clase, art: Artefacto, p : Package)]
+[template public generateEntity(c : Clase, art: Artefacto, p : Package, r : Relacion)]
 [file ('src/main/java/'+art.grupoId+'.'+art.artefactotId+'/entities/'+p.nombre+'/'+c.nombre+'.java', false, 'UTF-8')]
-package [art.grupoId/].[art.artefactotId/].entities;
+package [art.grupoId/].[art.artefactotId/].entities.[p.nombre/];
 
 [if (not (c.relaciones_contenidas->isEmpty()))]
 import javax.persistence.JoinColumn;
@@ -47,6 +48,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+[for (relacion_otro_package : Relacion | c.relaciones_contenidas)]
+[if (c.eContainer(Package).nombre <> relacion_otro_package.destino.eContainer(Package).nombre)]
+import [art.grupoId/].[art.artefactotId/].entities.[relacion_otro_package.destino.eContainer(Package).nombre/].[relacion_otro_package.destino.nombre/];
+[/if]
+[/for]
 
 @Entity
 @Table(name= "[c.nombre/]")
@@ -56,6 +62,11 @@ import lombok.NoArgsConstructor;
 @Builder
 [if (c.esAuditable)]@Audited[/if]
 public [if(c.esAbstracta)]abstract[/if] class [c.nombre/] [generateExtension(c)/] [generateImplementation(c)/] {
+
+	[if (r <> null and c.esAsociativa = true)]
+		[generateAssociativeClassManyToOne(r)/]
+		[r.visibilidad/][if (r.esFinal)] final [/if][if (r.esStatic)] static [/if] [r.destino.nombre/] [r.destino.nombre.toLower()/] = new [r.destino.nombre/]();
+	[/if]
 
 	[generateProperty(c)/]
 	[generateRelation(c, art, p)/]

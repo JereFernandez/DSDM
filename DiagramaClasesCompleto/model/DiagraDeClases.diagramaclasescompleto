@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto"
+xsi:schemaLocation="http://www.example.org/diagramaClasesCompleto diagramaClasesCompleto.ecore">
+  <packages_contenidos nombre="Administracion">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Tramite">
+      <atributos_contenidos nombre="NumeroTramite" visibilidad="private" esAuditable="true" pseudonimo=""/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.1" nombre="haciaEstado" origen="//@packages_contenidos.0/@clasificadores_contenidos.0">
+        <clases_asociativas_contenidas nombre="Tramite_Estado" esAsociativa="true">
+          <atributos_contenidos nombre="FechaCambioEstado" visibilidad="private" tipo="Date"/>
+        </clases_asociativas_contenidas>
+      </relaciones_contenidas>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.2" nombre="EsdeTipo" multiplicidad="manyToOne" origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+      <relaciones_contenidas destino="//@packages_contenidos.1/@clasificadores_contenidos.0" nombre="EsDe" multiplicidad="manyToOne" origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+      <relaciones_contenidas destino="//@packages_contenidos.1/@clasificadores_contenidos.1" nombre="EsParaUn" multiplicidad="manyToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Estado">
+      <atributos_contenidos nombre="NombreEstado" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="Activo" visibilidad="private" tipo="boolean" pseudonimo=""/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="TipoTramite">
+      <atributos_contenidos nombre="NombreTipoTramite" visibilidad="private" tipo="String" pseudonimo=""/>
+      <atributos_contenidos nombre="Activo" visibilidad="private" tipo="boolean" pseudonimo=""/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.1" nombre="TieneEstados" multiplicidad="manyToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.2"/>
+    </clasificadores_contenidos>
+  </packages_contenidos>
+  <packages_contenidos nombre="Persona">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Usuario" tieneABM="true">
+      <atributos_contenidos nombre="Nombre" visibilidad="private" tipo="String" pseudonimo="NombreUsuario"/>
+      <atributos_contenidos nombre="DNI" visibilidad="private" pseudonimo=""/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Jubilado" tieneABM="true">
+      <atributos_contenidos nombre="NombreJubilado" visibilidad="private" tipo="String" pseudonimo="JubiladoNombre"/>
+      <atributos_contenidos nombre="CUIT" visibilidad="private" pseudonimo="cuit"/>
+    </clasificadores_contenidos>
+  </packages_contenidos>
+  <artefacto_contenido nombre="Prueba" artefactotId="prueba" descripcion="Prueba Sirius"/>
+</diagramaClasesCompleto:DiagramaClases>

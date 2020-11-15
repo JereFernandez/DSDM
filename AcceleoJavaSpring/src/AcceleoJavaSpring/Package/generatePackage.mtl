@@ -23,7 +23,7 @@
 
 [for (p : Package | raiz.packages_contenidos)]
 [for (c : Clase | p.clasificadores_contenidos->filter(Clase))]
-[generateEntity(c, raiz.artefacto_contenido, p)/]
+[generateEntity(c, raiz.artefacto_contenido, p, null)/]
 [/for]
 [for (c : Clase | p.clasificadores_contenidos->filter(Clase))]
 [if (c.tieneABM)]
