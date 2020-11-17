@@ -30,7 +30,7 @@
           </source>
           <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".entities;&#xD;&#xA;&#xD;&#xA;import lombok.Getter;&#xD;&#xA;import lombok.NoArgsConstructor;&#xD;&#xA;import lombok.Setter;&#xD;&#xA;import lombok.AllArgsConstructor;&#xD;&#xA;&#xD;&#xA;import javax.persistence.GeneratedValue;&#xD;&#xA;import javax.persistence.GenerationType;&#xD;&#xA;import javax.persistence.Id;&#xD;&#xA;import javax.persistence.MappedSuperclass;&#xD;&#xA;import java.io.Serializable;&#xD;&#xA;&#xD;&#xA;@MappedSuperclass&#xD;&#xA;@Getter&#xD;&#xA;@Setter&#xD;&#xA;@NoArgsConstructor&#xD;&#xA;@AllArgsConstructor&#xD;&#xA;public class Base implements Serializable {&#xD;&#xA;&#xD;&#xA;&#x9;private static final long serialVersionUID = 1L;&#xD;&#xA;&#xD;&#xA;    @Id&#xD;&#xA;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#xD;&#xA;    private Long id;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".entities;&#xD;&#xA;&#xD;&#xA;import lombok.Getter;&#xD;&#xA;import lombok.NoArgsConstructor;&#xD;&#xA;import lombok.Setter;&#xD;&#xA;import lombok.AllArgsConstructor;&#xD;&#xA;&#xD;&#xA;import javax.persistence.GeneratedValue;&#xD;&#xA;import javax.persistence.GenerationType;&#xD;&#xA;import javax.persistence.Id;&#xD;&#xA;import javax.persistence.MappedSuperclass;&#xD;&#xA;import java.io.Serializable;&#xD;&#xA;&#xD;&#xA;@MappedSuperclass&#xD;&#xA;@Getter&#xD;&#xA;@Setter&#xD;&#xA;@NoArgsConstructor&#xD;&#xA;@AllArgsConstructor&#xD;&#xA;public class BaseEntity implements Serializable {&#xD;&#xA;&#xD;&#xA;&#x9;private static final long serialVersionUID = 1L;&#xD;&#xA;&#xD;&#xA;    @Id&#xD;&#xA;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#xD;&#xA;    private Long id;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
@@ -178,12 +178,12 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateBaseEntity">
       <details key="start" value="110"/>
-      <details key="end" value="1014"/>
+      <details key="end" value="1020"/>
       <details key="line" value="4"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateBaseEntity/%">
       <details key="start" value="170"/>
-      <details key="end" value="999"/>
+      <details key="end" value="1005"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateBaseEntity/%/%">
@@ -228,7 +228,7 @@
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generateBaseEntity/%/%.4">
       <details key="start" value="400"/>
-      <details key="end" value="992"/>
+      <details key="end" value="998"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generateBaseEntity/%/%.5">
@@ -302,8 +302,8 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/generateBaseEntity/%.1">
-      <details key="start" value="1001"/>
-      <details key="end" value="1003"/>
+      <details key="start" value="1007"/>
+      <details key="end" value="1009"/>
       <details key="line" value="34"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/generateBaseEntity/raiz">

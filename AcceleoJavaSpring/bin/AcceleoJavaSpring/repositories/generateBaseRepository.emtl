@@ -55,7 +55,7 @@
           </source>
           <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".entities.Base;&#xD;&#xA;import org.springframework.data.jpa.repository.JpaRepository;&#xD;&#xA;import org.springframework.data.repository.NoRepositoryBean;&#xD;&#xA;&#xD;&#xA;import java.io.Serializable;&#xD;&#xA;&#xD;&#xA;@NoRepositoryBean&#xD;&#xA;public interface BaseRepository&lt;E extends Base, ID extends Serializable> extends JpaRepository&lt;E,ID>{&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".entities.BaseEntity;&#xD;&#xA;import org.springframework.data.jpa.repository.JpaRepository;&#xD;&#xA;import org.springframework.data.repository.NoRepositoryBean;&#xD;&#xA;&#xD;&#xA;import java.io.Serializable;&#xD;&#xA;&#xD;&#xA;@NoRepositoryBean&#xD;&#xA;public interface BaseRepository&lt;E extends BaseEntity, ID extends Serializable> extends JpaRepository&lt;E,ID>{&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
@@ -208,7 +208,7 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateBaseRepository">
       <details key="start" value="116"/>
-      <details key="end" value="847"/>
+      <details key="end" value="859"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateBaseRepository/%">
@@ -218,7 +218,7 @@
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateBaseRepository/%.1">
       <details key="start" value="183"/>
-      <details key="end" value="834"/>
+      <details key="end" value="846"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateBaseRepository/%.1/%">
@@ -303,7 +303,7 @@
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/generateBaseRepository/%.1/%.8">
       <details key="start" value="522"/>
-      <details key="end" value="827"/>
+      <details key="end" value="839"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generateBaseRepository/%.1/%.9">
