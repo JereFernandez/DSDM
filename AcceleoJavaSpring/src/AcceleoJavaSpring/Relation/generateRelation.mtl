@@ -92,6 +92,7 @@
 	[/if]
 [/if]
 
+
 [for ( c : Clase | relacion.clases_asociativas_contenidas)]
 	[if (isClassAssociative(c))]
 		[generateAssociativeClassOneToMany(relacion)/]

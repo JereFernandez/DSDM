@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/[c.nombre.toLowerFirst()/]s")
+@RequestMapping(path = "api/v1/[c.nombre.toLowerFirst()/]")
 public class [c.nombre/]Controller extends BaseControllerImpl<[c.nombre/], [c.nombre/]ServiceImpl>{
 
 }

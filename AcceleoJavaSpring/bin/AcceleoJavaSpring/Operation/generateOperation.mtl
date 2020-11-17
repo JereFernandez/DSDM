@@ -3,6 +3,7 @@
 
 [import AcceleoJavaSpring::Entity::generateParameters /]
 
+
 [template public generateOperation(c : Clasificador)]
 [if (c.oclIsTypeOf(Clase))]
 [for (o : Operacion | c.operaciones_contenidas)]

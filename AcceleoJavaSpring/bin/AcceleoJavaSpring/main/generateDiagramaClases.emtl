@@ -8,13 +8,11 @@
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateBaseRepository.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateRepositories.emtl#/0"/>
-    <imports href="../Entity/generateBaseEntity.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateBaseEntity.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateBaseService.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateServices.emtl#/0"/>
-    <imports href="../controllers/generateBaseController.emtl#/0"/>
-    <imports href="../Entity/generateInterface.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Configurations/generatePom.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Configurations/generateAplicationProperties.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/controllers/generateBaseController.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateInterface.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateDiagrama" visibility="Public" main="true">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
@@ -146,44 +144,44 @@
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateDiagrama">
-      <details key="start" value="797"/>
-      <details key="end" value="943"/>
-      <details key="line" value="16"/>
+      <details key="start" value="662"/>
+      <details key="end" value="808"/>
+      <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateDiagrama/%">
-      <details key="start" value="875"/>
-      <details key="end" value="898"/>
+      <details key="start" value="740"/>
+      <details key="end" value="763"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateDiagrama/%/raiz">
-      <details key="start" value="893"/>
-      <details key="end" value="897"/>
+      <details key="start" value="758"/>
+      <details key="end" value="762"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateDiagrama/%.1">
-      <details key="start" value="900"/>
-      <details key="end" value="902"/>
-      <details key="line" value="19"/>
+      <details key="start" value="765"/>
+      <details key="end" value="767"/>
+      <details key="line" value="17"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateDiagrama/%.2">
-      <details key="start" value="903"/>
-      <details key="end" value="924"/>
+      <details key="start" value="768"/>
+      <details key="end" value="789"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateDiagrama/%.2/raiz">
-      <details key="start" value="919"/>
-      <details key="end" value="923"/>
+      <details key="start" value="784"/>
+      <details key="end" value="788"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateDiagrama/%.3">
-      <details key="start" value="926"/>
-      <details key="end" value="930"/>
-      <details key="line" value="20"/>
+      <details key="start" value="791"/>
+      <details key="end" value="795"/>
+      <details key="line" value="18"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generateDiagrama/raiz">
-      <details key="start" value="831"/>
-      <details key="end" value="852"/>
-      <details key="line" value="16"/>
+      <details key="start" value="696"/>
+      <details key="end" value="717"/>
+      <details key="line" value="14"/>
     </eAnnotations>
   </ecore:EAnnotation>
 </xmi:XMI>

@@ -40,7 +40,7 @@
               <beginLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </beginLabelStyleDescription>
-              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="[nombre/]">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM/]">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
               <endLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
@@ -54,7 +54,7 @@
               <beginLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </beginLabelStyleDescription>
-              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="[nombre/]">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM/]">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
               <endLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
@@ -68,7 +68,7 @@
               <beginLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </beginLabelStyleDescription>
-              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="[nombre/]">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM/]">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
               <endLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
@@ -82,7 +82,7 @@
               <beginLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </beginLabelStyleDescription>
-              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="[nombre/]">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="[nombre+'\n'+'vista: '+ tipoABM/]">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
               <endLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
@@ -93,7 +93,7 @@
           <conditionnalStyles predicateExpression="[tipo=TipoRelacion::dependenciaUso/]">
             <style lineStyle="dash" sizeComputationExpression="2">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <centerLabelStyleDescription labelSize="12" labelExpression="&lt;&lt;Uso>>">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;Uso>>">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
             </style>
@@ -101,7 +101,7 @@
           <conditionnalStyles predicateExpression="[tipo=TipoRelacion::dependenciaCreacion/]">
             <style lineStyle="dash" sizeComputationExpression="2">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <centerLabelStyleDescription labelSize="12" labelExpression="&lt;&lt;Creacion>>">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;Creacion>>">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
             </style>

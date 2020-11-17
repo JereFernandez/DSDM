@@ -54,6 +54,10 @@ import [art.grupoId/].[art.artefactotId/].entities.[relacion_otro_package.destin
 [/if]
 [/for]
 
+import [art.grupoId/].[art.artefactotId/].entities.BaseEntity;
+import java.util.Date;
+import org.hibernate.envers.NotAudited;
+
 @Entity
 @Table(name= "[c.nombre/]")
 @Data

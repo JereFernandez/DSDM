@@ -10,8 +10,10 @@
 [import AcceleoJavaSpring::services::generateServices /]
 [import AcceleoJavaSpring::controllers::generateBaseController /]
 [import AcceleoJavaSpring::Entity::generateInterface /]
-[import AcceleoJavaSpring::Configurations::generatePom /]
-[import AcceleoJavaSpring::Configurations::generateAplicationProperties /]
+[import AcceleoJavaSpring::Pom::generatePom /]
+[import AcceleoJavaSpring::ApplicationProperties::generateAplicationProperties /]
+[import AcceleoJavaSpring::Auditoria::generateCustomRevisionListener /]
+[import AcceleoJavaSpring::Auditoria::generateRevisionClass /]
 
 [template public generatePackage(raiz : DiagramaClases)]
 [generateBaseEntity(raiz)/]
@@ -20,6 +22,11 @@
 [generateBaseService(raiz)/]
 [generateServices(raiz)/]
 [generateBaseController(raiz)/]
+[generateAplicationProperties(raiz)/]
+[generatePom(raiz)/]
+[generateCustomRevisionListener(raiz.artefacto_contenido)/]
+[generateRevisionClass(raiz.artefacto_contenido)/]
+
 
 [for (p : Package | raiz.packages_contenidos)]
 [for (c : Clase | p.clasificadores_contenidos->filter(Clase))]

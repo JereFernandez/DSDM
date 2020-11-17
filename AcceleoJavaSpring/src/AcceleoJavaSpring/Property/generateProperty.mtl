@@ -8,6 +8,9 @@
 [else]
 @Column (name = "[a.pseudonimo/]")
 [/if]
+[if (a.esAuditable = false)]
+@NotAudited
+[/if]
 [if (a.esFinal)]
 	[a.visibilidad/][if (a.esStatic)] static[/if] final [a.tipo/] [a.nombre/]=
 	[if (a.tipo.toString()='int')]0;

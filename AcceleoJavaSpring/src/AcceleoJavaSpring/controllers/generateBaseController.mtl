@@ -7,7 +7,7 @@
 [file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/controllers/BaseController.java', false, 'UTF-8')]
 package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].controllers;
 
-import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.Base;
+import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.BaseEntity;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,10 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.io.Serializable;
 
-public interface BaseController<E extends Base, ID extends Serializable> {
+public interface BaseController<E extends BaseEntity, ID extends Serializable> {
 
     public ResponseEntity<?> getAll();
-    public ResponseEntity<?> getAll(Pageable pageable);
     public ResponseEntity<?> getOne(@PathVariable ID id);
     public ResponseEntity<?> save(@RequestBody E entity );
     public ResponseEntity<?> update(@PathVariable ID id, @RequestBody E entity );
@@ -31,20 +30,39 @@ public interface BaseController<E extends Base, ID extends Serializable> {
 [file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/controllers/BaseControllerImpl.java', false, 'UTF-8')]
 package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].controllers;
 
-import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.Base;
+import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.BaseEntity;
 import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].services.BaseServiceImpl;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.Serializable;
 
-public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceImpl<E,Long>> implements BaseController<E,Long>{
+public abstract class BaseControllerImpl<E extends BaseEntity, S extends BaseServiceImpl<E,Long>> implements BaseController<E,Long>{
 
     @Autowired
     public S service;
 
+	@Operation(summary = "Este metodo devuelve una lista de objetos")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200",
+            description = "trae una lista de objetos del Controller correspondiente",
+            content = {@Content}),
+            @ApiResponse(responseCode = "404",
+            description = "el controlador no se encuentra, o no es posible comunicarse con la base de datos",
+            content = @Content)
+
+    })
     @GetMapping("")
     public ResponseEntity<?> getAll() {
         try{
@@ -53,16 +71,17 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error\"}");
         }
     }
+	
+	@Operation(summary = "Este metodo devuelve un objeto", parameters = @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")))
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200",
+                    description = "trae un objeto del Controller correspondiente",
+                    content = {@Content(mediaType = "application/json")}),
+            @ApiResponse(responseCode = "404",
+                    description = "el controlador no se encuentra, o no es posible comunicarse con la base de datos",
+                    content = @Content)
 
-    @GetMapping("/paged")
-    public ResponseEntity<?> getAll(Pageable pageable){
-        try{
-            return ResponseEntity.status(HttpStatus.OK).body(service.findAll(pageable));
-        }catch (Exception e){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error\"}");
-        }
-    }
-
+    })
     @GetMapping("/{id}")
     public ResponseEntity<?> getOne(@PathVariable Long id) {
         try{
@@ -72,6 +91,16 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
         }
     }
 
+	@Operation(summary = "Este metodo guarda un objeto en la base de datos", parameters = @Parameter(name = "entity", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Object")))
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200",
+                    description = "guarda un objeto en la base de datos",
+                    content = {@Content(mediaType = "application/json")}),
+            @ApiResponse(responseCode = "404",
+                    description = "el controlador no se encuentra, o no es posible comunicarse con la base de datos",
+                    content = @Content)
+
+    })
     @PostMapping("")
     public ResponseEntity<?> save(@RequestBody E entity) {
         try{
@@ -82,6 +111,16 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
 
     }
 
+	@Operation(summary = "Este metodo recibe un id y actualiza el objeto asociado", parameters = @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")))
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200",
+                    description = "actualiza un objeto en la base de datos",
+                    content = {@Content(mediaType = "application/json")}),
+            @ApiResponse(responseCode = "404",
+                    description = "el controlador no se encuentra, o no es posible comunicarse con la base de datos",
+                    content = @Content)
+
+    })
     @PutMapping("/{id}")
     public ResponseEntity<?> update(@PathVariable Long id,@RequestBody E entity) {
         try{
@@ -91,6 +130,16 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
         }
     }
 
+	@Operation(summary = "Este metodo recibe un id y elimina el objeto asociado", parameters = @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")))
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204",
+                    description = "elimina un objeto en la base de datos",
+                    content = {@Content(mediaType = "application/json")}),
+            @ApiResponse(responseCode = "404",
+                    description = "el controlador no se encuentra, o no es posible comunicarse con la base de datos",
+                    content = @Content)
+
+    })
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable Long id) {
         try{

@@ -4,7 +4,7 @@
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateParameters.emtl#/0"/>
+    <imports href="../Entity/generateParameters.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateOverloadConstructor" visibility="Public">
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;public "/>
       <body xsi:type="ocl.ecore:PropertyCallExp">
@@ -17,7 +17,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" ("/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateParameters.emtl#/0/generateParameters"/>
+        <definition href="../Entity/generateParameters.emtl#/0/generateParameters"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateOverloadConstructor/c">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
         </argument>
@@ -114,7 +114,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateParameters.emtl#/0/generateParameters"/>
+          <references href="../Entity/generateParameters.emtl#/0/generateParameters"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="c">
