@@ -304,13 +304,31 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 	int CLASE__TIENE_ABM = CLASIFICADOR_FEATURE_COUNT + 5;
 
 	/**
+	 * The feature id for the '<em><b>Es Super Clase</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASE__ES_SUPER_CLASE = CLASIFICADOR_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Estrategia Herencia</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASE__ESTRATEGIA_HERENCIA = CLASIFICADOR_FEATURE_COUNT + 7;
+
+	/**
 	 * The number of structural features of the '<em>Clase</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASE_FEATURE_COUNT = CLASIFICADOR_FEATURE_COUNT + 6;
+	int CLASE_FEATURE_COUNT = CLASIFICADOR_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of operations of the '<em>Clase</em>' class.
@@ -1456,6 +1474,16 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 	int TIPO_ABM = 29;
 
 	/**
+	 * The meta object id for the '{@link diagramaClasesCompleto.TipoEstrategiasHerencia <em>Tipo Estrategias Herencia</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see diagramaClasesCompleto.TipoEstrategiasHerencia
+	 * @see diagramaClasesCompleto.impl.DiagramaClasesCompletoPackageImpl#getTipoEstrategiasHerencia()
+	 * @generated
+	 */
+	int TIPO_ESTRATEGIAS_HERENCIA = 30;
+
+	/**
 	 * Returns the meta object for class '{@link diagramaClasesCompleto.DiagramaClases <em>Diagrama Clases</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1660,6 +1688,28 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getClase_TieneABM();
+
+	/**
+	 * Returns the meta object for the attribute '{@link diagramaClasesCompleto.Clase#isEsSuperClase <em>Es Super Clase</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Es Super Clase</em>'.
+	 * @see diagramaClasesCompleto.Clase#isEsSuperClase()
+	 * @see #getClase()
+	 * @generated
+	 */
+	EAttribute getClase_EsSuperClase();
+
+	/**
+	 * Returns the meta object for the attribute '{@link diagramaClasesCompleto.Clase#getEstrategiaHerencia <em>Estrategia Herencia</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Estrategia Herencia</em>'.
+	 * @see diagramaClasesCompleto.Clase#getEstrategiaHerencia()
+	 * @see #getClase()
+	 * @generated
+	 */
+	EAttribute getClase_EstrategiaHerencia();
 
 	/**
 	 * Returns the meta object for class '{@link diagramaClasesCompleto.Interface <em>Interface</em>}'.
@@ -2526,6 +2576,16 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 	EEnum getTipoABM();
 
 	/**
+	 * Returns the meta object for enum '{@link diagramaClasesCompleto.TipoEstrategiasHerencia <em>Tipo Estrategias Herencia</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Tipo Estrategias Herencia</em>'.
+	 * @see diagramaClasesCompleto.TipoEstrategiasHerencia
+	 * @generated
+	 */
+	EEnum getTipoEstrategiasHerencia();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2706,6 +2766,22 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CLASE__TIENE_ABM = eINSTANCE.getClase_TieneABM();
+
+		/**
+		 * The meta object literal for the '<em><b>Es Super Clase</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLASE__ES_SUPER_CLASE = eINSTANCE.getClase_EsSuperClase();
+
+		/**
+		 * The meta object literal for the '<em><b>Estrategia Herencia</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLASE__ESTRATEGIA_HERENCIA = eINSTANCE.getClase_EstrategiaHerencia();
 
 		/**
 		 * The meta object literal for the '{@link diagramaClasesCompleto.impl.InterfaceImpl <em>Interface</em>}' class.
@@ -3409,6 +3485,16 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum TIPO_ABM = eINSTANCE.getTipoABM();
+
+		/**
+		 * The meta object literal for the '{@link diagramaClasesCompleto.TipoEstrategiasHerencia <em>Tipo Estrategias Herencia</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see diagramaClasesCompleto.TipoEstrategiasHerencia
+		 * @see diagramaClasesCompleto.impl.DiagramaClasesCompletoPackageImpl#getTipoEstrategiasHerencia()
+		 * @generated
+		 */
+		EEnum TIPO_ESTRATEGIAS_HERENCIA = eINSTANCE.getTipoEstrategiasHerencia();
 
 	}
 

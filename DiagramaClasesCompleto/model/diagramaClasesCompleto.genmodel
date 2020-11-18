@@ -94,6 +94,11 @@
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroComboDetalleCombo"/>
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/sinRepresentacion"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoEstrategiasHerencia">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoEstrategiasHerencia/JOINED"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoEstrategiasHerencia/SINGLE_TABLE"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoEstrategiasHerencia/TABLE_PER_CLASS"/>
+    </genEnums>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//DiagramaClases">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/packages_contenidos"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/artefacto_contenido"/>
@@ -115,6 +120,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/esAsociativa"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/esAuditable"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/tieneABM"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/esSuperClase"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/EstrategiaHerencia"/>
     </genClasses>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Interface"/>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Relacion">

@@ -6,6 +6,7 @@ import diagramaClasesCompleto.Clase;
 import diagramaClasesCompleto.DiagramaClasesCompletoPackage;
 import diagramaClasesCompleto.Realizacion;
 import diagramaClasesCompleto.Relacion;
+import diagramaClasesCompleto.TipoEstrategiasHerencia;
 
 import java.util.Collection;
 
@@ -36,6 +37,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link diagramaClasesCompleto.impl.ClaseImpl#isEsAsociativa <em>Es Asociativa</em>}</li>
  *   <li>{@link diagramaClasesCompleto.impl.ClaseImpl#isEsAuditable <em>Es Auditable</em>}</li>
  *   <li>{@link diagramaClasesCompleto.impl.ClaseImpl#isTieneABM <em>Tiene ABM</em>}</li>
+ *   <li>{@link diagramaClasesCompleto.impl.ClaseImpl#isEsSuperClase <em>Es Super Clase</em>}</li>
+ *   <li>{@link diagramaClasesCompleto.impl.ClaseImpl#getEstrategiaHerencia <em>Estrategia Herencia</em>}</li>
  * </ul>
  *
  * @generated
@@ -140,6 +143,46 @@ public class ClaseImpl extends ClasificadorImpl implements Clase {
 	 * @ordered
 	 */
 	protected boolean tieneABM = TIENE_ABM_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isEsSuperClase() <em>Es Super Clase</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isEsSuperClase()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean ES_SUPER_CLASE_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isEsSuperClase() <em>Es Super Clase</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isEsSuperClase()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean esSuperClase = ES_SUPER_CLASE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getEstrategiaHerencia() <em>Estrategia Herencia</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEstrategiaHerencia()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final TipoEstrategiasHerencia ESTRATEGIA_HERENCIA_EDEFAULT = TipoEstrategiasHerencia.JOINED;
+
+	/**
+	 * The cached value of the '{@link #getEstrategiaHerencia() <em>Estrategia Herencia</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEstrategiaHerencia()
+	 * @generated
+	 * @ordered
+	 */
+	protected TipoEstrategiasHerencia estrategiaHerencia = ESTRATEGIA_HERENCIA_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -290,6 +333,55 @@ public class ClaseImpl extends ClasificadorImpl implements Clase {
 	 * @generated
 	 */
 	@Override
+	public boolean isEsSuperClase() {
+		return esSuperClase;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEsSuperClase(boolean newEsSuperClase) {
+		boolean oldEsSuperClase = esSuperClase;
+		esSuperClase = newEsSuperClase;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DiagramaClasesCompletoPackage.CLASE__ES_SUPER_CLASE,
+					oldEsSuperClase, esSuperClase));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TipoEstrategiasHerencia getEstrategiaHerencia() {
+		return estrategiaHerencia;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEstrategiaHerencia(TipoEstrategiasHerencia newEstrategiaHerencia) {
+		TipoEstrategiasHerencia oldEstrategiaHerencia = estrategiaHerencia;
+		estrategiaHerencia = newEstrategiaHerencia == null ? ESTRATEGIA_HERENCIA_EDEFAULT : newEstrategiaHerencia;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					DiagramaClasesCompletoPackage.CLASE__ESTRATEGIA_HERENCIA, oldEstrategiaHerencia,
+					estrategiaHerencia));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case DiagramaClasesCompletoPackage.CLASE__RELACIONES_CONTENIDAS:
@@ -320,6 +412,10 @@ public class ClaseImpl extends ClasificadorImpl implements Clase {
 			return isEsAuditable();
 		case DiagramaClasesCompletoPackage.CLASE__TIENE_ABM:
 			return isTieneABM();
+		case DiagramaClasesCompletoPackage.CLASE__ES_SUPER_CLASE:
+			return isEsSuperClase();
+		case DiagramaClasesCompletoPackage.CLASE__ESTRATEGIA_HERENCIA:
+			return getEstrategiaHerencia();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -353,6 +449,12 @@ public class ClaseImpl extends ClasificadorImpl implements Clase {
 		case DiagramaClasesCompletoPackage.CLASE__TIENE_ABM:
 			setTieneABM((Boolean) newValue);
 			return;
+		case DiagramaClasesCompletoPackage.CLASE__ES_SUPER_CLASE:
+			setEsSuperClase((Boolean) newValue);
+			return;
+		case DiagramaClasesCompletoPackage.CLASE__ESTRATEGIA_HERENCIA:
+			setEstrategiaHerencia((TipoEstrategiasHerencia) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -383,6 +485,12 @@ public class ClaseImpl extends ClasificadorImpl implements Clase {
 		case DiagramaClasesCompletoPackage.CLASE__TIENE_ABM:
 			setTieneABM(TIENE_ABM_EDEFAULT);
 			return;
+		case DiagramaClasesCompletoPackage.CLASE__ES_SUPER_CLASE:
+			setEsSuperClase(ES_SUPER_CLASE_EDEFAULT);
+			return;
+		case DiagramaClasesCompletoPackage.CLASE__ESTRATEGIA_HERENCIA:
+			setEstrategiaHerencia(ESTRATEGIA_HERENCIA_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -407,6 +515,10 @@ public class ClaseImpl extends ClasificadorImpl implements Clase {
 			return esAuditable != ES_AUDITABLE_EDEFAULT;
 		case DiagramaClasesCompletoPackage.CLASE__TIENE_ABM:
 			return tieneABM != TIENE_ABM_EDEFAULT;
+		case DiagramaClasesCompletoPackage.CLASE__ES_SUPER_CLASE:
+			return esSuperClase != ES_SUPER_CLASE_EDEFAULT;
+		case DiagramaClasesCompletoPackage.CLASE__ESTRATEGIA_HERENCIA:
+			return estrategiaHerencia != ESTRATEGIA_HERENCIA_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -430,6 +542,10 @@ public class ClaseImpl extends ClasificadorImpl implements Clase {
 		result.append(esAuditable);
 		result.append(", tieneABM: ");
 		result.append(tieneABM);
+		result.append(", esSuperClase: ");
+		result.append(esSuperClase);
+		result.append(", EstrategiaHerencia: ");
+		result.append(estrategiaHerencia);
 		result.append(')');
 		return result.toString();
 	}

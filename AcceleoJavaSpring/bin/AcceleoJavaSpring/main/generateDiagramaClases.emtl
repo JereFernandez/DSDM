@@ -7,7 +7,7 @@
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Package/generatePackage.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateBaseRepository.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateRepositories.emtl#/0"/>
+    <imports href="../repositories/generateRepositories.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateBaseEntity.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateBaseService.emtl#/0"/>
     <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateServices.emtl#/0"/>
@@ -113,6 +113,11 @@
     <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_DiagramaClases_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_Clase_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
       </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_Interface_Class">

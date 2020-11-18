@@ -95,11 +95,8 @@
 
 [for ( c : Clase | relacion.clases_asociativas_contenidas)]
 	[if (isClassAssociative(c))]
-		[generateAssociativeClassOneToMany(relacion)/]
-		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.clases_asociativas_contenidas.nombre/]> ['CA_'+relacion.clases_asociativas_contenidas.nombre.toLower()/] = new ArrayList<[relacion.clases_asociativas_contenidas.nombre/]>();
 		[generateEntity(c, art, p, relacion)/]
 	[/if]
 [/for]
 [/for]
-
 [/template]

@@ -214,28 +214,18 @@
         <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
       </parameter>
     </ownedModuleElement>
-    <ownedModuleElement xsi:type="mtl:Template" name="generateAssociativeClassOneToMany" visibility="Public">
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)"/>
-      <parameter name="i">
-        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
-      </parameter>
-    </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateAssociativeClassManyToOne" visibility="Public">
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;@ManyToOne()&#xD;&#xA;&#x9;@JoinColumn(name=&quot;fk_"/>
       <body xsi:type="ocl.ecore:PropertyCallExp">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <source xsi:type="ocl.ecore:PropertyCallExp">
+        <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateAssociativeClassManyToOne/c">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
-          <source xsi:type="ocl.ecore:VariableExp" name="i" referredVariable="/0/generateAssociativeClassManyToOne/i">
-            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
-          </source>
-          <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//Relacion/destino"/>
         </source>
         <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)"/>
-      <parameter name="i">
-        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
+      <parameter name="c">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
       </parameter>
     </ownedModuleElement>
   </mtl:Module>
@@ -349,24 +339,14 @@
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
         </eParameters>
       </eOperations>
-      <eOperations name="generateAssociativeClassOneToMany">
-        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-          <contents xsi:type="ocl.ecore:Constraint"/>
-        </eAnnotations>
-        <eAnnotations source="MTL" references="/0/generateAssociativeClassOneToMany"/>
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="i">
-          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
-        </eParameters>
-      </eOperations>
       <eOperations name="generateAssociativeClassManyToOne">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL" references="/0/generateAssociativeClassManyToOne"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="i">
-          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
+        <eParameters name="c">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
         </eParameters>
       </eOperations>
     </eClassifiers>
@@ -393,6 +373,11 @@
     <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_Relacion_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_Clasificador_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
       </eAnnotations>
     </eClassifiers>
   </ecore:EPackage>
@@ -550,28 +535,16 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Relacion"/>
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -977,55 +950,35 @@
       <details key="end" value="1763"/>
       <details key="line" value="44"/>
     </eAnnotations>
-    <eAnnotations source="positions.80" references="/0/generateAssociativeClassOneToMany">
+    <eAnnotations source="positions.80" references="/0/generateAssociativeClassManyToOne">
       <details key="start" value="1822"/>
-      <details key="end" value="1958"/>
+      <details key="end" value="1956"/>
       <details key="line" value="49"/>
     </eAnnotations>
-    <eAnnotations source="positions.81" references="/0/generateAssociativeClassOneToMany/%">
-      <details key="start" value="1889"/>
-      <details key="end" value="1945"/>
+    <eAnnotations source="positions.81" references="/0/generateAssociativeClassManyToOne/%">
+      <details key="start" value="1893"/>
+      <details key="end" value="1930"/>
       <details key="line" value="50"/>
     </eAnnotations>
-    <eAnnotations source="positions.82" references="/0/generateAssociativeClassOneToMany/i">
+    <eAnnotations source="positions.82" references="/0/generateAssociativeClassManyToOne/%.1">
+      <details key="start" value="1931"/>
+      <details key="end" value="1939"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/generateAssociativeClassManyToOne/%.1/c">
+      <details key="start" value="1931"/>
+      <details key="end" value="1932"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/generateAssociativeClassManyToOne/%.2">
+      <details key="start" value="1941"/>
+      <details key="end" value="1943"/>
+      <details key="line" value="51"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/generateAssociativeClassManyToOne/c">
       <details key="start" value="1873"/>
-      <details key="end" value="1885"/>
+      <details key="end" value="1889"/>
       <details key="line" value="49"/>
-    </eAnnotations>
-    <eAnnotations source="positions.83" references="/0/generateAssociativeClassManyToOne">
-      <details key="start" value="1962"/>
-      <details key="end" value="2100"/>
-      <details key="line" value="53"/>
-    </eAnnotations>
-    <eAnnotations source="positions.84" references="/0/generateAssociativeClassManyToOne/%">
-      <details key="start" value="2029"/>
-      <details key="end" value="2066"/>
-      <details key="line" value="54"/>
-    </eAnnotations>
-    <eAnnotations source="positions.85" references="/0/generateAssociativeClassManyToOne/%.1">
-      <details key="start" value="2067"/>
-      <details key="end" value="2083"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.86" references="/0/generateAssociativeClassManyToOne/%.1/%">
-      <details key="start" value="2067"/>
-      <details key="end" value="2076"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.87" references="/0/generateAssociativeClassManyToOne/%.1/%/i">
-      <details key="start" value="2067"/>
-      <details key="end" value="2068"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.88" references="/0/generateAssociativeClassManyToOne/%.2">
-      <details key="start" value="2085"/>
-      <details key="end" value="2087"/>
-      <details key="line" value="55"/>
-    </eAnnotations>
-    <eAnnotations source="positions.89" references="/0/generateAssociativeClassManyToOne/i">
-      <details key="start" value="2013"/>
-      <details key="end" value="2025"/>
-      <details key="line" value="53"/>
     </eAnnotations>
   </ecore:EAnnotation>
 </xmi:XMI>
