@@ -34,6 +34,9 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="esAsociativa" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="esAuditable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tieneABM" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="esSuperClase" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="EstrategiaHerencia" eType="#//TipoEstrategiasHerencia"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Interface" eSuperTypes="#//Clasificador"/>
   <eClassifiers xsi:type="ecore:EClass" name="Relacion">
@@ -223,5 +226,10 @@
     <eLiterals name="maestroDetalleCombo" value="4"/>
     <eLiterals name="maestroComboDetalleCombo" value="5"/>
     <eLiterals name="sinRepresentacion" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TipoEstrategiasHerencia">
+    <eLiterals name="JOINED"/>
+    <eLiterals name="SINGLE_TABLE" value="1"/>
+    <eLiterals name="TABLE_PER_CLASS" value="2"/>
   </eClassifiers>
 </ecore:EPackage>

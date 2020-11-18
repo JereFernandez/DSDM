@@ -19,6 +19,8 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link diagramaClasesCompleto.Clase#isEsAsociativa <em>Es Asociativa</em>}</li>
  *   <li>{@link diagramaClasesCompleto.Clase#isEsAuditable <em>Es Auditable</em>}</li>
  *   <li>{@link diagramaClasesCompleto.Clase#isTieneABM <em>Tiene ABM</em>}</li>
+ *   <li>{@link diagramaClasesCompleto.Clase#isEsSuperClase <em>Es Super Clase</em>}</li>
+ *   <li>{@link diagramaClasesCompleto.Clase#getEstrategiaHerencia <em>Estrategia Herencia</em>}</li>
  * </ul>
  *
  * @see diagramaClasesCompleto.DiagramaClasesCompletoPackage#getClase()
@@ -137,5 +139,53 @@ public interface Clase extends Clasificador {
 	 * @generated
 	 */
 	void setTieneABM(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Es Super Clase</b></em>' attribute.
+	 * The default value is <code>"false"</code>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Es Super Clase</em>' attribute.
+	 * @see #setEsSuperClase(boolean)
+	 * @see diagramaClasesCompleto.DiagramaClasesCompletoPackage#getClase_EsSuperClase()
+	 * @model default="false"
+	 * @generated
+	 */
+	boolean isEsSuperClase();
+
+	/**
+	 * Sets the value of the '{@link diagramaClasesCompleto.Clase#isEsSuperClase <em>Es Super Clase</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Es Super Clase</em>' attribute.
+	 * @see #isEsSuperClase()
+	 * @generated
+	 */
+	void setEsSuperClase(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Estrategia Herencia</b></em>' attribute.
+	 * The literals are from the enumeration {@link diagramaClasesCompleto.TipoEstrategiasHerencia}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Estrategia Herencia</em>' attribute.
+	 * @see diagramaClasesCompleto.TipoEstrategiasHerencia
+	 * @see #setEstrategiaHerencia(TipoEstrategiasHerencia)
+	 * @see diagramaClasesCompleto.DiagramaClasesCompletoPackage#getClase_EstrategiaHerencia()
+	 * @model
+	 * @generated
+	 */
+	TipoEstrategiasHerencia getEstrategiaHerencia();
+
+	/**
+	 * Sets the value of the '{@link diagramaClasesCompleto.Clase#getEstrategiaHerencia <em>Estrategia Herencia</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Estrategia Herencia</em>' attribute.
+	 * @see diagramaClasesCompleto.TipoEstrategiasHerencia
+	 * @see #getEstrategiaHerencia()
+	 * @generated
+	 */
+	void setEstrategiaHerencia(TipoEstrategiasHerencia value);
 
 } // Clase

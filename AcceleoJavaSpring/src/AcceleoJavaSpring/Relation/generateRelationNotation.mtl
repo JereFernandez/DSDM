@@ -46,11 +46,7 @@
 [/template]
 
 
-[template public generateAssociativeClassOneToMany(i : Relacion)]
-	@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)
-[/template]
-
-[template public generateAssociativeClassManyToOne(i : Relacion)]
+[template public generateAssociativeClassManyToOne(c : Clasificador)]
 	@ManyToOne()
-	@JoinColumn(name="fk_[i.destino.nombre/]")
+	@JoinColumn(name="fk_[c.nombre/]")
 [/template]

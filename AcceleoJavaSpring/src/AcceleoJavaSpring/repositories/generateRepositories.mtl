@@ -2,27 +2,15 @@
 [module generateRepositories('http://www.example.org/diagramaClasesCompleto')]
 [import AcceleoJavaSpring::repositories::generateBaseRepository/]
 
-[template public generateRepositories(raiz : DiagramaClases)]
-
-
-[for (pack : Package | raiz.packages_contenidos)]
-	
-
-[for (clase : Clase | pack.clasificadores_contenidos->filter(Clase))]
-
-[if (clase.tieneABM)]
-
-[file ('src/main/java/'+raiz.artefacto_contenido.grupoId+'.'+raiz.artefacto_contenido.artefactotId+'/repositories/'+clase.nombre+'Repository.java', false, 'UTF-8')]
-package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].repositories;
-import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.[pack.nombre/].[clase.nombre/];
+[template public generateRepositories(c : Clase, art : Artefacto,p : Package)]
+[file ('src/main/java/'+art.grupoId+'.'+art.artefactotId+'/repositories/'+c.nombre+'Repository.java', false, 'UTF-8')]
+package [art.grupoId/].[art.artefactotId/].repositories;
+import [art.grupoId/].[art.artefactotId/].entities.[p.nombre/].[c.nombre/];
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface [clase.nombre/]Repository extends BaseRepository<[clase.nombre/], Long>{
+public interface [c.nombre/]Repository extends BaseRepository<[c.nombre/], Long>{
 
 }
 [/file]
-[/if]
-[/for]
-[/for]
 [/template]

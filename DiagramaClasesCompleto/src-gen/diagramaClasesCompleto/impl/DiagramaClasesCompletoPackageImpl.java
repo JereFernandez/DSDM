@@ -28,6 +28,7 @@ import diagramaClasesCompleto.RepresentacionGrafica;
 import diagramaClasesCompleto.Retornable;
 import diagramaClasesCompleto.TipoABM;
 import diagramaClasesCompleto.TipoDato;
+import diagramaClasesCompleto.TipoEstrategiasHerencia;
 import diagramaClasesCompleto.TipoReinicio;
 import diagramaClasesCompleto.TipoRelacion;
 import diagramaClasesCompleto.TipoRetorno;
@@ -258,6 +259,13 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 	 * @generated
 	 */
 	private EEnum tipoABMEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum tipoEstrategiasHerenciaEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -512,6 +520,26 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 	@Override
 	public EAttribute getClase_TieneABM() {
 		return (EAttribute) claseEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClase_EsSuperClase() {
+		return (EAttribute) claseEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClase_EstrategiaHerencia() {
+		return (EAttribute) claseEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -1330,6 +1358,16 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 	 * @generated
 	 */
 	@Override
+	public EEnum getTipoEstrategiasHerencia() {
+		return tipoEstrategiasHerenciaEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public DiagramaClasesCompletoFactory getDiagramaClasesCompletoFactory() {
 		return (DiagramaClasesCompletoFactory) getEFactoryInstance();
 	}
@@ -1375,6 +1413,8 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 		createEAttribute(claseEClass, CLASE__ES_ASOCIATIVA);
 		createEAttribute(claseEClass, CLASE__ES_AUDITABLE);
 		createEAttribute(claseEClass, CLASE__TIENE_ABM);
+		createEAttribute(claseEClass, CLASE__ES_SUPER_CLASE);
+		createEAttribute(claseEClass, CLASE__ESTRATEGIA_HERENCIA);
 
 		interfaceEClass = createEClass(INTERFACE);
 
@@ -1473,6 +1513,7 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 		lenguajeEEnum = createEEnum(LENGUAJE);
 		representacionGraficaEEnum = createEEnum(REPRESENTACION_GRAFICA);
 		tipoABMEEnum = createEEnum(TIPO_ABM);
+		tipoEstrategiasHerenciaEEnum = createEEnum(TIPO_ESTRATEGIAS_HERENCIA);
 	}
 
 	/**
@@ -1560,6 +1601,11 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getClase_TieneABM(), ecorePackage.getEBoolean(), "tieneABM", null, 0, 1, Clase.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClase_EsSuperClase(), ecorePackage.getEBoolean(), "esSuperClase", "false", 0, 1, Clase.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClase_EstrategiaHerencia(), this.getTipoEstrategiasHerencia(), "EstrategiaHerencia", null, 0,
+				1, Clase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
 
 		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -1838,6 +1884,11 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 		addEEnumLiteral(tipoABMEEnum, TipoABM.MAESTRO_DETALLE_COMBO);
 		addEEnumLiteral(tipoABMEEnum, TipoABM.MAESTRO_COMBO_DETALLE_COMBO);
 		addEEnumLiteral(tipoABMEEnum, TipoABM.SIN_REPRESENTACION);
+
+		initEEnum(tipoEstrategiasHerenciaEEnum, TipoEstrategiasHerencia.class, "TipoEstrategiasHerencia");
+		addEEnumLiteral(tipoEstrategiasHerenciaEEnum, TipoEstrategiasHerencia.JOINED);
+		addEEnumLiteral(tipoEstrategiasHerenciaEEnum, TipoEstrategiasHerencia.SINGLE_TABLE);
+		addEEnumLiteral(tipoEstrategiasHerenciaEEnum, TipoEstrategiasHerencia.TABLE_PER_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

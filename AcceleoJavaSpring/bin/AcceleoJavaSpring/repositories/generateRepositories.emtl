@@ -4,195 +4,137 @@
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
-    <imports href="generateBaseRepository.emtl#/0"/>
+    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateBaseRepository.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateRepositories" visibility="Public">
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&#xD;&#xA;"/>
-      <body xsi:type="mtl:ForBlock">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xD;&#xA;&#xD;&#xA;"/>
-        <body xsi:type="mtl:ForBlock">
-          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
-          <body xsi:type="mtl:IfBlock">
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
-            <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package "/>
-              <body xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <source xsi:type="ocl.ecore:PropertyCallExp">
-                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
-                  <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateRepositories/raiz">
-                    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-                  </source>
-                  <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
-                </source>
-                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
-              </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
-              <body xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <source xsi:type="ocl.ecore:PropertyCallExp">
-                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
-                  <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateRepositories/raiz">
-                    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-                  </source>
-                  <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
-                </source>
-                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
-              </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".repositories;&#xD;&#xA;import "/>
-              <body xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <source xsi:type="ocl.ecore:PropertyCallExp">
-                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
-                  <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateRepositories/raiz">
-                    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-                  </source>
-                  <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
-                </source>
-                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
-              </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
-              <body xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <source xsi:type="ocl.ecore:PropertyCallExp">
-                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
-                  <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateRepositories/raiz">
-                    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-                  </source>
-                  <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
-                </source>
-                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
-              </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".entities."/>
-              <body xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <source xsi:type="ocl.ecore:VariableExp" name="pack" referredVariable="/0/generateRepositories/%.1/pack">
-                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
-                </source>
-                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Package/nombre"/>
-              </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
-              <body xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <source xsi:type="ocl.ecore:VariableExp" name="clase" referredVariable="/0/generateRepositories/%.1/%.1/clase">
-                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-                </source>
-                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
-              </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xD;&#xA;import org.springframework.stereotype.Repository;&#xD;&#xA;&#xD;&#xA;@Repository&#xD;&#xA;public interface "/>
-              <body xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <source xsi:type="ocl.ecore:VariableExp" name="clase" referredVariable="/0/generateRepositories/%.1/%.1/clase">
-                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-                </source>
-                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
-              </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Repository extends BaseRepository&lt;"/>
-              <body xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <source xsi:type="ocl.ecore:VariableExp" name="clase" referredVariable="/0/generateRepositories/%.1/%.1/clase">
-                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-                </source>
-                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
-              </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", Long>{&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;"/>
-              <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="art" referredVariable="/0/generateRepositories/art">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="art" referredVariable="/0/generateRepositories/art">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".repositories;&#xD;&#xA;import "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="art" referredVariable="/0/generateRepositories/art">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="art" referredVariable="/0/generateRepositories/art">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".entities."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/generateRepositories/p">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Package/nombre"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateRepositories/c">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xD;&#xA;import org.springframework.stereotype.Repository;&#xD;&#xA;&#xD;&#xA;@Repository&#xD;&#xA;public interface "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateRepositories/c">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Repository extends BaseRepository&lt;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateRepositories/c">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", Long>{&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                 <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                   <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                    <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+                    <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/main/java/">
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                      <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
-                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                        <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
-                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                          <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/main/java/">
-                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                          </source>
-                          <argument xsi:type="ocl.ecore:PropertyCallExp">
-                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                            <source xsi:type="ocl.ecore:PropertyCallExp">
-                              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
-                              <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateRepositories/raiz">
-                                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-                              </source>
-                              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
-                            </source>
-                            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
-                          </argument>
-                        </source>
-                        <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".">
-                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                        </argument>
-                      </source>
-                      <argument xsi:type="ocl.ecore:PropertyCallExp">
-                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                        <source xsi:type="ocl.ecore:PropertyCallExp">
-                          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
-                          <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateRepositories/raiz">
-                            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-                          </source>
-                          <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
-                        </source>
-                        <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
-                      </argument>
                     </source>
-                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/repositories/">
+                    <argument xsi:type="ocl.ecore:PropertyCallExp">
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      <source xsi:type="ocl.ecore:VariableExp" name="art" referredVariable="/0/generateRepositories/art">
+                        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+                      </source>
+                      <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
                     </argument>
                   </source>
-                  <argument xsi:type="ocl.ecore:PropertyCallExp">
+                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="clase" referredVariable="/0/generateRepositories/%.1/%.1/clase">
-                      <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-                    </source>
-                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
                   </argument>
                 </source>
-                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Repository.java">
+                <argument xsi:type="ocl.ecore:PropertyCallExp">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="art" referredVariable="/0/generateRepositories/art">
+                    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
                 </argument>
-              </fileUrl>
-              <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/repositories/">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              </charset>
-            </body>
-            <ifExpr xsi:type="ocl.ecore:PropertyCallExp">
-              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
-              <source xsi:type="ocl.ecore:VariableExp" name="clase" referredVariable="/0/generateRepositories/%.1/%.1/clase">
+              </argument>
+            </source>
+            <argument xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateRepositories/c">
                 <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
               </source>
-              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clase/tieneABM"/>
-            </ifExpr>
-          </body>
-          <loopVariable name="clase">
-            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-          </loopVariable>
-          <iterSet xsi:type="ocl.ecore:OperationCallExp" eType="/6/OrderedSet(Clase)" referredOperation="/1/oclstdlib_Collection(T)_Class/filter">
-            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/6/OrderedSet(Clasificador)">
-              <source xsi:type="ocl.ecore:VariableExp" name="pack" referredVariable="/0/generateRepositories/%.1/pack">
-                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
-              </source>
-              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//Package/clasificadores_contenidos"/>
-            </source>
-            <argument xsi:type="ocl.ecore:TypeExp" eType="/9/Clase">
-              <referredType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/nombre"/>
             </argument>
-          </iterSet>
-        </body>
-        <loopVariable name="pack">
-          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
-        </loopVariable>
-        <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/6/OrderedSet(Package)">
-          <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateRepositories/raiz">
-            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
           </source>
-          <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/packages_contenidos"/>
-        </iterSet>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Repository.java">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
       </body>
-      <parameter name="raiz">
-        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+      <parameter name="c">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
+      </parameter>
+      <parameter name="art">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+      </parameter>
+      <parameter name="p">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
       </parameter>
     </ownedModuleElement>
   </mtl:Module>
@@ -229,8 +171,14 @@
         </eAnnotations>
         <eAnnotations source="MTL" references="/0/generateRepositories"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="raiz">
-          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+        <eParameters name="c">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
+        </eParameters>
+        <eParameters name="art">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+        </eParameters>
+        <eParameters name="p">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
         </eParameters>
       </eOperations>
     </eClassifiers>
@@ -243,13 +191,6 @@
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
       </eAnnotations>
-      <eOperations name="filter">
-        <eAnnotations source="MTL non-standard"/>
-        <eType xsi:type="ocl.ecore:CollectionType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
-        <eParameters name="filter">
-          <eType xsi:type="ocl.ecore:TypeType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclType"/>
-        </eParameters>
-      </eOperations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
@@ -259,6 +200,11 @@
     <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_Clase_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
       </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_DiagramaClases_Class">
@@ -271,40 +217,12 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-  </ocl.ecore:Variable>
-  <ecore:EPackage name="collections">
-    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Package)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Clasificador)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Clase)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-    </eClassifiers>
-  </ecore:EPackage>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
-  </ocl.ecore:Variable>
-  <ecore:EPackage name="types">
-    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Clase">
-      <referredType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-    </eClassifiers>
-  </ecore:EPackage>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
@@ -336,21 +254,6 @@
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Package"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="i">
-    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="i">
-    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -358,342 +261,237 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateRepositories">
       <details key="start" value="179"/>
-      <details key="end" value="997"/>
+      <details key="end" value="688"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateRepositories/%">
-      <details key="start" value="242"/>
-      <details key="end" value="246"/>
+      <details key="start" value="259"/>
+      <details key="end" value="675"/>
       <details key="line" value="6"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/generateRepositories/%.1">
-      <details key="start" value="246"/>
-      <details key="end" value="984"/>
-      <details key="line" value="8"/>
+    <eAnnotations source="positions.2" references="/0/generateRepositories/%/%">
+      <details key="start" value="379"/>
+      <details key="end" value="387"/>
+      <details key="line" value="7"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/generateRepositories/%.1/%">
-      <details key="start" value="297"/>
-      <details key="end" value="302"/>
-      <details key="line" value="9"/>
-    </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/generateRepositories/%.1/%.1">
-      <details key="start" value="302"/>
-      <details key="end" value="976"/>
-      <details key="line" value="11"/>
-    </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/generateRepositories/%.1/%.1/%">
-      <details key="start" value="373"/>
-      <details key="end" value="375"/>
-      <details key="line" value="12"/>
-    </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/generateRepositories/%.1/%.1/%.1">
-      <details key="start" value="375"/>
-      <details key="end" value="968"/>
-      <details key="line" value="13"/>
-    </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/generateRepositories/%.1/%.1/%.1/%">
-      <details key="start" value="398"/>
-      <details key="end" value="400"/>
-      <details key="line" value="14"/>
-    </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/generateRepositories/%.1/%.1/%.1/%.1">
-      <details key="start" value="400"/>
-      <details key="end" value="961"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%">
-      <details key="start" value="566"/>
-      <details key="end" value="574"/>
-      <details key="line" value="16"/>
-    </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.1">
-      <details key="start" value="575"/>
-      <details key="end" value="607"/>
+    <eAnnotations source="positions.3" references="/0/generateRepositories/%/%.1">
+      <details key="start" value="388"/>
+      <details key="end" value="399"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.1/%">
-      <details key="start" value="575"/>
-      <details key="end" value="599"/>
+    <eAnnotations source="positions.4" references="/0/generateRepositories/%/%.1/art">
+      <details key="start" value="388"/>
+      <details key="end" value="391"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.1/%/raiz">
-      <details key="start" value="575"/>
-      <details key="end" value="579"/>
+    <eAnnotations source="positions.5" references="/0/generateRepositories/%/%.2">
+      <details key="start" value="401"/>
+      <details key="end" value="402"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateRepositories/%/%.3">
+      <details key="start" value="403"/>
+      <details key="end" value="419"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.2">
-      <details key="start" value="609"/>
-      <details key="end" value="610"/>
-      <details key="line" value="16"/>
-    </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.3">
-      <details key="start" value="611"/>
-      <details key="end" value="648"/>
+    <eAnnotations source="positions.7" references="/0/generateRepositories/%/%.3/art">
+      <details key="start" value="403"/>
+      <details key="end" value="406"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.3/%">
-      <details key="start" value="611"/>
-      <details key="end" value="635"/>
-      <details key="line" value="0"/>
+    <eAnnotations source="positions.8" references="/0/generateRepositories/%/%.4">
+      <details key="start" value="421"/>
+      <details key="end" value="444"/>
+      <details key="line" value="7"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.3/%/raiz">
-      <details key="start" value="611"/>
-      <details key="end" value="615"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.4">
-      <details key="start" value="650"/>
-      <details key="end" value="673"/>
-      <details key="line" value="16"/>
-    </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.5">
-      <details key="start" value="674"/>
-      <details key="end" value="706"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.5/%">
-      <details key="start" value="674"/>
-      <details key="end" value="698"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.5/%/raiz">
-      <details key="start" value="674"/>
-      <details key="end" value="678"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.6">
-      <details key="start" value="708"/>
-      <details key="end" value="709"/>
-      <details key="line" value="17"/>
-    </eAnnotations>
-    <eAnnotations source="positions.22" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.7">
-      <details key="start" value="710"/>
-      <details key="end" value="747"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.7/%">
-      <details key="start" value="710"/>
-      <details key="end" value="734"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.7/%/raiz">
-      <details key="start" value="710"/>
-      <details key="end" value="714"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.8">
-      <details key="start" value="749"/>
-      <details key="end" value="759"/>
-      <details key="line" value="17"/>
-    </eAnnotations>
-    <eAnnotations source="positions.26" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.9">
-      <details key="start" value="760"/>
-      <details key="end" value="771"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.27" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.9/pack">
-      <details key="start" value="760"/>
-      <details key="end" value="764"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.10">
-      <details key="start" value="773"/>
-      <details key="end" value="774"/>
-      <details key="line" value="17"/>
-    </eAnnotations>
-    <eAnnotations source="positions.29" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.11">
-      <details key="start" value="775"/>
-      <details key="end" value="787"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.11/clase">
-      <details key="start" value="775"/>
-      <details key="end" value="780"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.12">
-      <details key="start" value="789"/>
-      <details key="end" value="875"/>
-      <details key="line" value="17"/>
-    </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.13">
-      <details key="start" value="876"/>
-      <details key="end" value="888"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.13/clase">
-      <details key="start" value="876"/>
-      <details key="end" value="881"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.14">
-      <details key="start" value="890"/>
-      <details key="end" value="924"/>
-      <details key="line" value="21"/>
-    </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.15">
-      <details key="start" value="925"/>
-      <details key="end" value="937"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.15/clase">
-      <details key="start" value="925"/>
-      <details key="end" value="930"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.16">
-      <details key="start" value="939"/>
-      <details key="end" value="954"/>
-      <details key="line" value="21"/>
-    </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17">
-      <details key="start" value="407"/>
-      <details key="end" value="546"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%">
-      <details key="start" value="407"/>
-      <details key="end" value="528"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%">
-      <details key="start" value="407"/>
-      <details key="end" value="515"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.41" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%">
-      <details key="start" value="407"/>
-      <details key="end" value="498"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.42" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%">
-      <details key="start" value="407"/>
-      <details key="end" value="460"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.43" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%/%">
-      <details key="start" value="407"/>
+    <eAnnotations source="positions.9" references="/0/generateRepositories/%/%.5">
+      <details key="start" value="445"/>
       <details key="end" value="456"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.44" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%/%/%">
-      <details key="start" value="407"/>
-      <details key="end" value="423"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.45" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%/%/%.1">
-      <details key="start" value="424"/>
-      <details key="end" value="456"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.46" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%/%/%.1/%">
-      <details key="start" value="424"/>
+    <eAnnotations source="positions.10" references="/0/generateRepositories/%/%.5/art">
+      <details key="start" value="445"/>
       <details key="end" value="448"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.47" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%/%/%.1/%/raiz">
-      <details key="start" value="424"/>
-      <details key="end" value="428"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.48" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%/%.1">
-      <details key="start" value="457"/>
-      <details key="end" value="460"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.49" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%.1">
-      <details key="start" value="461"/>
-      <details key="end" value="498"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.50" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%.1/%">
-      <details key="start" value="461"/>
-      <details key="end" value="485"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.51" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%/%.1/%/raiz">
-      <details key="start" value="461"/>
-      <details key="end" value="465"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.52" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%/%.1">
-      <details key="start" value="499"/>
-      <details key="end" value="515"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.53" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%.1">
-      <details key="start" value="516"/>
-      <details key="end" value="528"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.54" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%/%.1/clase">
-      <details key="start" value="516"/>
-      <details key="end" value="521"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.55" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.17/%.1">
-      <details key="start" value="529"/>
-      <details key="end" value="546"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.56" references="/0/generateRepositories/%.1/%.1/%.1/%.1/%.18">
-      <details key="start" value="555"/>
-      <details key="end" value="562"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.57" references="/0/generateRepositories/%.1/%.1/%.1/%.2">
-      <details key="start" value="379"/>
-      <details key="end" value="395"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.58" references="/0/generateRepositories/%.1/%.1/%.1/%.2/clase">
-      <details key="start" value="380"/>
-      <details key="end" value="385"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.59" references="/0/generateRepositories/%.1/%.1/clase">
-      <details key="start" value="308"/>
-      <details key="end" value="321"/>
-      <details key="line" value="11"/>
-    </eAnnotations>
-    <eAnnotations source="positions.60" references="/0/generateRepositories/%.1/%.1/%.2">
-      <details key="start" value="324"/>
-      <details key="end" value="369"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.61" references="/0/generateRepositories/%.1/%.1/%.2/%">
-      <details key="start" value="324"/>
-      <details key="end" value="354"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.62" references="/0/generateRepositories/%.1/%.1/%.2/%/pack">
-      <details key="start" value="324"/>
-      <details key="end" value="328"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.63" references="/0/generateRepositories/%.1/%.1/%.2/%.1">
-      <details key="start" value="363"/>
-      <details key="end" value="368"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.64" references="/0/generateRepositories/%.1/pack">
-      <details key="start" value="252"/>
-      <details key="end" value="266"/>
+    <eAnnotations source="positions.11" references="/0/generateRepositories/%/%.6">
+      <details key="start" value="458"/>
+      <details key="end" value="459"/>
       <details key="line" value="8"/>
     </eAnnotations>
-    <eAnnotations source="positions.65" references="/0/generateRepositories/%.1/%.2">
-      <details key="start" value="269"/>
-      <details key="end" value="293"/>
+    <eAnnotations source="positions.12" references="/0/generateRepositories/%/%.7">
+      <details key="start" value="460"/>
+      <details key="end" value="476"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.66" references="/0/generateRepositories/%.1/%.2/raiz">
-      <details key="start" value="269"/>
-      <details key="end" value="273"/>
+    <eAnnotations source="positions.13" references="/0/generateRepositories/%/%.7/art">
+      <details key="start" value="460"/>
+      <details key="end" value="463"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.67" references="/0/generateRepositories/raiz">
+    <eAnnotations source="positions.14" references="/0/generateRepositories/%/%.8">
+      <details key="start" value="478"/>
+      <details key="end" value="488"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateRepositories/%/%.9">
+      <details key="start" value="489"/>
+      <details key="end" value="497"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateRepositories/%/%.9/p">
+      <details key="start" value="489"/>
+      <details key="end" value="490"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateRepositories/%/%.10">
+      <details key="start" value="499"/>
+      <details key="end" value="500"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateRepositories/%/%.11">
+      <details key="start" value="501"/>
+      <details key="end" value="509"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateRepositories/%/%.11/c">
+      <details key="start" value="501"/>
+      <details key="end" value="502"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateRepositories/%/%.12">
+      <details key="start" value="511"/>
+      <details key="end" value="597"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateRepositories/%/%.13">
+      <details key="start" value="598"/>
+      <details key="end" value="606"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateRepositories/%/%.13/c">
+      <details key="start" value="598"/>
+      <details key="end" value="599"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateRepositories/%/%.14">
+      <details key="start" value="608"/>
+      <details key="end" value="642"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateRepositories/%/%.15">
+      <details key="start" value="643"/>
+      <details key="end" value="651"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateRepositories/%/%.15/c">
+      <details key="start" value="643"/>
+      <details key="end" value="644"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateRepositories/%/%.16">
+      <details key="start" value="653"/>
+      <details key="end" value="668"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateRepositories/%/%.17">
+      <details key="start" value="266"/>
+      <details key="end" value="359"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateRepositories/%/%.17/%">
+      <details key="start" value="266"/>
+      <details key="end" value="341"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateRepositories/%/%.17/%/%">
+      <details key="start" value="266"/>
+      <details key="end" value="332"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateRepositories/%/%.17/%/%/%">
+      <details key="start" value="266"/>
+      <details key="end" value="315"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateRepositories/%/%.17/%/%/%/%">
+      <details key="start" value="266"/>
+      <details key="end" value="298"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateRepositories/%/%.17/%/%/%/%/%">
+      <details key="start" value="266"/>
+      <details key="end" value="294"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateRepositories/%/%.17/%/%/%/%/%/%">
+      <details key="start" value="266"/>
+      <details key="end" value="282"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateRepositories/%/%.17/%/%/%/%/%/%.1">
+      <details key="start" value="283"/>
+      <details key="end" value="294"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateRepositories/%/%.17/%/%/%/%/%/%.1/art">
+      <details key="start" value="283"/>
+      <details key="end" value="286"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateRepositories/%/%.17/%/%/%/%/%.1">
+      <details key="start" value="295"/>
+      <details key="end" value="298"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateRepositories/%/%.17/%/%/%/%.1">
+      <details key="start" value="299"/>
+      <details key="end" value="315"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateRepositories/%/%.17/%/%/%/%.1/art">
+      <details key="start" value="299"/>
+      <details key="end" value="302"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateRepositories/%/%.17/%/%/%.1">
+      <details key="start" value="316"/>
+      <details key="end" value="332"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateRepositories/%/%.17/%/%.1">
+      <details key="start" value="333"/>
+      <details key="end" value="341"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateRepositories/%/%.17/%/%.1/c">
+      <details key="start" value="333"/>
+      <details key="end" value="334"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateRepositories/%/%.17/%.1">
+      <details key="start" value="342"/>
+      <details key="end" value="359"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateRepositories/%/%.18">
+      <details key="start" value="368"/>
+      <details key="end" value="375"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateRepositories/c">
       <details key="start" value="217"/>
-      <details key="end" value="238"/>
+      <details key="end" value="226"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateRepositories/art">
+      <details key="start" value="228"/>
+      <details key="end" value="243"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateRepositories/p">
+      <details key="start" value="244"/>
+      <details key="end" value="255"/>
       <details key="line" value="5"/>
     </eAnnotations>
   </ecore:EAnnotation>

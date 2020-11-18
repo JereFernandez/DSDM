@@ -8,7 +8,7 @@
 [else]
 @Column (name = "[a.pseudonimo/]")
 [/if]
-[if (a.esAuditable = false)]
+[if (a.esAuditable = false and a.eContainer(Clase).esAuditable = true)]
 @NotAudited
 [/if]
 [if (a.esFinal)]

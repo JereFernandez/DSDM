@@ -51,6 +51,8 @@ public class ClaseItemProvider extends ClasificadorItemProvider {
 			addEsAsociativaPropertyDescriptor(object);
 			addEsAuditablePropertyDescriptor(object);
 			addTieneABMPropertyDescriptor(object);
+			addEsSuperClasePropertyDescriptor(object);
+			addEstrategiaHerenciaPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -116,6 +118,38 @@ public class ClaseItemProvider extends ClasificadorItemProvider {
 						getString("_UI_PropertyDescriptor_description", "_UI_Clase_tieneABM_feature", "_UI_Clase_type"),
 						DiagramaClasesCompletoPackage.Literals.CLASE__TIENE_ABM, true, false, false,
 						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Es Super Clase feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addEsSuperClasePropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Clase_esSuperClase_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Clase_esSuperClase_feature",
+								"_UI_Clase_type"),
+						DiagramaClasesCompletoPackage.Literals.CLASE__ES_SUPER_CLASE, true, false, false,
+						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Estrategia Herencia feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addEstrategiaHerenciaPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Clase_EstrategiaHerencia_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Clase_EstrategiaHerencia_feature",
+								"_UI_Clase_type"),
+						DiagramaClasesCompletoPackage.Literals.CLASE__ESTRATEGIA_HERENCIA, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -199,6 +233,8 @@ public class ClaseItemProvider extends ClasificadorItemProvider {
 		case DiagramaClasesCompletoPackage.CLASE__ES_ASOCIATIVA:
 		case DiagramaClasesCompletoPackage.CLASE__ES_AUDITABLE:
 		case DiagramaClasesCompletoPackage.CLASE__TIENE_ABM:
+		case DiagramaClasesCompletoPackage.CLASE__ES_SUPER_CLASE:
+		case DiagramaClasesCompletoPackage.CLASE__ESTRATEGIA_HERENCIA:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case DiagramaClasesCompletoPackage.CLASE__RELACIONES_CONTENIDAS:
