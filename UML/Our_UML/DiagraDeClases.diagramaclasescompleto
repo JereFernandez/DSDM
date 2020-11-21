@@ -1,51 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto"
-xsi:schemaLocation="http://www.example.org/diagramaClasesCompleto diagramaClasesCompleto.ecore">
-  <packages_contenidos nombre="Persona">
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Persona" tieneABM="true" esSuperClase="true" EstrategiaHerencia="SINGLE_TABLE">
-      <atributos_contenidos nombre="Nombre" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="Apellido" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="DNI" visibilidad="private"/>
-      <relaciones_contenidas destino="//@packages_contenidos.2/@clasificadores_contenidos.0" nombre="ViveEn" origen="//@packages_contenidos.0/@clasificadores_contenidos.0" tipoABM="simple"/>
+<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto">
+  <packages_contenidos nombre="Prueba">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Persona" esAuditable="true" tieneABM="true">
+      <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String" esAuditable="true" pseudonimo="nombre"/>
+      <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String" esAuditable="true" pseudonimo="apellido"/>
+      <atributos_contenidos nombre="DNI" visibilidad="private" esAuditable="true" pseudonimo="dni"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.1" nombre="Alquila" tipo="composicion" multiplicidad="oneToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.0" tipoABM="maestroDetalle"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.3" nombre="ViveEn" origen="//@packages_contenidos.0/@clasificadores_contenidos.0" tipoABM="simple"/>
     </clasificadores_contenidos>
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Usuario">
-      <atributos_contenidos nombre="Edad" visibilidad="private"/>
-      <operaciones_contenidas nombre="Saludar" visibilidad="public" tipoRetorno="String"/>
-      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.1" destino="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
-      <relaciones_contenidas destino="//@packages_contenidos.1/@clasificadores_contenidos.0" nombre="Alquilo" origen="//@packages_contenidos.0/@clasificadores_contenidos.1">
-        <clases_asociativas_contenidas nombre="Alquiler" esAsociativa="true">
-          <atributos_contenidos nombre="FechaAlquiler" visibilidad="private" tipo="Date"/>
-        </clases_asociativas_contenidas>
-      </relaciones_contenidas>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Libro" esAuditable="true">
+      <atributos_contenidos nombre="titulo" visibilidad="private" tipo="String" esAuditable="true"/>
+      <atributos_contenidos nombre="fecha" visibilidad="private" tipo="Date" esAuditable="true"/>
+      <atributos_contenidos nombre="genero" visibilidad="private" tipo="String" esAuditable="true"/>
+      <atributos_contenidos nombre="paginas" visibilidad="private" esAuditable="true"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.2" nombre="EsDe" multiplicidad="manyToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.1" tipoABM="maestroComboDetalleCombo"/>
     </clasificadores_contenidos>
     <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Autor">
-      <atributos_contenidos nombre="Bibliografia" visibilidad="private" tipo="String"/>
-      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.2" destino="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+      <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="biografia" visibilidad="private" tipo="String"/>
     </clasificadores_contenidos>
-  </packages_contenidos>
-  <packages_contenidos nombre="Biblioteca">
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Libro" tieneABM="true">
-      <atributos_contenidos nombre="Titulo" visibilidad="private" tipo="String"/>
-      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.2" nombre="EsDe" origen="//@packages_contenidos.1/@clasificadores_contenidos.0" tipoABM="maestroDetalle">
-        <clases_asociativas_contenidas nombre="Publicacion" esAsociativa="true">
-          <atributos_contenidos nombre="FechaPublicacion" visibilidad="private" tipo="Date"/>
-          <atributos_contenidos nombre="FechaInicioEscritura" visibilidad="private" tipo="String"/>
-        </clases_asociativas_contenidas>
-      </relaciones_contenidas>
-    </clasificadores_contenidos>
-  </packages_contenidos>
-  <packages_contenidos nombre="Ubicacion">
     <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Domicilio">
-      <atributos_contenidos nombre="calle" visibilidad="private" tipo="String"/>
-      <atributos_contenidos nombre="altura" visibilidad="private"/>
-      <relaciones_contenidas destino="//@packages_contenidos.2/@clasificadores_contenidos.1" nombre="haciaLocalidad" multiplicidad="oneToMany" origen="//@packages_contenidos.2/@clasificadores_contenidos.0" tipoABM="seleccionable"/>
+      <atributos_contenidos nombre="calle" visibilidad="private" tipo="String" esAuditable="true"/>
+      <atributos_contenidos nombre="altura" visibilidad="private" esAuditable="true"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.4" nombre="Pertenece" multiplicidad="manyToOne" origen="//@packages_contenidos.0/@clasificadores_contenidos.3" tipoABM="seleccionable"/>
     </clasificadores_contenidos>
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Localidad" tieneABM="true">
-      <atributos_contenidos nombre="denominacion" visibilidad="private" tipo="String"/>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Localidad">
+      <atributos_contenidos nombre="denominacion" visibilidad="private" tipo="String" esAuditable="true"/>
     </clasificadores_contenidos>
   </packages_contenidos>
-  <artefacto_contenido nombre="APIBiblioteca" grupoId="api.dsdm" artefactotId="APIBiblioteca" descripcion="APIREST realizada en DSDM" version="Beta v2.0.0"/>
-  <configuraciondb dbNombre="api_biblioteca" dbUsuario="root" dbPuerto="3307" ip="127.0.0.1" dbContrasena="" serverPuerto="9000"/>
+  <artefacto_contenido/>
   <configuracionlenguaje version="11"/>
   <configuracionmicroservicios/>
 </diagramaClasesCompleto:DiagramaClases>
