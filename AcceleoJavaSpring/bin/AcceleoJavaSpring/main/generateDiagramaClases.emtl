@@ -4,19 +4,19 @@
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Package/generatePackage.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/repositories/generateBaseRepository.emtl#/0"/>
+    <imports href="../Package/generatePackage.emtl#/0"/>
+    <imports href="generateMainClass.emtl#/0"/>
+    <imports href="../repositories/generateBaseRepository.emtl#/0"/>
     <imports href="../repositories/generateRepositories.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateBaseEntity.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateBaseService.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/services/generateServices.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/controllers/generateBaseController.emtl#/0"/>
-    <imports href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Entity/generateInterface.emtl#/0"/>
+    <imports href="../Entity/generateBaseEntity.emtl#/0"/>
+    <imports href="../services/generateBaseService.emtl#/0"/>
+    <imports href="../services/generateServices.emtl#/0"/>
+    <imports href="../controllers/generateBaseController.emtl#/0"/>
+    <imports href="../Entity/generateInterface.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateDiagrama" visibility="Public" main="true">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0/generateMainClass"/>
+        <definition href="generateMainClass.emtl#/0/generateMainClass"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
@@ -24,7 +24,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Package/generatePackage.emtl#/0/generatePackage"/>
+        <definition href="../Package/generatePackage.emtl#/0/generatePackage"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateDiagrama/raiz">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
@@ -70,7 +70,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/Package/generatePackage.emtl#/0/generatePackage"/>
+          <references href="../Package/generatePackage.emtl#/0/generatePackage"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">
@@ -82,7 +82,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/AcceleoJavaSpring/bin/AcceleoJavaSpring/main/generateMainClass.emtl#/0/generateMainClass"/>
+          <references href="generateMainClass.emtl#/0/generateMainClass"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="raiz">

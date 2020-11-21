@@ -7,7 +7,10 @@
 [template public generateRelation(a : Clase, art: Artefacto, p : Package)]
 
 [for (relacion : Relacion | a.relaciones_contenidas)]
-
+[if (a.esAuditable = true and relacion.destino -> filter(Clase).esAuditable = true)]
+[else]
+	@NotAudited
+[/if]
 [if (relacion.tipo=TipoRelacion::unidireccional and relacion.clases_asociativas_contenidas -> isEmpty())]
 
 	[if (relacion.multiplicidad=Multiplicidad::oneToOne)]

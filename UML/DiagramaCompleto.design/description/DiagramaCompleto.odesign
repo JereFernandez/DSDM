@@ -4,13 +4,13 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="DiagramaDeClases" domainClass="diagramaClasesCompleto::DiagramaClases" enablePopupBars="true">
       <defaultLayer name="Principal">
         <nodeMappings name="ConfigDB" domainClass="diagramaClasesCompleto::ConfiguracionDB">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/DiagramaCompleto.design/iconos/BD.jpg">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" resizeKind="NSEW" workspacePath="/DiagramaCompleto.design/iconos/BD.jpg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="ConfigLenguaje" domainClass="diagramaClasesCompleto::ConfiguracionLenguaje">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" workspacePath="/DiagramaCompleto.design/iconos/coding.png">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" arcWidth="0" arcHeight="0" workspacePath="/DiagramaCompleto.design/iconos/coding.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
