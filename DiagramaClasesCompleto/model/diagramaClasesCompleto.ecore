@@ -53,6 +53,8 @@
         defaultValueLiteral="private"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipoABM" eType="#//TipoABM"
         defaultValueLiteral="sinRepresentacion"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="PersistenciaRelacional"
+        eType="#//TiposPersistencia"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Operacion" eSuperTypes="#//Retornable">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipoRetorno" eType="#//TipoRetorno"/>
@@ -231,5 +233,13 @@
     <eLiterals name="JOINED"/>
     <eLiterals name="SINGLE_TABLE" value="1"/>
     <eLiterals name="TABLE_PER_CLASS" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TiposPersistencia">
+    <eLiterals name="None"/>
+    <eLiterals name="PERSIST" value="1"/>
+    <eLiterals name="MERGE" value="2"/>
+    <eLiterals name="REFRESH" value="3"/>
+    <eLiterals name="REMOVAL" value="4"/>
+    <eLiterals name="ALL" value="5"/>
   </eClassifiers>
 </ecore:EPackage>

@@ -504,13 +504,22 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 	int RELACION__TIPO_ABM = 9;
 
 	/**
+	 * The feature id for the '<em><b>Persistencia Relacional</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RELACION__PERSISTENCIA_RELACIONAL = 10;
+
+	/**
 	 * The number of structural features of the '<em>Relacion</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RELACION_FEATURE_COUNT = 10;
+	int RELACION_FEATURE_COUNT = 11;
 
 	/**
 	 * The number of operations of the '<em>Relacion</em>' class.
@@ -1484,6 +1493,16 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 	int TIPO_ESTRATEGIAS_HERENCIA = 30;
 
 	/**
+	 * The meta object id for the '{@link diagramaClasesCompleto.TiposPersistencia <em>Tipos Persistencia</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see diagramaClasesCompleto.TiposPersistencia
+	 * @see diagramaClasesCompleto.impl.DiagramaClasesCompletoPackageImpl#getTiposPersistencia()
+	 * @generated
+	 */
+	int TIPOS_PERSISTENCIA = 31;
+
+	/**
 	 * Returns the meta object for class '{@link diagramaClasesCompleto.DiagramaClases <em>Diagrama Clases</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1840,6 +1859,17 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getRelacion_TipoABM();
+
+	/**
+	 * Returns the meta object for the attribute '{@link diagramaClasesCompleto.Relacion#getPersistenciaRelacional <em>Persistencia Relacional</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Persistencia Relacional</em>'.
+	 * @see diagramaClasesCompleto.Relacion#getPersistenciaRelacional()
+	 * @see #getRelacion()
+	 * @generated
+	 */
+	EAttribute getRelacion_PersistenciaRelacional();
 
 	/**
 	 * Returns the meta object for class '{@link diagramaClasesCompleto.Operacion <em>Operacion</em>}'.
@@ -2586,6 +2616,16 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 	EEnum getTipoEstrategiasHerencia();
 
 	/**
+	 * Returns the meta object for enum '{@link diagramaClasesCompleto.TiposPersistencia <em>Tipos Persistencia</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Tipos Persistencia</em>'.
+	 * @see diagramaClasesCompleto.TiposPersistencia
+	 * @generated
+	 */
+	EEnum getTiposPersistencia();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2882,6 +2922,14 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute RELACION__TIPO_ABM = eINSTANCE.getRelacion_TipoABM();
+
+		/**
+		 * The meta object literal for the '<em><b>Persistencia Relacional</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RELACION__PERSISTENCIA_RELACIONAL = eINSTANCE.getRelacion_PersistenciaRelacional();
 
 		/**
 		 * The meta object literal for the '{@link diagramaClasesCompleto.impl.OperacionImpl <em>Operacion</em>}' class.
@@ -3495,6 +3543,16 @@ public interface DiagramaClasesCompletoPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum TIPO_ESTRATEGIAS_HERENCIA = eINSTANCE.getTipoEstrategiasHerencia();
+
+		/**
+		 * The meta object literal for the '{@link diagramaClasesCompleto.TiposPersistencia <em>Tipos Persistencia</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see diagramaClasesCompleto.TiposPersistencia
+		 * @see diagramaClasesCompleto.impl.DiagramaClasesCompletoPackageImpl#getTiposPersistencia()
+		 * @generated
+		 */
+		EEnum TIPOS_PERSISTENCIA = eINSTANCE.getTiposPersistencia();
 
 	}
 

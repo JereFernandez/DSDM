@@ -10,6 +10,7 @@ import diagramaClasesCompleto.Multiplicidad;
 import diagramaClasesCompleto.Relacion;
 import diagramaClasesCompleto.TipoABM;
 import diagramaClasesCompleto.TipoRelacion;
+import diagramaClasesCompleto.TiposPersistencia;
 
 import java.util.Collection;
 
@@ -45,6 +46,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link diagramaClasesCompleto.impl.RelacionImpl#isEsStatic <em>Es Static</em>}</li>
  *   <li>{@link diagramaClasesCompleto.impl.RelacionImpl#getVisibilidad <em>Visibilidad</em>}</li>
  *   <li>{@link diagramaClasesCompleto.impl.RelacionImpl#getTipoABM <em>Tipo ABM</em>}</li>
+ *   <li>{@link diagramaClasesCompleto.impl.RelacionImpl#getPersistenciaRelacional <em>Persistencia Relacional</em>}</li>
  * </ul>
  *
  * @generated
@@ -219,6 +221,26 @@ public class RelacionImpl extends MinimalEObjectImpl.Container implements Relaci
 	 * @ordered
 	 */
 	protected TipoABM tipoABM = TIPO_ABM_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPersistenciaRelacional() <em>Persistencia Relacional</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPersistenciaRelacional()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final TiposPersistencia PERSISTENCIA_RELACIONAL_EDEFAULT = TiposPersistencia.NONE;
+
+	/**
+	 * The cached value of the '{@link #getPersistenciaRelacional() <em>Persistencia Relacional</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPersistenciaRelacional()
+	 * @generated
+	 * @ordered
+	 */
+	protected TiposPersistencia persistenciaRelacional = PERSISTENCIA_RELACIONAL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -511,6 +533,32 @@ public class RelacionImpl extends MinimalEObjectImpl.Container implements Relaci
 	 * @generated
 	 */
 	@Override
+	public TiposPersistencia getPersistenciaRelacional() {
+		return persistenciaRelacional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPersistenciaRelacional(TiposPersistencia newPersistenciaRelacional) {
+		TiposPersistencia oldPersistenciaRelacional = persistenciaRelacional;
+		persistenciaRelacional = newPersistenciaRelacional == null ? PERSISTENCIA_RELACIONAL_EDEFAULT
+				: newPersistenciaRelacional;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					DiagramaClasesCompletoPackage.RELACION__PERSISTENCIA_RELACIONAL, oldPersistenciaRelacional,
+					persistenciaRelacional));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case DiagramaClasesCompletoPackage.RELACION__CLASES_ASOCIATIVAS_CONTENIDAS:
@@ -551,6 +599,8 @@ public class RelacionImpl extends MinimalEObjectImpl.Container implements Relaci
 			return getVisibilidad();
 		case DiagramaClasesCompletoPackage.RELACION__TIPO_ABM:
 			return getTipoABM();
+		case DiagramaClasesCompletoPackage.RELACION__PERSISTENCIA_RELACIONAL:
+			return getPersistenciaRelacional();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -595,6 +645,9 @@ public class RelacionImpl extends MinimalEObjectImpl.Container implements Relaci
 		case DiagramaClasesCompletoPackage.RELACION__TIPO_ABM:
 			setTipoABM((TipoABM) newValue);
 			return;
+		case DiagramaClasesCompletoPackage.RELACION__PERSISTENCIA_RELACIONAL:
+			setPersistenciaRelacional((TiposPersistencia) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -637,6 +690,9 @@ public class RelacionImpl extends MinimalEObjectImpl.Container implements Relaci
 		case DiagramaClasesCompletoPackage.RELACION__TIPO_ABM:
 			setTipoABM(TIPO_ABM_EDEFAULT);
 			return;
+		case DiagramaClasesCompletoPackage.RELACION__PERSISTENCIA_RELACIONAL:
+			setPersistenciaRelacional(PERSISTENCIA_RELACIONAL_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -669,6 +725,8 @@ public class RelacionImpl extends MinimalEObjectImpl.Container implements Relaci
 			return visibilidad != VISIBILIDAD_EDEFAULT;
 		case DiagramaClasesCompletoPackage.RELACION__TIPO_ABM:
 			return tipoABM != TIPO_ABM_EDEFAULT;
+		case DiagramaClasesCompletoPackage.RELACION__PERSISTENCIA_RELACIONAL:
+			return persistenciaRelacional != PERSISTENCIA_RELACIONAL_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -698,6 +756,8 @@ public class RelacionImpl extends MinimalEObjectImpl.Container implements Relaci
 		result.append(visibilidad);
 		result.append(", tipoABM: ");
 		result.append(tipoABM);
+		result.append(", PersistenciaRelacional: ");
+		result.append(persistenciaRelacional);
 		result.append(')');
 		return result.toString();
 	}

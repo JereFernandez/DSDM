@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link diagramaClasesCompleto.Relacion#isEsStatic <em>Es Static</em>}</li>
  *   <li>{@link diagramaClasesCompleto.Relacion#getVisibilidad <em>Visibilidad</em>}</li>
  *   <li>{@link diagramaClasesCompleto.Relacion#getTipoABM <em>Tipo ABM</em>}</li>
+ *   <li>{@link diagramaClasesCompleto.Relacion#getPersistenciaRelacional <em>Persistencia Relacional</em>}</li>
  * </ul>
  *
  * @see diagramaClasesCompleto.DiagramaClasesCompletoPackage#getRelacion()
@@ -255,5 +256,30 @@ public interface Relacion extends EObject {
 	 * @generated
 	 */
 	void setTipoABM(TipoABM value);
+
+	/**
+	 * Returns the value of the '<em><b>Persistencia Relacional</b></em>' attribute.
+	 * The literals are from the enumeration {@link diagramaClasesCompleto.TiposPersistencia}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Persistencia Relacional</em>' attribute.
+	 * @see diagramaClasesCompleto.TiposPersistencia
+	 * @see #setPersistenciaRelacional(TiposPersistencia)
+	 * @see diagramaClasesCompleto.DiagramaClasesCompletoPackage#getRelacion_PersistenciaRelacional()
+	 * @model
+	 * @generated
+	 */
+	TiposPersistencia getPersistenciaRelacional();
+
+	/**
+	 * Sets the value of the '{@link diagramaClasesCompleto.Relacion#getPersistenciaRelacional <em>Persistencia Relacional</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Persistencia Relacional</em>' attribute.
+	 * @see diagramaClasesCompleto.TiposPersistencia
+	 * @see #getPersistenciaRelacional()
+	 * @generated
+	 */
+	void setPersistenciaRelacional(TiposPersistencia value);
 
 } // Relacion
