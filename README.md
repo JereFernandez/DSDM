@@ -1,8 +1,8 @@
-                                                            # Desarrollo de Software Dirigido por Modelos
+# Desarrollo de Software Dirigido por Modelos
 
-                                                                        ## Proyecto Final
+## Proyecto Final
 
-###¿Qué nos permite realizar si estamos a cargo de un proyecto?
+### ¿Qué nos permite realizar si estamos a cargo de un proyecto?
 
 Nos permite generar código a través de un modelo UML pero con mejoras y enriquecerlo con información visual para nuestros programadores, a continuación se detallan algunas características:
 
@@ -18,7 +18,7 @@ Nos permite generar código a través de un modelo UML pero con mejoras y enriqu
 
 Todo lo definido anteriormente se puede generar en cualquier código de programación sólo debemos generar las plantillas Acceleo en el lenguaje que deseamos, al utilizar Java podrémos dar provecho al tipo de cascada para persistir objetos, ya que los tipos del mismo se han cargado en base a lo establecido en JPA, si utilizamos otro lenguaje ¡No hay problema!, podemos utilizar esta información visual para indicarles a nuestros programadores como deben hacer la lógica para persistir la relación entre uno o más clases asociadas.
 
-###¿Qué nos permite interpretar si somos programadores?
+### ¿Qué nos permite interpretar si somos programadores?
 
 Nos permite visualizar información que con UML no podemos, ya que el mismo es muy acotado. A partir de nuestro metamodelo podemos darle a nuestros programadores una interpretación extra sobre los artefactos (clases, relaciones, interfaces, etc.) que van a componer la arquitectura del software, por ejemplo:
 
