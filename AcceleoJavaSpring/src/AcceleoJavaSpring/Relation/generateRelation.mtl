@@ -4,6 +4,7 @@
 [import AcceleoJavaSpring::Queries::queryGeneral /]
 [import AcceleoJavaSpring::Entity::generateEntity /]
 
+
 [template public generateRelation(a : Clase, art: Artefacto, p : Package)]
 
 [for (relacion : Relacion | a.relaciones_contenidas)]
@@ -81,16 +82,16 @@
 
 [elseif (relacion.tipo=TipoRelacion::composicion)]
 	[if (relacion.multiplicidad=Multiplicidad::oneToOne)]
-		[generateRelationOneToOne(relacion)/]
+		[generateComposicionOneToOne(relacion)/]
 		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/] = new [relacion.destino.nombre/]();
 	[elseif (relacion.multiplicidad=Multiplicidad::oneToMany)]
-		[generateRelationOneToMany(relacion)/]
+		[generateComposicionOneToMany(relacion)/]
 		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
 	[elseif (relacion.multiplicidad=Multiplicidad::manyToOne)]
-		[generateRelationManyToOne()/]
+		[generateComposicionManyToOne()/]
 		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/] = new [relacion.destino.nombre/]();
 	[elseif (relacion.multiplicidad=Multiplicidad::manyToMany)]
-		[generateRelationManyToMany(relacion)/]
+		[generateComposicionManyToMany(relacion)/]
 		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
 	[/if]
 [/if]

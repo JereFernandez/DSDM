@@ -65,6 +65,7 @@ public class RelacionItemProvider extends ItemProviderAdapter implements IEditin
 			addEsStaticPropertyDescriptor(object);
 			addVisibilidadPropertyDescriptor(object);
 			addTipoABMPropertyDescriptor(object);
+			addPersistenciaRelacionalPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -212,6 +213,22 @@ public class RelacionItemProvider extends ItemProviderAdapter implements IEditin
 	}
 
 	/**
+	 * This adds a property descriptor for the Persistencia Relacional feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addPersistenciaRelacionalPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				getString("_UI_Relacion_PersistenciaRelacional_feature"),
+				getString("_UI_PropertyDescriptor_description", "_UI_Relacion_PersistenciaRelacional_feature",
+						"_UI_Relacion_type"),
+				DiagramaClasesCompletoPackage.Literals.RELACION__PERSISTENCIA_RELACIONAL, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -294,6 +311,7 @@ public class RelacionItemProvider extends ItemProviderAdapter implements IEditin
 		case DiagramaClasesCompletoPackage.RELACION__ES_STATIC:
 		case DiagramaClasesCompletoPackage.RELACION__VISIBILIDAD:
 		case DiagramaClasesCompletoPackage.RELACION__TIPO_ABM:
+		case DiagramaClasesCompletoPackage.RELACION__PERSISTENCIA_RELACIONAL:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case DiagramaClasesCompletoPackage.RELACION__CLASES_ASOCIATIVAS_CONTENIDAS:

@@ -33,6 +33,7 @@ import diagramaClasesCompleto.TipoReinicio;
 import diagramaClasesCompleto.TipoRelacion;
 import diagramaClasesCompleto.TipoRetorno;
 import diagramaClasesCompleto.TipoTransferencia;
+import diagramaClasesCompleto.TiposPersistencia;
 import diagramaClasesCompleto.VerbosHTTP;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -266,6 +267,13 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 	 * @generated
 	 */
 	private EEnum tipoEstrategiasHerenciaEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum tiposPersistenciaEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -660,6 +668,16 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 	@Override
 	public EAttribute getRelacion_TipoABM() {
 		return (EAttribute) relacionEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRelacion_PersistenciaRelacional() {
+		return (EAttribute) relacionEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -1368,6 +1386,16 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 	 * @generated
 	 */
 	@Override
+	public EEnum getTiposPersistencia() {
+		return tiposPersistenciaEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public DiagramaClasesCompletoFactory getDiagramaClasesCompletoFactory() {
 		return (DiagramaClasesCompletoFactory) getEFactoryInstance();
 	}
@@ -1429,6 +1457,7 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 		createEAttribute(relacionEClass, RELACION__ES_STATIC);
 		createEAttribute(relacionEClass, RELACION__VISIBILIDAD);
 		createEAttribute(relacionEClass, RELACION__TIPO_ABM);
+		createEAttribute(relacionEClass, RELACION__PERSISTENCIA_RELACIONAL);
 
 		operacionEClass = createEClass(OPERACION);
 		createEAttribute(operacionEClass, OPERACION__TIPO_RETORNO);
@@ -1514,6 +1543,7 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 		representacionGraficaEEnum = createEEnum(REPRESENTACION_GRAFICA);
 		tipoABMEEnum = createEEnum(TIPO_ABM);
 		tipoEstrategiasHerenciaEEnum = createEEnum(TIPO_ESTRATEGIAS_HERENCIA);
+		tiposPersistenciaEEnum = createEEnum(TIPOS_PERSISTENCIA);
 	}
 
 	/**
@@ -1637,6 +1667,9 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRelacion_TipoABM(), this.getTipoABM(), "tipoABM", "sinRepresentacion", 0, 1, Relacion.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRelacion_PersistenciaRelacional(), this.getTiposPersistencia(), "PersistenciaRelacional",
+				null, 0, 1, Relacion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(operacionEClass, Operacion.class, "Operacion", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -1889,6 +1922,14 @@ public class DiagramaClasesCompletoPackageImpl extends EPackageImpl implements D
 		addEEnumLiteral(tipoEstrategiasHerenciaEEnum, TipoEstrategiasHerencia.JOINED);
 		addEEnumLiteral(tipoEstrategiasHerenciaEEnum, TipoEstrategiasHerencia.SINGLE_TABLE);
 		addEEnumLiteral(tipoEstrategiasHerenciaEEnum, TipoEstrategiasHerencia.TABLE_PER_CLASS);
+
+		initEEnum(tiposPersistenciaEEnum, TiposPersistencia.class, "TiposPersistencia");
+		addEEnumLiteral(tiposPersistenciaEEnum, TiposPersistencia.NONE);
+		addEEnumLiteral(tiposPersistenciaEEnum, TiposPersistencia.PERSIST);
+		addEEnumLiteral(tiposPersistenciaEEnum, TiposPersistencia.MERGE);
+		addEEnumLiteral(tiposPersistenciaEEnum, TiposPersistencia.REFRESH);
+		addEEnumLiteral(tiposPersistenciaEEnum, TiposPersistencia.REMOVAL);
+		addEEnumLiteral(tiposPersistenciaEEnum, TiposPersistencia.ALL);
 
 		// Create resource
 		createResource(eNS_URI);

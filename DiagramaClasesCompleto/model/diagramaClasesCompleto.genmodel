@@ -99,6 +99,14 @@
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoEstrategiasHerencia/SINGLE_TABLE"/>
       <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoEstrategiasHerencia/TABLE_PER_CLASS"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TiposPersistencia">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TiposPersistencia/None"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TiposPersistencia/PERSIST"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TiposPersistencia/MERGE"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TiposPersistencia/REFRESH"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TiposPersistencia/REMOVAL"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TiposPersistencia/ALL"/>
+    </genEnums>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//DiagramaClases">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/packages_contenidos"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/artefacto_contenido"/>
@@ -135,6 +143,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/esStatic"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/visibilidad"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/tipoABM"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/PersistenciaRelacional"/>
     </genClasses>
     <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Operacion">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Operacion/tipoRetorno"/>

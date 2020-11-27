@@ -2,18 +2,70 @@
 [module generateRelationNotation('http://www.example.org/diagramaClasesCompleto')]
  
 [template public generateRelationOneToOne(i : Relacion)]
-	@OneToOne(cascade= CascadeType.ALL)
+	[if (i.PersistenciaRelacional=TiposPersistencia::None)]
+	@OneToOne()
+	[else]
+	@OneToOne(cascade= CascadeType.[i.PersistenciaRelacional/])
+	[/if]
 	@JoinColumn(name="fk_[i.destino.nombre/]")
 [/template]
 [template public generateRelationOneToMany(i : Relacion)]
-	@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)
+	[if (i.PersistenciaRelacional=TiposPersistencia::None)]
+	@OneToMany()
+	[else]
+	@OneToMany(cascade= CascadeType.[i.PersistenciaRelacional/])
+	[/if]
 [/template]
 [template public generateRelationManyToOne(i : Relacion)]
-	@ManyToOne(cascade= CascadeType.PERSIST)
+	[if (i.PersistenciaRelacional=TiposPersistencia::None)]
+	@ManyToOne()
+	[else]
+	@ManyToOne(cascade= CascadeType.[i.PersistenciaRelacional/])
+	[/if]
 	@JoinColumn(name="fk_[i.destino.nombre/]")
 [/template]
 [template public generateRelationManyToMany(i : Relacion)]
-	@ManyToMany(cascade= CascadeType.ALL)
+	[if (i.PersistenciaRelacional=TiposPersistencia::None)]
+	@ManyToMany()
+	[else]
+	@ManyToMany(cascade= CascadeType.[i.PersistenciaRelacional/])
+	[/if]
+	@JoinTable(name="[i.origen.nombre/]_[i.destino.nombre/]",
+	joinColumns=@JoinColumn(name="[i.origen.nombre/]"),
+	inverseJoinColumns=@JoinColumn(name="[i.destino.nombre/]"))
+	@Default
+[/template]
+
+
+[template public generateComposicionOneToOne(i : Relacion)]
+	[if (i.PersistenciaRelacional=TiposPersistencia::None)]
+	@OneToOne()
+	[else]
+	@OneToOne(cascade= CascadeType.[i.PersistenciaRelacional/], orphanRemoval=true)
+	[/if]
+	@JoinColumn(name="fk_[i.destino.nombre/]")
+[/template]
+[template public generateComposicionOneToMany(i : Relacion)]
+	[if (i.PersistenciaRelacional=TiposPersistencia::None)]
+	@OneToMany()
+	[else]
+	@OneToMany(cascade= CascadeType.[i.PersistenciaRelacional/], orphanRemoval=true)
+	[/if]
+[/template]
+[template public generateComposicionManyToOne(i : Relacion)]
+	[if (i.PersistenciaRelacional=TiposPersistencia::None)]
+	@ManyToOne()
+	[else]
+	@ManyToOne(cascade= CascadeType.[i.PersistenciaRelacional/], orphanRemoval=true)
+	[/if]
+	@JoinColumn(name="fk_[i.destino.nombre/]")
+[/template]
+[template public generateComposicionManyToMany(i : Relacion)]
+	[if (i.PersistenciaRelacional=TiposPersistencia::None)]
+	@ManyToMany()
+	[else]
+	@ManyToMany(cascade= CascadeType.[i.PersistenciaRelacional/], orphanRemoval=true)
+	[/if]
 	@JoinTable(name="[i.origen.nombre/]_[i.destino.nombre/]",
 	joinColumns=@JoinColumn(name="[i.origen.nombre/]"),
 	inverseJoinColumns=@JoinColumn(name="[i.destino.nombre/]"))

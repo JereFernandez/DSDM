@@ -40,7 +40,7 @@
               <beginLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </beginLabelStyleDescription>
-              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM/]">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM+'\n'+'persistencia: '+PersistenciaRelacional/]">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
               <endLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
@@ -54,7 +54,7 @@
               <beginLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </beginLabelStyleDescription>
-              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM/]">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM+'\n'+'persistencia: '+PersistenciaRelacional/]">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
               <endLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
@@ -68,7 +68,7 @@
               <beginLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </beginLabelStyleDescription>
-              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM/]">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="['rol: '+nombre+'\n'+'vista: '+ tipoABM+'\n'+'persistencia: '+PersistenciaRelacional/]">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
               <endLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
@@ -82,7 +82,7 @@
               <beginLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </beginLabelStyleDescription>
-              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="[nombre+'\n'+'vista: '+ tipoABM/]">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="[nombre+'\n'+'vista: '+ tipoABM+'\n'+'persistencia: '+PersistenciaRelacional/]">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
               <endLabelStyleDescription labelSize="12" showIcon="false" labelExpression="1">
@@ -178,7 +178,7 @@
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
               </style>
             </conditionnalStyles>
@@ -189,6 +189,15 @@
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[self.tieneABM=true/]">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="[nombre/]" widthComputationExpression="20" heightComputationExpression="20">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>italic</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               </style>
             </conditionnalStyles>
           </subContainerMappings>

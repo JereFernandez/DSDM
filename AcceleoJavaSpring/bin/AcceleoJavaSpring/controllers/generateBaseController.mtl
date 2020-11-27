@@ -72,7 +72,7 @@ public abstract class BaseControllerImpl<E extends BaseEntity, S extends BaseSer
         }
     }
 	
-	@Operation(summary = "Este metodo devuelve un objeto", parameters = @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")))
+	@Operation(summary = "Este metodo devuelve un objeto", parameters = { @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")) })
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200",
                     description = "trae un objeto del Controller correspondiente",
@@ -91,7 +91,7 @@ public abstract class BaseControllerImpl<E extends BaseEntity, S extends BaseSer
         }
     }
 
-	@Operation(summary = "Este metodo guarda un objeto en la base de datos", parameters = @Parameter(name = "entity", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Object")))
+	@Operation(summary = "Este metodo guarda un objeto en la base de datos", parameters = { @Parameter(name = "entity", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Object")) })
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200",
                     description = "guarda un objeto en la base de datos",
@@ -111,7 +111,7 @@ public abstract class BaseControllerImpl<E extends BaseEntity, S extends BaseSer
 
     }
 
-	@Operation(summary = "Este metodo recibe un id y actualiza el objeto asociado", parameters = @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")))
+	@Operation(summary = "Este metodo recibe un id y actualiza el objeto asociado", parameters = { @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")) })
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200",
                     description = "actualiza un objeto en la base de datos",
@@ -130,7 +130,7 @@ public abstract class BaseControllerImpl<E extends BaseEntity, S extends BaseSer
         }
     }
 
-	@Operation(summary = "Este metodo recibe un id y elimina el objeto asociado", parameters = @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")))
+	@Operation(summary = "Este metodo recibe un id y elimina el objeto asociado", parameters = { @Parameter(name = "id", in = ParameterIn.PATH, required = true, schema = @Schema( type = "Long")) })
     @ApiResponses(value = {
             @ApiResponse(responseCode = "204",
                     description = "elimina un objeto en la base de datos",

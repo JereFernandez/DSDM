@@ -31,6 +31,7 @@ import diagramaClasesCompleto.TipoReinicio;
 import diagramaClasesCompleto.TipoRelacion;
 import diagramaClasesCompleto.TipoRetorno;
 import diagramaClasesCompleto.TipoTransferencia;
+import diagramaClasesCompleto.TiposPersistencia;
 import diagramaClasesCompleto.VerbosHTTP;
 
 import org.eclipse.emf.ecore.EClass;
@@ -157,6 +158,8 @@ public class DiagramaClasesCompletoFactoryImpl extends EFactoryImpl implements D
 			return createTipoABMFromString(eDataType, initialValue);
 		case DiagramaClasesCompletoPackage.TIPO_ESTRATEGIAS_HERENCIA:
 			return createTipoEstrategiasHerenciaFromString(eDataType, initialValue);
+		case DiagramaClasesCompletoPackage.TIPOS_PERSISTENCIA:
+			return createTiposPersistenciaFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -196,6 +199,8 @@ public class DiagramaClasesCompletoFactoryImpl extends EFactoryImpl implements D
 			return convertTipoABMToString(eDataType, instanceValue);
 		case DiagramaClasesCompletoPackage.TIPO_ESTRATEGIAS_HERENCIA:
 			return convertTipoEstrategiasHerenciaToString(eDataType, instanceValue);
+		case DiagramaClasesCompletoPackage.TIPOS_PERSISTENCIA:
+			return convertTiposPersistenciaToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -660,6 +665,28 @@ public class DiagramaClasesCompletoFactoryImpl extends EFactoryImpl implements D
 	 * @generated
 	 */
 	public String convertTipoEstrategiasHerenciaToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TiposPersistencia createTiposPersistenciaFromString(EDataType eDataType, String initialValue) {
+		TiposPersistencia result = TiposPersistencia.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertTiposPersistenciaToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
