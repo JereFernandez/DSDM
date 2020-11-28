@@ -20,7 +20,7 @@ Nos permite generar código a través de un modelo UML pero con mejoras y enriqu
 
 **Para destacar**
 
-Al utilizar Java podrémos dar provecho al tipo de cascada para persistir objetos, ya que los tipos del mismo se han elegido en base a lo establecido en JPA para tener una referencia de como se guardarán los objetos relacionados, si utilizamos otro lenguaje, entonces... ¡No hay problema!, podemos utilizar esta información visual para indicarles a nuestros programadores como deben hacer la lógica para persistir la relación entre uno o más clases asociadas.
+Al utilizar Java podrémos dar provecho al tipo de cascada para persistir objetos, ya que los tipos del mismo se han elegido en base a lo establecido en JPA para tener una referencia de como se guardarán los objetos relacionados, si utilizamos otro lenguaje, entonces... ¡No hay problema!, podemos utilizar esta información visual para indicarles a nuestros programadores como deben hacer la lógica para persistir la relación entre una o más clases asociadas.
 ### ¿Qué nos permite interpretar si somos programadores?
 
 Nos permite visualizar información que con UML no podemos, ya que el mismo es muy acotado. A partir de nuestro metamodelo podemos darle a nuestros programadores una interpretación extra sobre los artefactos (clases, relaciones, interfaces, etc.) que van a componer la arquitectura del software, por ejemplo:
