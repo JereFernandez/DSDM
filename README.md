@@ -33,4 +33,4 @@ Nos permite visualizar información que con UML no podemos, ya que el mismo es m
 
 **Demo**
 
-![Screenshot](Demo del proyecto.png)
+https://github.com/facuerbin/DSDM/blob/desarrollo/Demo%20del%20proyecto.png
