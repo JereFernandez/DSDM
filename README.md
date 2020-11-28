@@ -33,4 +33,4 @@ Nos permite visualizar información que con UML no podemos, ya que el mismo es m
 
 **Demo**
 
-![Demo del proyecto.png]
+![Screenshot](Demo del proyecto.png)
